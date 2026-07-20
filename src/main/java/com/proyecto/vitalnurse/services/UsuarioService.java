@@ -22,6 +22,9 @@ public class UsuarioService {
     }
 
     public void guardarUsuario(Usuario usuario) {
+        if (usuarioRepository.findByCedula(usuario.getCedula()).isPresent()) {
+            throw new com.proyecto.vitalnurse.exception.PacienteDuplicadoException(usuario.getCedula());
+        }
         String claveSegura = passwordEncoder.encode(usuario.getContrasena());
         usuario.setContrasena(claveSegura);
         usuarioRepository.save(usuario);

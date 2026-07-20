@@ -31,3 +31,11 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Seguridad ###
+backups_seguridad/
+*.sql
+
+### Logs de pruebas ###
+.playwright-mcp/
+*.log

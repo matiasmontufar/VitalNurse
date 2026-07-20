@@ -6,10 +6,12 @@ import com.proyecto.vitalnurse.models.SignoVital;
 import com.proyecto.vitalnurse.services.PacienteService;
 import com.proyecto.vitalnurse.services.PdfService;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,7 +22,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import java.io.IOException;
 import java.util.List;
 
-@Controller // Cambiado para poder gestionar las vistas de las páginas HTML
+@Controller
 public class PacienteController {
 
     @Autowired
@@ -29,37 +31,39 @@ public class PacienteController {
     @Autowired
     private PdfService pdfService;
 
-    // Ruta para MOSTRAR el formulario de Admisión de un Nuevo Paciente
     @GetMapping("/pacientes/nuevo")
     public String mostrarFormularioRegistro(Model model) {
         model.addAttribute("paciente", new Paciente());
         return "registro-paciente";
     }
 
-    // Ruta para GUARDAR al nuevo paciente en la base de datos
     @PostMapping("/pacientes/nuevo")
-    public String guardarPaciente(@ModelAttribute Paciente paciente, Model model) {
+    public String guardarPaciente(@Valid @ModelAttribute Paciente paciente, BindingResult result, Model model) {
+        if (result.hasErrors()) {
+            return "registro-paciente";
+        }
+        if (pacienteService.existsByCedula(paciente.getCedula())) {
+            model.addAttribute("error", "Ya existe un paciente registrado con la cédula: " + paciente.getCedula());
+            model.addAttribute("paciente", paciente);
+            return "registro-paciente";
+        }
         pacienteService.guardar(paciente);
         model.addAttribute("mensajeExito", "Expediente del paciente creado exitosamente.");
         model.addAttribute("paciente", new Paciente());
         return "registro-paciente";
     }
 
-    // Ruta para MOSTRAR la lista de pacientes
     @GetMapping("/pacientes")
     public String listarPacientes(Model model) {
         List<Paciente> listaPacientes = pacienteService.obtenerTodos();
         model.addAttribute("pacientes", listaPacientes);
-        return "listar-pacientes"; // Llamará al nuevo archivo HTML
+        return "listar-pacientes";
     }
 
-    // Ruta para MOSTRAR el perfil, evaluaciones y SIGNOS VITALES
     @GetMapping("/pacientes/perfil/{id}")
     @Transactional(readOnly = true)
     public String verPerfilPaciente(@PathVariable Long id, Model model) {
         Paciente paciente = pacienteService.obtenerPorId(id);
-        if (paciente == null) return "redirect:/pacientes";
-
         List<Evaluacion> historial = pacienteService.obtenerEvaluacionesPorPaciente(id);
         List<SignoVital> historialSignos = pacienteService.obtenerSignosPorPaciente(id);
 
@@ -70,14 +74,12 @@ public class PacienteController {
         return "perfil-paciente";
     }
 
-    // Ruta para MOSTRAR la calculadora de IMC con estética de registro
     @GetMapping("/calculadoras/imc")
     public String mostrarCalculadoraIMC(Model model) {
         model.addAttribute("pacientes", pacienteService.obtenerTodos());
         return "calculadora-imc";
     }
 
-    // Ruta para PROCESAR y GUARDAR el IMC en la ficha del paciente
     @PostMapping("/calculadoras/imc")
     public String calcularIMC(
             @RequestParam Long idPaciente,
@@ -85,33 +87,24 @@ public class PacienteController {
             @RequestParam double estatura,
             Model model) {
 
-        // 1. Cálculo matemático del IMC
-        double imc = peso / (estatura * estatura);
-        imc = Math.round(imc * 100.0) / 100.0; // Redondear a 2 decimales
+        model.addAttribute("pacientes", pacienteService.obtenerTodos());
 
-        // 2. Diagnóstico médico
-        String diagnostico = "";
-        if (imc < 18.5) {
-            diagnostico = "Bajo Peso (Riesgo Nutricional)";
-        } else if (imc >= 18.5 && imc <= 24.9) {
-            diagnostico = "Peso Normal (Saludable)";
-        } else if (imc >= 25 && imc <= 29.9) {
-            diagnostico = "Sobrepeso (Precaución)";
-        } else {
-            diagnostico = "Obesidad (Riesgo Cardiovascular)";
+        if (estatura <= 0) {
+            model.addAttribute("error", "La estatura debe ser mayor a cero");
+            return "calculadora-imc";
         }
 
-        // 3. Crear y guardar la evaluación
+        double imc = pacienteService.calcularIMC(peso, estatura);
+        imc = Math.round(imc * 100.0) / 100.0;
+        String diagnostico = pacienteService.clasificarIMC(imc);
+
         Evaluacion evaluacion = new Evaluacion();
         evaluacion.setTipo("Triaje Nutricional (IMC)");
         evaluacion.setResultado(String.valueOf(imc));
         evaluacion.setDiagnostico(diagnostico);
-        
         pacienteService.guardarEvaluacion(idPaciente, evaluacion);
 
-        // 4. Recargar la pantalla
-        model.addAttribute("mensajeExito", "IMC de " + imc + " guardado exitosamente en el expediente del paciente.");
-        model.addAttribute("pacientes", pacienteService.obtenerTodos());
+        model.addAttribute("mensajeExito", "IMC de " + imc + " guardado exitosamente.");
         model.addAttribute("imcCalculado", imc);
         model.addAttribute("diagnostico", diagnostico);
         model.addAttribute("colorAlerta", imc < 18.5 ? "warning" : imc >= 25 ? "danger" : "success");
@@ -119,14 +112,12 @@ public class PacienteController {
         return "calculadora-imc";
     }
 
-    // Ruta para MOSTRAR la calculadora de Glasgow con estética de registro
     @GetMapping("/calculadoras/glasgow")
     public String mostrarCalculadoraGlasgow(Model model) {
         model.addAttribute("pacientes", pacienteService.obtenerTodos());
         return "calculadora-glasgow";
     }
 
-    // Ruta para PROCESAR y GUARDAR el puntaje en la ficha del paciente
     @PostMapping("/calculadoras/glasgow")
     public String calcularGlasgow(
             @RequestParam Long idPaciente,
@@ -135,9 +126,17 @@ public class PacienteController {
             @RequestParam int motora,
             Model model) {
 
+        model.addAttribute("pacientes", pacienteService.obtenerTodos());
+
+        try {
+            pacienteService.calcularGlasgow(ocular, verbal, motora);
+        } catch (IllegalArgumentException e) {
+            model.addAttribute("error", e.getMessage());
+            return "calculadora-glasgow";
+        }
+
         int puntajeTotal = ocular + verbal + motora;
-        String nivelTrauma = "";
-        
+        String nivelTrauma;
         if (puntajeTotal >= 13) {
             nivelTrauma = "Traumatismo Leve";
         } else if (puntajeTotal >= 9) {
@@ -146,17 +145,13 @@ public class PacienteController {
             nivelTrauma = "Traumatismo Severo (Riesgo)";
         }
 
-        // Creamos el objeto Evaluacion para guardarlo en la base de datos
         Evaluacion evaluacion = new Evaluacion();
         evaluacion.setTipo("Triaje Neurológico (Glasgow)");
         evaluacion.setResultado(puntajeTotal + " / 15");
         evaluacion.setDiagnostico(nivelTrauma);
-        
         pacienteService.guardarEvaluacion(idPaciente, evaluacion);
 
-        // Recargamos la pantalla con el mensaje de éxito y la lista de pacientes
-        model.addAttribute("mensajeExito", "Evaluación de Glasgow guardada exitosamente en el expediente del paciente.");
-        model.addAttribute("pacientes", pacienteService.obtenerTodos());
+        model.addAttribute("mensajeExito", "Evaluación de Glasgow guardada exitosamente.");
         model.addAttribute("puntajeTotal", puntajeTotal);
         model.addAttribute("nivelTrauma", nivelTrauma);
         model.addAttribute("colorAlerta", puntajeTotal >= 13 ? "success" : puntajeTotal >= 9 ? "warning" : "danger");
@@ -164,23 +159,21 @@ public class PacienteController {
         return "calculadora-glasgow";
     }
 
-    // Mostrar pantalla de edición
     @GetMapping("/pacientes/editar/{id}")
     public String mostrarEditarPaciente(@PathVariable Long id, Model model) {
-        Paciente paciente = pacienteService.obtenerPorId(id);
-        if (paciente == null) return "redirect:/pacientes";
-        model.addAttribute("paciente", paciente);
+        model.addAttribute("paciente", pacienteService.obtenerPorId(id));
         return "editar-paciente";
     }
 
-    // Procesar la actualización y devolver a la tabla
     @PostMapping("/pacientes/editar/{id}")
-    public String actualizarPaciente(@PathVariable Long id, @ModelAttribute Paciente paciente) {
+    public String actualizarPaciente(@PathVariable Long id, @Valid @ModelAttribute Paciente paciente, BindingResult result) {
+        if (result.hasErrors()) {
+            return "editar-paciente";
+        }
         pacienteService.actualizarPaciente(id, paciente);
         return "redirect:/pacientes";
     }
 
-    // Eliminar paciente (solo supervisores)
     @PostMapping("/pacientes/eliminar/{id}")
     public String eliminarPaciente(@PathVariable Long id, RedirectAttributes redirectAttrs) {
         pacienteService.eliminarPaciente(id);
@@ -197,9 +190,7 @@ public class PacienteController {
         List<Evaluacion> historial = pacienteService.obtenerEvaluacionesPorPaciente(id);
         List<SignoVital> historialSignos = pacienteService.obtenerSignosPorPaciente(id);
 
-        if (paciente != null) {
-            pdfService.exportarFichaPdf(response, paciente, historial, historialSignos);
-        }
+        pdfService.exportarFichaPdf(response, paciente, historial, historialSignos);
     }
 
     @GetMapping("/pacientes/signos")
@@ -209,13 +200,13 @@ public class PacienteController {
     }
 
     @PostMapping("/pacientes/signos")
-    public String registrarSignos(@RequestParam Long idPaciente, @ModelAttribute SignoVital signoVital, Model model) {
-
-        pacienteService.guardarSignosVitales(idPaciente, signoVital);
-
-        model.addAttribute("mensajeExito", "Signos vitales registrados correctamente en el historial del paciente.");
+    public String registrarSignos(@RequestParam Long idPaciente, @Valid @ModelAttribute SignoVital signoVital, BindingResult result, Model model) {
         model.addAttribute("pacientes", pacienteService.obtenerTodos());
-
+        if (result.hasErrors()) {
+            return "registro-signos";
+        }
+        pacienteService.guardarSignosVitales(idPaciente, signoVital);
+        model.addAttribute("mensajeExito", "Signos vitales registrados correctamente.");
         return "registro-signos";
     }
 
@@ -234,6 +225,11 @@ public class PacienteController {
             @RequestParam(required = false, defaultValue = "0") int tiempoMinutos,
             Model model) {
 
+        if (dosisIndicada <= 0 || concentracion <= 0 || volumen <= 0) {
+            model.addAttribute("error", "Dosis, concentración y volumen deben ser valores positivos");
+            return "calculadora-dosis";
+        }
+
         double dosisEnMg = unidadDosis.equals("g") ? dosisIndicada * 1000 : dosisIndicada;
         double concentracionEnMg = unidadConcentracion.equals("g") ? concentracion * 1000 : concentracion;
 
@@ -250,7 +246,6 @@ public class PacienteController {
         model.addAttribute("resultadoMl", Math.round(volumenAdministrar * 100.0) / 100.0);
         model.addAttribute("resultadoGotas", Math.round(gotasPorMinuto));
         model.addAttribute("resultadoMicrogotas", Math.round(microgotasPorMinuto));
-
         model.addAttribute("dosisIndicada", dosisIndicada);
         model.addAttribute("concentracion", concentracion);
         model.addAttribute("volumen", volumen);

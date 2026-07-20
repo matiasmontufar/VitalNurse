@@ -1,6 +1,7 @@
 package com.proyecto.vitalnurse.models;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
 
 @Entity
 @Table(name = "pacientes")
@@ -8,20 +9,28 @@ public class Paciente {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long idPaciente; // <-- Cambiado de id_paciente a idPaciente
+    private Long idPaciente;
 
+    @NotBlank(message = "La cédula es obligatoria")
+    @Size(min = 10, max = 10, message = "La cédula debe tener 10 dígitos")
     @Column(nullable = false, unique = true, length = 10)
     private String cedula;
 
+    @NotBlank(message = "El nombre es obligatorio")
     @Column(nullable = false)
     private String nombres;
 
+    @NotBlank(message = "Los apellidos son obligatorios")
     @Column(nullable = false)
     private String apellidos;
 
+    @NotNull(message = "La edad es obligatoria")
+    @Min(value = 0, message = "La edad no puede ser negativa")
+    @Max(value = 150, message = "La edad no puede superar 150")
     @Column(nullable = false)
     private Integer edad;
 
+    @NotBlank(message = "El sexo es obligatorio")
     @Column(nullable = false, length = 15)
     private String sexo;
 

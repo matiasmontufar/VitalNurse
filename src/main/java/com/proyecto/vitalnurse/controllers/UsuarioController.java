@@ -2,9 +2,11 @@ package com.proyecto.vitalnurse.controllers;
 
 import com.proyecto.vitalnurse.models.Usuario;
 import com.proyecto.vitalnurse.services.UsuarioService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -33,7 +35,10 @@ public class UsuarioController {
     }
 
     @PostMapping("/usuarios/nuevo")
-    public String registrarUsuario(@ModelAttribute Usuario usuario, Model model) {
+    public String registrarUsuario(@Valid @ModelAttribute Usuario usuario, BindingResult result, Model model) {
+        if (result.hasErrors()) {
+            return "registrar-usuario";
+        }
         usuarioService.guardarUsuario(usuario);
         model.addAttribute("mensajeExito", "Usuario creado y credenciales encriptadas correctamente.");
         model.addAttribute("usuario", new Usuario());

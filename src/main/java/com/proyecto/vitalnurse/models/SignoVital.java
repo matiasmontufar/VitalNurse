@@ -1,6 +1,7 @@
 package com.proyecto.vitalnurse.models;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -12,24 +13,41 @@ public class SignoVital {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idSigno;
 
+    @NotNull(message = "La temperatura es obligatoria")
+    @DecimalMin(value = "30.0", message = "Temperatura fuera de rango")
+    @DecimalMax(value = "45.0", message = "Temperatura fuera de rango")
     @Column(nullable = false)
     private Double temperatura;
 
+    @NotBlank(message = "La presión arterial es obligatoria")
     @Column(nullable = false)
     private String presionArterial;
 
+    @NotNull(message = "La frecuencia cardíaca es obligatoria")
+    @Min(value = 20, message = "FC fuera de rango")
+    @Max(value = 300, message = "FC fuera de rango")
     @Column(nullable = false)
     private Integer frecuenciaCardiaca;
 
+    @NotNull(message = "La frecuencia respiratoria es obligatoria")
+    @Min(value = 4, message = "FR fuera de rango")
+    @Max(value = 100, message = "FR fuera de rango")
     @Column(nullable = false)
     private Integer frecuenciaRespiratoria;
 
+    @NotNull(message = "La saturación de oxígeno es obligatoria")
+    @Min(value = 30, message = "SpO2 fuera de rango")
+    @Max(value = 100, message = "SpO2 fuera de rango")
     @Column(nullable = false)
     private Integer saturacionOxigeno;
 
+    @NotNull(message = "La glicemia es obligatoria")
+    @DecimalMin(value = "10.0", message = "Glicemia fuera de rango")
+    @DecimalMax(value = "600.0", message = "Glicemia fuera de rango")
     @Column(nullable = false)
     private Double glicemia;
 
+    @NotNull(message = "La fecha es obligatoria")
     @Column(nullable = false)
     private LocalDateTime fecha;
 
@@ -38,7 +56,6 @@ public class SignoVital {
     private Paciente paciente;
 
     public SignoVital() {
-        this.fecha = LocalDateTime.now();
     }
 
     public Long getIdSigno() { return idSigno; }

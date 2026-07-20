@@ -1,6 +1,7 @@
 package com.proyecto.vitalnurse.models;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -12,15 +13,19 @@ public class Evaluacion {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idEvaluacion;
 
+    @NotBlank(message = "El tipo de evaluación es obligatorio")
     @Column(nullable = false)
     private String tipo;
 
+    @NotBlank(message = "El resultado es obligatorio")
     @Column(nullable = false)
     private String resultado;
 
+    @NotBlank(message = "El diagnóstico es obligatorio")
     @Column(nullable = false)
     private String diagnostico;
 
+    @NotNull(message = "La fecha es obligatoria")
     @Column(nullable = false)
     private LocalDateTime fecha;
 
@@ -29,7 +34,6 @@ public class Evaluacion {
     private Paciente paciente;
 
     public Evaluacion() {
-        this.fecha = LocalDateTime.now();
     }
 
     public Long getIdEvaluacion() { return idEvaluacion; }
