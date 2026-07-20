@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="utf-8">
+    <title>VitalNurse - Gestión de Usuarios</title>
+    <link th:href="@{/vendor/fontawesome-free/css/all.min.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/sb-admin-2.min.css}" rel="stylesheet">
+</head>
+<body id="page-top">
+
+<div id="wrapper">
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
+            <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-stethoscope"></i></div>
+            <div class="sidebar-brand-text mx-3">VitalNurse</div>
+        </a>
+        <hr class="sidebar-divider my-0">
+        <li class="nav-item"><a class="nav-link" href="/dashboard"><i class="fas fa-fw fa-tachometer-alt"></i><span>Panel Principal</span></a></li>
+        <hr class="sidebar-divider">
+        <div class="sidebar-heading">Gestión de Pacientes</div>
+        <li class="nav-item"><a class="nav-link" href="/pacientes/nuevo"><i class="fas fa-fw fa-user-plus"></i><span>Admisión y Registro</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/pacientes"><i class="fas fa-fw fa-users"></i><span>Lista de Pacientes</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/pacientes/signos"><i class="fas fa-fw fa-heartbeat"></i><span>Signos Vitales</span></a></li>
+        <hr class="sidebar-divider">
+        <div class="sidebar-heading">Soporte Clínico</div>
+        <li class="nav-item"><a class="nav-link" href="/calculadoras/imc"><i class="fas fa-fw fa-weight"></i><span>Triaje Nutricional</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/calculadoras/glasgow"><i class="fas fa-fw fa-brain"></i><span>Escala de Glasgow</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/calculadoras/dosis"><i class="fas fa-fw fa-capsules"></i><span>Conversión de Dosis</span></a></li>
+
+        <hr class="sidebar-divider" sec:authorize="hasRole('SUPERVISOR')">
+        <div class="sidebar-heading" sec:authorize="hasRole('SUPERVISOR')">Administración</div>
+        <li class="nav-item active" sec:authorize="hasRole('SUPERVISOR')">
+            <a class="nav-link" href="/usuarios/nuevo"><i class="fas fa-fw fa-user-shield"></i><span>Gestión de Personal</span></a>
+        </li>
+    </ul>
+
+    <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content">
+            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <h1 class="h3 mb-0 text-gray-800 ml-3">Registro de Personal Clínico</h1>
+            </nav>
+
+            <div class="container-fluid">
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3 bg-dark">
+                        <h6 class="m-0 font-weight-bold text-white"><i class="fas fa-user-plus"></i> Nuevo Usuario del Sistema</h6>
+                    </div>
+                    <div class="card-body">
+
+                        <div th:if="${mensajeExito}" class="alert alert-success shadow-sm mb-4">
+                            <i class="fas fa-check-circle"></i> <span th:text="${mensajeExito}"></span>
+                        </div>
+
+                        <form th:action="@{/usuarios/nuevo}" method="post" th:object="${usuario}">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="font-weight-bold">Nombre Completo:</label>
+                                    <input type="text" class="form-control" name="nombre" required placeholder="Ej. Lcda. María Gómez">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="font-weight-bold">Número de Cédula (Usuario):</label>
+                                    <input type="text" class="form-control" name="cedula" required placeholder="Ej. 1700000000">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="font-weight-bold">Contraseña Temporal:</label>
+                                    <input type="password" class="form-control" name="contrasena" required placeholder="Digite una clave segura">
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="font-weight-bold">Rol en el Sistema:</label>
+                                    <select class="form-control" name="rol" required>
+                                        <option value="ENFERMERA">Enfermera / Paramédico</option>
+                                        <option value="SUPERVISOR">Supervisor Médico (Admin)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <hr>
+                            <button type="submit" class="btn btn-dark btn-icon-split shadow-sm">
+                                <span class="icon text-white-50"><i class="fas fa-save"></i></span>
+                                <span class="text">Crear Credenciales</span>
+                            </button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script th:src="@{/vendor/jquery/jquery.min.js}"></script>
+<script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+<script th:src="@{/js/sb-admin-2.min.js}"></script>
+</body>
+</html>

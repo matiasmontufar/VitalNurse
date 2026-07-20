@@ -1,0 +1,320 @@
+[       7ms] [LOG] rcvd close msg @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[      15ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[      28ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[      28ms] [ERROR] Ajax error occured for  https://learningmanagerfr.adobe.com//primeapi/v2/users/22269687/moduleReset?loId=course:4059000&loResourceId=course:4059000_4630795_9267217_1&i_qp_reset=false&i_qp_started_time=1784295440&close=true&access_token=e29ce9452090c2a24ae8607206c678c9 GET @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[      29ms] [LOG] Worker: Received {"command":"failedApi","value":"{\"url\":\"https://learningmanagerfr.adobe.com//primeapi/v2/users/22269687/moduleReset?loId=course:4059000&loResourceId=course:4059000_4630795_9267217_1&i_qp_reset=false&i_qp_started_time=1784295440&close=true&access_token=e29ce9452090c2a24ae8607206c678c9\",\"type\":\"GET\",\"isLocal\":false,\"global\":true,\"processData\":false,\"async\":false,\"contentType\":\"application/json;charset=UTF-8\",\"accepts\":{\"*\":\"*/*\",\"text\":\"text/plain\",\"html\":\"text/html\",\"xml\":\"application/xml, text/xml\",\"json\":\"application/json, text/javascript\",\"script\":\"text/javascript, application/javascript, application/ecmascript, application/x-ecmascript\"},\"contents\":{\"xml\":{},\"html\":{},\"json\":{},\"script\":false},\"responseFields\":{\"xml\":\"responseXML\",\"text\":\"responseText\",\"json\":\"responseJSON\"},\"converters\":{\"text html\":true},\"flatOptions\":{\"url\":true,\"context\":true},\"jsonp\":\"callback\",\"dataType\":\"json\",\"xhrFields\":{\"withCredentials\":true},\"crossDomain\":true,\"dataTypes\":[\"json\"],\"hasContent\":false}"} @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[      30ms] [LOG] Worker: Successfully stored failed api https://learningmanagerfr.adobe.com//primeapi/v2/users/22269687/moduleReset?loId=course:4059000&loResourceId=course:4059000_4630795_9267217_1&i_qp_reset=false&i_qp_started_time=1784295440&close=true&access_token=e29ce9452090c2a24ae8607206c678c9 @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[     221ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     221ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     221ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     221ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     221ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     221ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     221ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     221ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     221ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     221ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     221ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     221ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     222ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     222ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     222ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     222ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     225ms] [LOG] player closed !! @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[     228ms] [WARNING] Scripts may close only the windows that were opened by them. @ https://alm.ibm.com/etc.clientlibs/learning/clientlibs/clientlib-alm.lc-2b310f79c1e81951878a59b5b08e1036-lc.min.js:123
+[     230ms] [LOG] rcvd close msg @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[     233ms] [LOG] pagehide PageTransitionEvent @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[     233ms] [LOG] Unload Event @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    2455ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ https://alm.ibm.com/etc.clientlibs/clientlibs/granite/coralui3.lc-128ef7bb116bd33e075784c264c98ea8-lc.min.js:1
+[    2684ms] [ERROR] Incorrect environment provided prodfr, Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    2684ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    2684ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    2684ms] [ERROR] Incorrect hostname provided https://learningmanagerfr.adobe.com, Must be a valid hostname @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    2684ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    2685ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    2685ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    2685ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3003ms] [LOG] app.vue @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3004ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3004ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3004ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3004ms] [ERROR] Incorrect hostname provided https://learningmanagerfr.adobe.com, Must be a valid hostname @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3004ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3004ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3004ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3004ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3004ms] [LOG] App player parameters read @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3004ms] [LOG] Syncing Params @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3004ms] [LOG] {loId: course:4059000, instanceId: , moduleId: , serverApiEndpoint: https://learningmanagerfr.adobe.com/, userId: } @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3006ms] [LOG] attaching event listeners @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3008ms] [LOG] IndexComponent created @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3009ms] [LOG] format here @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3010ms] [LOG] courseNamePanel created @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3012ms] [LOG] >>>>>>> panelRef watch null @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3013ms] [LOG] Reporting loaded @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3013ms] [LOG] CourseNamePanel null @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3014ms] [LOG] pulloutcomp mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3014ms] [LOG] BottomPanel mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3014ms] [LOG] WebUI loaded @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3014ms] [LOG] Mounted  of index component  Proxy(Object) Proxy(Object) @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3014ms] [LOG] Inserted playerlayout view @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3015ms] [LOG] Error component @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3016ms] [LOG] Configure Quality component @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3044ms] [LOG] tocPanelOpener created @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3044ms] [LOG] FullScreen created @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3045ms] [LOG] here after render @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3046ms] [LOG] tocPanelOpener mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3047ms] [LOG] NotesPanelOpener mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3047ms] [LOG] PulloutOpener mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3047ms] [LOG] FullScreen @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3047ms] [LOG] prev mod @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3047ms] [LOG] NextModule mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3047ms] [LOG] here after render @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3047ms] [LOG] >>>>>>> bottomPanelRef JSHandle@node @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3047ms] [LOG] >>>>>>> bottomPanelRef Proxy(Object) Proxy(Object) @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3048ms] [LOG] >>>>>>> panelRef watch JSHandle@node @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3199ms] [LOG] Worker: Port set @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3199ms] [LOG] Worker: App initialised. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3200ms] [LOG] Worker: Received {"command":"startWorker","type":"accessToken","value":"","user":"22269687"} @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3211ms] [LOG] Worker: Database initialised @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3280ms] [LOG] App handleAfterModel @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3281ms] [LOG] Initilizing application controller @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3281ms] [LOG] loadIndex watch @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3281ms] [LOG] Received appCtrlData Proxy(Object) @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3282ms] [LOG] Initializing index controller @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3283ms] [LOG] [MQA] hasContentDrivenAttemptTracking: false @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3286ms] [LOG] [Index] Before initializeCmi - window.API exists: object LMSInitialize: function @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3286ms] [LOG] format here @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3287ms] [LOG] ModulePlayer created @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3292ms] [LOG] loadIndex watch @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3293ms] [LOG] ModulePlayer mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3293ms] [LOG] OptionsControl mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3599ms] [LOG] Worker: Retry updated 1 @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    3600ms] [LOG] Worker: Statement succeeded and deleted [object Object] @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    8297ms] [LOG] flushStatementQueue called. There are 2 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[    8521ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[    8521ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[    8521ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[    8521ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[    8521ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[    8521ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[    8521ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[    8521ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[    8521ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[    8521ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[    8521ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[    8521ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[    8521ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[    8521ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[    8521ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[    8521ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   10418ms] [LOG] Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm @ https://alm.ibm.com/etc.clientlibs/learning/clientlibs/clientlib-alm.lc-2b310f79c1e81951878a59b5b08e1036-lc.min.js:123
+[   13288ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[   23299ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[   24281ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[   24489ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   24489ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   24489ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   24489ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   24489ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   24489ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   24490ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   24490ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   24490ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   24490ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   24490ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   24490ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   24490ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   24490ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   24490ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   24490ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   30356ms] [LOG] Button 0: text="INTENTAR DE NUEVO", hidden=null, tabIndex=-1, disabled=false @ :4
+[   30356ms] [LOG] Button 1: text="INTENTAR DE NUEVO", hidden=true, tabIndex=-1, disabled=false @ :4
+[   30356ms] [LOG] Dispatched click on button 0 @ :11
+[   33287ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[   43286ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[   44269ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[   44475ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   44475ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   44475ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   44475ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   44475ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   44475ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   44475ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   44475ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   44475ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   44475ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   44475ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   44475ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   44475ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   44475ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   44475ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   44475ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   53293ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[   63293ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[   64248ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[   64266ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[   64474ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   64474ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   64474ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   64474ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   64474ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   64474ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   64474ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   64474ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   64474ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   64474ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   64474ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   64474ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   64474ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   64474ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   64474ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   64474ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   68294ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[   68503ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   68503ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   68503ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   68503ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   68503ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   68503ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   68503ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   68503ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   68503ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   68503ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   68503ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   68503ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   68503ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   68503ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   68503ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   68503ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   73298ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[   83295ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[   84273ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[   84480ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   84480ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   84480ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   84480ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   84481ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   84481ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   84481ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   84481ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   84481ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   84481ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   84481ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   84481ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   84481ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   84481ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   84481ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   84481ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[   93292ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  103284ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  104270ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  104480ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  104480ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  104480ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  104480ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  104480ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  104480ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  104480ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  104480ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  104480ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  104480ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  104480ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  104480ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  104480ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  104480ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  104480ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  104480ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  108468ms] [LOG] Found onClick handler, calling it directly @ :17
+[  113297ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  118026ms] [LOG] Found onClick on button, calling it @ :14
+[  123292ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  124261ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  124270ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  124493ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  124493ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  124493ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  124493ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  124493ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  124494ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  124494ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  124494ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  124494ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  124494ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  124494ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  124494ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  124494ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  124494ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  124494ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  124494ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  128283ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128492ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  128492ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  128492ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  128492ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  128492ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  128492ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  128492ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  128492ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  128492ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  128492ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  128493ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  128493ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  128493ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  128493ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  128493ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  128493ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  133286ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  143353ms] [LOG] flushStatementQueue called. There are 2 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  143562ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  143562ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  143562ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  143562ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  143562ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  143562ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  143562ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  143562ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  143562ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  143562ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  143562ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  143562ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  143562ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  143562ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  143562ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  143562ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  144269ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  144486ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  144486ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  144486ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  144486ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  144486ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  144486ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  144486ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  144486ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  144486ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  144487ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  144487ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  144487ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  144487ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  144487ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  144487ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  144487ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  153285ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  163296ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  164264ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  164471ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  164471ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  164471ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  164471ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  164471ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  164471ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  164471ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  164471ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  164471ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  164471ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  164471ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  164471ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  164471ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  164471ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  164471ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  164471ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239

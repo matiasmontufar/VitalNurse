@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="utf-8">
+    <title>VitalNurse - Editar Paciente</title>
+    <link th:href="@{/vendor/fontawesome-free/css/all.min.css}" rel="stylesheet" type="text/css">
+    <link th:href="@{/css/sb-admin-2.min.css}" rel="stylesheet">
+</head>
+<body id="page-top">
+
+<div id="wrapper">
+
+    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
+            <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-stethoscope"></i></div>
+            <div class="sidebar-brand-text mx-3">VitalNurse</div>
+        </a>
+        <hr class="sidebar-divider my-0">
+        <li class="nav-item"><a class="nav-link" href="/dashboard"><i class="fas fa-fw fa-tachometer-alt"></i><span>Panel Principal</span></a></li>
+        <hr class="sidebar-divider">
+        <div class="sidebar-heading">Gestión de Pacientes</div>
+        <li class="nav-item"><a class="nav-link" href="/pacientes/nuevo"><i class="fas fa-fw fa-user-plus"></i><span>Admisión y Registro</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/pacientes"><i class="fas fa-fw fa-users"></i><span>Lista de Pacientes</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/pacientes/signos"><i class="fas fa-fw fa-heartbeat"></i><span>Signos Vitales</span></a></li>
+        <hr class="sidebar-divider">
+        <div class="sidebar-heading">Soporte Clínico</div>
+        <li class="nav-item"><a class="nav-link" href="/calculadoras/imc"><i class="fas fa-fw fa-weight"></i><span>Triaje Nutricional</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/calculadoras/glasgow"><i class="fas fa-fw fa-brain"></i><span>Escala de Glasgow</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/calculadoras/dosis"><i class="fas fa-fw fa-capsules"></i><span>Conversión de Dosis</span></a></li>
+
+        <hr class="sidebar-divider" sec:authorize="hasRole('SUPERVISOR')">
+        <div class="sidebar-heading" sec:authorize="hasRole('SUPERVISOR')">Administración</div>
+        <li class="nav-item" sec:authorize="hasRole('SUPERVISOR')">
+            <a class="nav-link" href="/usuarios/nuevo"><i class="fas fa-fw fa-user-shield"></i><span>Gestión de Personal</span></a>
+        </li>
+    </ul>
+
+    <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content">
+
+            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+                <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <h1 class="h3 mb-0 text-gray-800 ml-3">Editar Expediente Clínico</h1>
+                <ul class="navbar-nav ml-auto">
+
+                    <div class="topbar-divider d-none d-sm-block"></div>
+
+                    <li class="nav-item dropdown no-arrow">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="mr-2 d-none d-lg-inline text-gray-600 small font-weight-bold">Matías Montufar</span>
+                            <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Cerrar Sesión</a>
+                        </div>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class="container-fluid">
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">Corregir Datos del Paciente</h6>
+                    </div>
+                    <div class="card-body">
+
+                        <div th:if="${error}" class="alert alert-danger" th:text="${error}"></div>
+                        <div th:if="${success}" class="alert alert-success" th:text="${success}"></div>
+
+                        <form th:action="@{/pacientes/editar/{id}(id=${paciente.idPaciente})}" method="post">
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label class="font-weight-bold text-gray-800">Número de Cédula:</label>
+                                    <input type="text" class="form-control" name="cedula" maxlength="10" th:value="${paciente.cedula}" readonly>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="font-weight-bold text-gray-800">Edad:</label>
+                                    <input type="number" class="form-control" name="edad" min="0" th:value="${paciente.edad}" required>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group col-md-6">
+                                    <label class="font-weight-bold text-gray-800">Nombres:</label>
+                                    <input type="text" class="form-control" name="nombres" th:value="${paciente.nombres}" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="font-weight-bold text-gray-800">Apellidos:</label>
+                                    <input type="text" class="form-control" name="apellidos" th:value="${paciente.apellidos}" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="font-weight-bold text-gray-800">Sexo Biológico:</label>
+                                <select class="form-control" name="sexo" required>
+                                    <option value="">Seleccione...</option>
+                                    <option value="Masculino" th:selected="${paciente.sexo == 'Masculino'}">Masculino</option>
+                                    <option value="Femenino" th:selected="${paciente.sexo == 'Femenino'}">Femenino</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="font-weight-bold text-gray-800">Enfermedades Preexistentes:</label>
+                                <textarea class="form-control" name="enfermedadesPreexistentes" rows="3" th:text="${paciente.enfermedadesPreexistentes}"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-warning btn-block mt-4">
+                                <i class="fas fa-save"></i> Actualizar Datos del Paciente
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script th:src="@{/vendor/jquery/jquery.min.js}"></script>
+<script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+<script th:src="@{/js/sb-admin-2.min.js}"></script>
+
+<!-- Modal de Cerrar Sesión -->
+<div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">¿Cerrar Sesión?</h5>
+                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">Seleccione "Cerrar Sesión" si desea finalizar su sesión actual.</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                <form th:action="@{/logout}" method="post">
+                    <button type="submit" class="btn btn-primary">Cerrar Sesión</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+- generic [ref=f1e1]:
+  - generic:
+    - generic:
+      - generic:
+        - main
+  - iframe [active] [ref=f1e4]:
+    - generic [ref=f2e10]:
+      - generic:
+        - generic:
+          - contentinfo "Encabezado del reproductor" [ref=f2e11]:
+            - generic [ref=f2e12]: De la Conservación a la Sostenibilidad
+            - button "cerrar reproductor" [ref=f2e14] [cursor=pointer]
+          - generic:
+            - region [ref=f2e21]:
+              - iframe [ref=f2e22]
+            - main "Controles del reproductor" [ref=f2e23]:
+              - generic [ref=f2e24]:
+                - button "note panel" [ref=f2e28] [cursor=pointer]
+                - generic [ref=f2e33]:
+                  - generic "Opciones" [ref=f2e35]:
+                    - button "configuración" [ref=f2e37] [cursor=pointer]
+                  - button "Pasar a pantalla completa" [ref=f2e41] [cursor=pointer]
+                  - generic [ref=f2e46]:
+                    - generic "Ir a Módulo anterior" [ref=f2e48]:
+                      - button "Ir a Módulo anterior" [disabled] [ref=f2e49] [cursor=pointer]
+                    - button "Salir" [ref=f2e52] [cursor=pointer]

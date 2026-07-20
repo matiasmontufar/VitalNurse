@@ -1,0 +1,288 @@
+- generic [ref=f11e1]:
+  - generic:
+    - generic:
+      - generic:
+        - main
+  - iframe [active] [ref=f11e4]:
+    - generic [ref=f12e10]:
+      - generic:
+        - generic:
+          - contentinfo "Encabezado del reproductor" [ref=f12e11]:
+            - generic [ref=f12e12]: De la Conservación a la Sostenibilidad
+            - button "cerrar reproductor" [active] [ref=f12e14] [cursor=pointer]
+          - generic:
+            - region [ref=f12e21]:
+              - iframe [ref=f12e22]:
+                - iframe [ref=f14e3]:
+                  - generic [ref=f15e2]:
+                    - log [ref=f15e3]
+                    - log [ref=f15e4]
+                    - log [ref=f15e5]
+                    - log [ref=f15e6]
+                    - generic [ref=f15e7]:
+                      - generic [ref=f15e8]:
+                        - main:
+                          - generic [ref=f15e9]: Presentación del curso
+                          - generic [ref=f15e11]:
+                            - generic [ref=f15e14]:
+                              - heading "De la Conservación a la Sostenibilidad" [level=1] [ref=f15e15]
+                              - link "COMENZAR CURSO" [ref=f15e17] [cursor=pointer]:
+                                - /url: "#/lessons/EZfgzSXAs5yFg3AMCwfnlESTzi83OqTn"
+                            - generic [ref=f15e22]:
+                              - generic [ref=f15e26]:
+                                - paragraph [ref=f15e27]:
+                                  - text: En este curso aprenderá cómo la
+                                  - strong [ref=f15e28]: sostenibilidad
+                                  - text: amplía los logros de la conservación añadiendo la tecnología moderna y el análisis de datos a las ideas tradicionales sobre la preservación de los recursos de la Tierra. Explorará una simulación de sostenibilidad y descubrirá prácticas de sostenibilidad que puede empezar a utilizar ya. A continuación, descubrirá formas concretas en que la tecnología apoya el trabajo de sostenibilidad.
+                                - paragraph [ref=f15e29]
+                                - paragraph [ref=f15e30]:
+                                  - text: Seleccione
+                                  - strong [ref=f15e31]: COMENZAR CURSO
+                                  - text: para comenzar o consulte aquí el contenido detallado del curso
+                              - navigation "Tabla de contenidos" [ref=f15e33]:
+                                - generic [ref=f15e34]:
+                                  - heading "RESUMEN DEL CURSO" [level=2] [ref=f15e35]
+                                  - list [ref=f15e36]:
+                                    - listitem [ref=f15e37]:
+                                      - link "El mundo necesita \"sostenibilidores\" Sin comenzar" [ref=f15e39] [cursor=pointer]:
+                                        - /url: "#/lessons/EZfgzSXAs5yFg3AMCwfnlESTzi83OqTn"
+                                        - generic [ref=f15e40]:
+                                          - generic [ref=f15e41]: El mundo necesita "sostenibilidores"
+                                          - img "Sin comenzar" [ref=f15e44]
+                                    - listitem [ref=f15e47]:
+                                      - link "Acerca de este curso Sin comenzar" [ref=f15e49] [cursor=pointer]:
+                                        - /url: "#/lessons/ZLdZ2HT401xB-W54JF_Jar1Bqk1JpnJA"
+                                        - generic [ref=f15e50]:
+                                          - generic [ref=f15e51]: Acerca de este curso
+                                          - img "Sin comenzar" [ref=f15e54]
+                                    - listitem [ref=f15e57]:
+                                      - link "¡Gane una credencial! Sin comenzar" [ref=f15e59] [cursor=pointer]:
+                                        - /url: "#/lessons/h42YEmgmvPCXElG9_4cjPFwCSf8DdIAs"
+                                        - generic [ref=f15e60]:
+                                          - generic [ref=f15e61]: ¡Gane una credencial!
+                                          - img "Sin comenzar" [ref=f15e64]
+                                    - listitem [ref=f15e67]:
+                                      - link "Diseño del curso Sin comenzar" [ref=f15e69] [cursor=pointer]:
+                                        - /url: "#/lessons/ycwrBDG0CUFNxOcZPJQm2mTx6IDNOs3Z"
+                                        - generic [ref=f15e70]:
+                                          - generic [ref=f15e71]: Diseño del curso
+                                          - img "Sin comenzar" [ref=f15e74]
+                                - generic [ref=f15e77]:
+                                  - 'heading "MÓDULO 1: EL PROBLEMA DE LA CONSERVACIÓN" [level=2] [ref=f15e78]'
+                                  - list [ref=f15e79]:
+                                    - listitem [ref=f15e80]:
+                                      - 'link "Acerca de este módulo: El problema de la conservación Sin comenzar" [ref=f15e82] [cursor=pointer]':
+                                        - /url: "#/lessons/Ls7Umtd1JzW4zcZuV4vz72Q0Gsrro_OW"
+                                        - generic [ref=f15e83]:
+                                          - generic [ref=f15e84]: "Acerca de este módulo: El problema de la conservación"
+                                          - img "Sin comenzar" [ref=f15e87]
+                                    - listitem [ref=f15e90]:
+                                      - link "Ahora es su turno Sin comenzar" [ref=f15e92] [cursor=pointer]:
+                                        - /url: "#/lessons/Hpq5Jf4la2FQZ3YvEREvncirGsUtvcue"
+                                        - generic [ref=f15e93]:
+                                          - generic [ref=f15e94]: Ahora es su turno
+                                          - img "Sin comenzar" [ref=f15e97]
+                                    - listitem [ref=f15e100]:
+                                      - link "¿Cree que entiende de conservación? Sin comenzar" [ref=f15e102] [cursor=pointer]:
+                                        - /url: "#/lessons/4xLFPjE9KUQyp8d06nbwBUeHuqCV04VO"
+                                        - generic [ref=f15e103]:
+                                          - generic [ref=f15e104]: ¿Cree que entiende de conservación?
+                                          - img "Sin comenzar" [ref=f15e107]
+                                    - listitem [ref=f15e110]:
+                                      - link "Cuestionario Sin comenzar" [ref=f15e112] [cursor=pointer]:
+                                        - /url: "#/lessons/iG3XziDQ2GYqhE0C_VoMzobzdKB_-_ze"
+                                        - generic [ref=f15e113]:
+                                          - generic [ref=f15e114]: Cuestionario
+                                          - img "Sin comenzar" [ref=f15e117]
+                                - generic [ref=f15e120]:
+                                  - 'heading "MÓDULO 2: LA SOLUCIÓN DE SOSTENIBILIDAD" [level=2] [ref=f15e121]'
+                                  - list [ref=f15e122]:
+                                    - listitem [ref=f15e123]:
+                                      - 'link "Acerca de este módulo: La solución de sostenibilidad Sin comenzar Esta lección no está disponible por ahora Debe pasar una prueba antes de continuar: \"Cuestionario\"" [disabled] [ref=f15e125]':
+                                        - generic [ref=f15e126]:
+                                          - generic [ref=f15e127]: "Acerca de este módulo: La solución de sostenibilidad"
+                                          - generic:
+                                            - generic:
+                                              - img "Sin comenzar"
+                                        - generic [ref=f15e128]: Esta lección no está disponible por ahora
+                                        - generic [ref=f15e129]: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                                    - listitem [ref=f15e130]:
+                                      - 'link "¿Qué es la sostenibilidad? Sin comenzar Esta lección no está disponible por ahora Debe pasar una prueba antes de continuar: \"Cuestionario\"" [disabled] [ref=f15e132]':
+                                        - generic [ref=f15e133]:
+                                          - generic [ref=f15e134]: ¿Qué es la sostenibilidad?
+                                          - generic:
+                                            - generic:
+                                              - img "Sin comenzar"
+                                        - generic [ref=f15e135]: Esta lección no está disponible por ahora
+                                        - generic [ref=f15e136]: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                                    - listitem [ref=f15e137]:
+                                      - 'link "Sostenibilidad en la empresa y el gobierno Sin comenzar Esta lección no está disponible por ahora Debe pasar una prueba antes de continuar: \"Cuestionario\"" [disabled] [ref=f15e139]':
+                                        - generic [ref=f15e140]:
+                                          - generic [ref=f15e141]: Sostenibilidad en la empresa y el gobierno
+                                          - generic:
+                                            - generic:
+                                              - img "Sin comenzar"
+                                        - generic [ref=f15e142]: Esta lección no está disponible por ahora
+                                        - generic [ref=f15e143]: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                                    - listitem [ref=f15e144]:
+                                      - 'link "Identificar el pilar de ESG Sin comenzar Esta lección no está disponible por ahora Debe pasar una prueba antes de continuar: \"Cuestionario\"" [disabled] [ref=f15e146]':
+                                        - generic [ref=f15e147]:
+                                          - generic [ref=f15e148]: Identificar el pilar de ESG
+                                          - generic:
+                                            - generic:
+                                              - img "Sin comenzar"
+                                        - generic [ref=f15e149]: Esta lección no está disponible por ahora
+                                        - generic [ref=f15e150]: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                                    - listitem [ref=f15e151]:
+                                      - 'link "Cuestionario Sin comenzar Esta lección no está disponible por ahora Debe pasar una prueba antes de continuar: \"Cuestionario\"" [disabled] [ref=f15e153]':
+                                        - generic [ref=f15e154]:
+                                          - generic [ref=f15e155]: Cuestionario
+                                          - generic:
+                                            - generic:
+                                              - img "Sin comenzar"
+                                        - generic [ref=f15e156]: Esta lección no está disponible por ahora
+                                        - generic [ref=f15e157]: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                                - generic [ref=f15e158]:
+                                  - 'heading "MÓDULO 3: TECNOLOGÍAS QUE MEJORAN LA SOSTENIBILIDAD" [level=2] [ref=f15e159]'
+                                  - list [ref=f15e160]:
+                                    - listitem [ref=f15e161]:
+                                      - 'link "Acerca de este módulo: Tecnologías que mejoran la sostenibilidad Sin comenzar Esta lección no está disponible por ahora Debe pasar una prueba antes de continuar: \"Cuestionario\"" [disabled] [ref=f15e163]':
+                                        - generic [ref=f15e164]:
+                                          - generic [ref=f15e165]: "Acerca de este módulo: Tecnologías que mejoran la sostenibilidad"
+                                          - generic:
+                                            - generic:
+                                              - img "Sin comenzar"
+                                        - generic [ref=f15e166]: Esta lección no está disponible por ahora
+                                        - generic [ref=f15e167]: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                                    - listitem [ref=f15e168]:
+                                      - 'link "La tecnología puede fomentar la sostenibilidad Sin comenzar Esta lección no está disponible por ahora Debe pasar una prueba antes de continuar: \"Cuestionario\"" [disabled] [ref=f15e170]':
+                                        - generic [ref=f15e171]:
+                                          - generic [ref=f15e172]: La tecnología puede fomentar la sostenibilidad
+                                          - generic:
+                                            - generic:
+                                              - img "Sin comenzar"
+                                        - generic [ref=f15e173]: Esta lección no está disponible por ahora
+                                        - generic [ref=f15e174]: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                                    - listitem [ref=f15e175]:
+                                      - 'link "Cuestionario Sin comenzar Esta lección no está disponible por ahora Debe pasar una prueba antes de continuar: \"Cuestionario\"" [disabled] [ref=f15e177]':
+                                        - generic [ref=f15e178]:
+                                          - generic [ref=f15e179]: Cuestionario
+                                          - generic:
+                                            - generic:
+                                              - img "Sin comenzar"
+                                        - generic [ref=f15e180]: Esta lección no está disponible por ahora
+                                        - generic [ref=f15e181]: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                                - generic [ref=f15e182]:
+                                  - 'heading "MÓDULO 4: ¿CÓMO PUEDE AYUDAR?" [level=2] [ref=f15e183]'
+                                  - list [ref=f15e184]:
+                                    - listitem [ref=f15e185]:
+                                      - 'link "Acerca de este módulo: ¿Cómo puede ayudar? Sin comenzar Esta lección no está disponible por ahora Debe pasar una prueba antes de continuar: \"Cuestionario\"" [disabled] [ref=f15e187]':
+                                        - generic [ref=f15e188]:
+                                          - generic [ref=f15e189]: "Acerca de este módulo: ¿Cómo puede ayudar?"
+                                          - generic:
+                                            - generic:
+                                              - img "Sin comenzar"
+                                        - generic [ref=f15e190]: Esta lección no está disponible por ahora
+                                        - generic [ref=f15e191]: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                                    - listitem [ref=f15e192]:
+                                      - 'link "Vivir de forma sostenible Sin comenzar Esta lección no está disponible por ahora Debe pasar una prueba antes de continuar: \"Cuestionario\"" [disabled] [ref=f15e194]':
+                                        - generic [ref=f15e195]:
+                                          - generic [ref=f15e196]: Vivir de forma sostenible
+                                          - generic:
+                                            - generic:
+                                              - img "Sin comenzar"
+                                        - generic [ref=f15e197]: Esta lección no está disponible por ahora
+                                        - generic [ref=f15e198]: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                                    - listitem [ref=f15e199]:
+                                      - 'link "Desplazamientos y compras sostenibles Sin comenzar Esta lección no está disponible por ahora Debe pasar una prueba antes de continuar: \"Cuestionario\"" [disabled] [ref=f15e201]':
+                                        - generic [ref=f15e202]:
+                                          - generic [ref=f15e203]: Desplazamientos y compras sostenibles
+                                          - generic:
+                                            - generic:
+                                              - img "Sin comenzar"
+                                        - generic [ref=f15e204]: Esta lección no está disponible por ahora
+                                        - generic [ref=f15e205]: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                                    - listitem [ref=f15e206]:
+                                      - 'link "Cuestionario Sin comenzar Esta lección no está disponible por ahora Debe pasar una prueba antes de continuar: \"Cuestionario\"" [disabled] [ref=f15e208]':
+                                        - generic [ref=f15e209]:
+                                          - generic [ref=f15e210]: Cuestionario
+                                          - generic:
+                                            - generic:
+                                              - img "Sin comenzar"
+                                        - generic [ref=f15e211]: Esta lección no está disponible por ahora
+                                        - generic [ref=f15e212]: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                                - generic [ref=f15e213]:
+                                  - heading "RESUMEN Y EVALUACIÓN FINAL" [level=2] [ref=f15e214]
+                                  - list [ref=f15e215]:
+                                    - listitem [ref=f15e216]:
+                                      - 'link "¡Ha llegado muy lejos! Sin comenzar Esta lección no está disponible por ahora Debe pasar una prueba antes de continuar: \"Cuestionario\"" [disabled] [ref=f15e218]':
+                                        - generic [ref=f15e219]:
+                                          - generic [ref=f15e220]: ¡Ha llegado muy lejos!
+                                          - generic:
+                                            - generic:
+                                              - img "Sin comenzar"
+                                        - generic [ref=f15e221]: Esta lección no está disponible por ahora
+                                        - generic [ref=f15e222]: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                                    - listitem [ref=f15e223]:
+                                      - 'link "Principales puntos que recordar Sin comenzar Esta lección no está disponible por ahora Debe pasar una prueba antes de continuar: \"Cuestionario\"" [disabled] [ref=f15e225]':
+                                        - generic [ref=f15e226]:
+                                          - generic [ref=f15e227]: Principales puntos que recordar
+                                          - generic:
+                                            - generic:
+                                              - img "Sin comenzar"
+                                        - generic [ref=f15e228]: Esta lección no está disponible por ahora
+                                        - generic [ref=f15e229]: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                                    - listitem [ref=f15e230]:
+                                      - 'link "Evaluación final Sin comenzar Esta lección no está disponible por ahora Debe pasar una prueba antes de continuar: \"Cuestionario\"" [disabled] [ref=f15e232]':
+                                        - generic [ref=f15e233]:
+                                          - generic [ref=f15e234]: Evaluación final
+                                          - generic:
+                                            - generic:
+                                              - img "Sin comenzar"
+                                        - generic [ref=f15e235]: Esta lección no está disponible por ahora
+                                        - generic [ref=f15e236]: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                                    - listitem [ref=f15e237]:
+                                      - 'link "Finalización del curso Sin comenzar Esta lección no está disponible por ahora Debe pasar una prueba antes de continuar: \"Cuestionario\"" [disabled] [ref=f15e239]':
+                                        - generic [ref=f15e240]:
+                                          - generic [ref=f15e241]: Finalización del curso
+                                          - generic:
+                                            - generic:
+                                              - img "Sin comenzar"
+                                        - generic [ref=f15e242]: Esta lección no está disponible por ahora
+                                        - generic [ref=f15e243]: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                      - generic:
+                        - generic: Sin comenzar
+                        - generic: Sin comenzar
+                        - generic: Sin comenzar
+                        - generic: Sin comenzar
+                        - generic: Sin comenzar
+                        - generic: Sin comenzar
+                        - generic: Sin comenzar
+                        - generic: Sin comenzar
+                        - generic: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                        - generic: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                        - generic: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                        - generic: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                        - generic: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                        - generic: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                        - generic: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                        - generic: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                        - generic: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                        - generic: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                        - generic: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                        - generic: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                        - generic: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                        - generic: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                        - generic: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                        - generic: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+            - main "Controles del reproductor" [ref=f12e23]:
+              - generic [ref=f12e24]:
+                - button "note panel" [ref=f12e28] [cursor=pointer]
+                - generic [ref=f12e33]:
+                  - generic "Opciones" [ref=f12e35]:
+                    - button "configuración" [ref=f12e37] [cursor=pointer]
+                  - button "Pasar a pantalla completa" [ref=f12e41] [cursor=pointer]
+                  - generic [ref=f12e46]:
+                    - generic "Ir a Módulo anterior" [ref=f12e48]:
+                      - button "Ir a Módulo anterior" [disabled] [ref=f12e49] [cursor=pointer]
+                    - button "Salir" [ref=f12e52] [cursor=pointer]

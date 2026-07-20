@@ -1,0 +1,26 @@
+[       8ms] [LOG] rcvd close msg @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[      19ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[      36ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[      37ms] [ERROR] Ajax error occured for  https://learningmanagerfr.adobe.com//primeapi/v2/users/22269687/moduleReset?loId=course:4059000&loResourceId=course:4059000_4630795_9267217_1&i_qp_reset=false&i_qp_started_time=1784214632&close=true&access_token=e29ce9452090c2a24ae8607206c678c9 GET @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[      38ms] [LOG] Worker: Received {"command":"failedApi","value":"{\"url\":\"https://learningmanagerfr.adobe.com//primeapi/v2/users/22269687/moduleReset?loId=course:4059000&loResourceId=course:4059000_4630795_9267217_1&i_qp_reset=false&i_qp_started_time=1784214632&close=true&access_token=e29ce9452090c2a24ae8607206c678c9\",\"type\":\"GET\",\"isLocal\":false,\"global\":true,\"processData\":false,\"async\":false,\"contentType\":\"application/json;charset=UTF-8\",\"accepts\":{\"*\":\"*/*\",\"text\":\"text/plain\",\"html\":\"text/html\",\"xml\":\"application/xml, text/xml\",\"json\":\"application/json, text/javascript\",\"script\":\"text/javascript, application/javascript, application/ecmascript, application/x-ecmascript\"},\"contents\":{\"xml\":{},\"html\":{},\"json\":{},\"script\":false},\"responseFields\":{\"xml\":\"responseXML\",\"text\":\"responseText\",\"json\":\"responseJSON\"},\"converters\":{\"text html\":true},\"flatOptions\":{\"url\":true,\"context\":true},\"jsonp\":\"callback\",\"dataType\":\"json\",\"xhrFields\":{\"withCredentials\":true},\"crossDomain\":true,\"dataTypes\":[\"json\"],\"hasContent\":false}"} @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[      39ms] [LOG] Worker: Successfully stored failed api https://learningmanagerfr.adobe.com//primeapi/v2/users/22269687/moduleReset?loId=course:4059000&loResourceId=course:4059000_4630795_9267217_1&i_qp_reset=false&i_qp_started_time=1784214632&close=true&access_token=e29ce9452090c2a24ae8607206c678c9 @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[     233ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     233ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     233ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     233ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     233ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     233ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     233ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     233ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     233ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     233ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     233ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     233ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     233ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     233ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     233ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     233ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[     237ms] [LOG] player closed !! @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[     240ms] [LOG] rcvd close msg @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[     242ms] [LOG] pagehide PageTransitionEvent @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[     242ms] [LOG] Unload Event @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0

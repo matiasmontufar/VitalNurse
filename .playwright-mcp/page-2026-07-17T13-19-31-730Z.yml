@@ -1,0 +1,45 @@
+- generic [active] [ref=f2e1]:
+  - generic [ref=f2e2]:
+    - generic [ref=f2e4]:
+      - generic [ref=f2e5]:
+        - generic "Logo" [ref=f2e6]:
+          - img "Nav Logo" [ref=f2e7]
+        - generic [ref=f2e9]: SkillsBuild
+      - region "Language Selector" [ref=f2e10]:
+        - region "Language selector" [ref=f2e12]:
+          - button "Select language" [ref=f2e13] [cursor=pointer]:
+            - generic [ref=f2e14]: Español
+    - main [ref=f2e17]:
+      - generic [ref=f2e18]:
+        - generic [ref=f2e19]:
+          - generic [ref=f2e20]:
+            - heading "Inicia sesión en IBM SkillsBuild." [level=1] [ref=f2e21]
+            - button "Log in with google" [ref=f2e24] [cursor=pointer]:
+              - generic [ref=f2e25]: Continuar con Google / Gmail
+              - generic "Logo" [ref=f2e26]:
+                - img "Blue google logo" [ref=f2e27]
+            - button "Log in with ibm" [ref=f2e29] [cursor=pointer]:
+              - generic [ref=f2e30]: Continuar con IBM ID
+              - generic "Logo":
+                - img "Blue ibm logo"
+            - button "Log in with appid" [ref=f2e32] [cursor=pointer]:
+              - generic [ref=f2e33]: Continuar con el correo electrónico
+              - generic "Logo":
+                - img "Blue appid logo"
+            - paragraph [ref=f2e34]:
+              - text: ¿Quieres iniciar sesión con tu escuela?
+              - button "Ver escuelas" [ref=f2e35] [cursor=pointer]
+            - paragraph [ref=f2e37]:
+              - text: ¿No tienes una cuenta en IBM SkillsBuild?
+              - link "Inscribirse" [ref=f2e38] [cursor=pointer]:
+                - /url: /signup?learning_path=https:%2F%2Fstudents.yourlearning.ibm.com%2Fsaml%2Fsso%3FsamlRequestId%3D51150082-43b3-4bde-ab52-7cef4f8f78e1&referer=students.yourlearning.ibm.com&samlRequestId=51150082-43b3-4bde-ab52-7cef4f8f78e1
+          - generic "Generic Image" [ref=f2e40]:
+            - img "Generic Image" [ref=f2e41]
+        - generic [ref=f2e44]:
+          - link "Condiciones de uso" [ref=f2e46] [cursor=pointer]:
+            - /url: https://students.yourlearning.ibm.com/about/terms?lang=es
+          - link "Política de privacidad de datos" [ref=f2e48] [cursor=pointer]:
+            - /url: https://students.yourlearning.ibm.com/about/data-privacy?lang=es
+  - banner "consent_blackbar"
+  - complementary "Open Cookie Preferences Modal" [ref=f2e49]:
+    - link "Cookie Preferences, opens a dedicated popup modal window" [ref=f2e50] [cursor=pointer]: Preferencias sobre cookies

@@ -1,0 +1,176 @@
+- generic [ref=f60e1]:
+  - generic [ref=f60e2]:
+    - banner [ref=f60e3]:
+      - generic [ref=f60e6]:
+        - link "Saltar al contenido principal" [ref=f60e7] [cursor=pointer]:
+          - /url: "#main-content-starting-point"
+        - generic [ref=f60e9]:
+          - link "SkillsBuild" [ref=f60e10] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f60e13]:
+            - menubar "Menú de navegación" [ref=f60e14]:
+              - menuitem "Recomendaciones" [ref=f60e15] [cursor=pointer]
+              - menuitem "Progreso" [ref=f60e18] [cursor=pointer]
+            - button "Búsqueda" [ref=f60e22] [cursor=pointer]
+            - menubar [ref=f60e25]:
+              - menuitem "help" [ref=f60e26] [cursor=pointer]
+              - menuitem "profile" [ref=f60e28] [cursor=pointer]
+              - menuitem "more" [ref=f60e32] [cursor=pointer]
+    - main [ref=f60e34]:
+      - generic [ref=f60e1109]:
+        - generic [ref=f60e1110]:
+          - button "Compartir" [ref=f60e1112] [cursor=pointer]
+          - generic [ref=f60e1118]:
+            - generic [ref=f60e1119]: Plan de formación
+            - 'heading "Alianza Junior Achievement | IBM SkillsBuild: IA y Habilidades del Futuro" [level=1] [ref=f60e1120]'
+            - generic [ref=f60e1121]:
+              - generic [ref=f60e1126]:
+                - generic [ref=f60e1127]: La duración es
+                - text: Aproximadamente 11 horas
+              - generic "58 alumnos han realizado esta actividad durante los últimos 12 meses." [ref=f60e1128]:
+                - generic [ref=f60e1136]:
+                  - text: "58"
+                  - generic [ref=f60e1137]: 58 alumnos han realizado esta actividad durante los últimos 12 meses.
+        - generic [ref=f60e1139]:
+          - heading "Estado" [level=2] [ref=f60e1140]
+          - generic [ref=f60e1141]:
+            - generic [ref=f60e1142]: En curso
+            - generic [ref=f60e1146]:
+              - generic [ref=f60e1147]:
+                - generic [ref=f60e1148]: 37%
+                - generic [ref=f60e1152]: 3 realizadas de 8 obligatorias
+              - button "Actualizar" [active] [ref=f60e1154] [cursor=pointer]
+          - generic [ref=f60e1155]:
+            - generic [ref=f60e1160]: Fecha límite de la formación obligatoria asignada
+            - generic [ref=f60e1161]: 01 Aug 2026
+          - button "Mostrar más" [ref=f60e1163] [cursor=pointer]
+        - generic [ref=f60e1164]:
+          - heading "Mapa de avance" [level=2] [ref=f60e1165]
+          - generic [ref=f60e1167]:
+            - button "Descubre y Explora 3 de 4 actividades cursadas" [ref=f60e1171] [cursor=pointer]:
+              - generic [ref=f60e1174]:
+                - generic [ref=f60e1175]: Descubre y Explora
+                - generic [ref=f60e1176]: 3 de 4 actividades cursadas
+            - button "Desarrolla Conocimientos 0 de 2 actividades cursadas" [ref=f60e1177] [cursor=pointer]:
+              - generic [ref=f60e1180]:
+                - generic [ref=f60e1181]: Desarrolla Conocimientos
+                - generic [ref=f60e1182]: 0 de 2 actividades cursadas
+            - button "Aplica tus Habilidades y Obtén Credenciales 0 de 2 actividades cursadas" [ref=f60e1183] [cursor=pointer]:
+              - generic [ref=f60e1186]:
+                - generic [ref=f60e1187]: Aplica tus Habilidades y Obtén Credenciales
+                - generic [ref=f60e1188]: 0 de 2 actividades cursadas
+        - generic [ref=f60e1192]:
+          - button "Acciones" [ref=f60e1198] [cursor=pointer]
+          - generic [ref=f60e1203]:
+            - heading "Acerca de este plan de formación" [level=2] [ref=f60e1204]
+            - generic [ref=f60e1205]:
+              - generic [ref=f60e1208]:
+                - paragraph [ref=f60e1209]: Este plan de aprendizaje ofrece una ruta para que desarrolles conocimientos fundamentales en inteligencia artificial, mentalidad digital y tecnologías emergentes. Explora cómo funciona la IA, cómo se aplica en la vida real y cómo puedes usarla de manera responsable para prepararte para tu futuro académico y profesional.
+                - paragraph [ref=f60e1210]
+              - link "Mostrar más" [ref=f60e1211] [cursor=pointer]:
+                - /url: /activity/PLAN-5B465A40F315
+        - generic [ref=f60e1212]:
+          - heading "Secciones del plan de aprendizaje" [level=2] [ref=f60e1213]
+          - generic [ref=f60e1215]:
+            - link "Contraer todo" [ref=f60e1216] [cursor=pointer]:
+              - /url: /
+            - button "Cambiar el tipo de visualización a lista" [ref=f60e1219] [cursor=pointer]
+          - generic [ref=f60e1222]:
+            - list [ref=f60e1225]:
+              - listitem [ref=f60e1226]:
+                - generic [ref=f60e1227]:
+                  - paragraph
+                - generic [ref=f60e1228]:
+                  - paragraph
+                  - paragraph
+                  - paragraph
+              - listitem [ref=f60e1229]:
+                - generic [ref=f60e1230]:
+                  - paragraph
+              - listitem [ref=f60e1231]:
+                - generic [ref=f60e1232]:
+                  - paragraph
+              - listitem [ref=f60e1233]:
+                - generic [ref=f60e1234]:
+                  - paragraph
+            - list [ref=f60e1237]:
+              - listitem [ref=f60e1238]:
+                - generic [ref=f60e1239]:
+                  - paragraph
+                - generic [ref=f60e1240]:
+                  - paragraph
+                  - paragraph
+                  - paragraph
+              - listitem [ref=f60e1241]:
+                - generic [ref=f60e1242]:
+                  - paragraph
+              - listitem [ref=f60e1243]:
+                - generic [ref=f60e1244]:
+                  - paragraph
+              - listitem [ref=f60e1245]:
+                - generic [ref=f60e1246]:
+                  - paragraph
+            - list [ref=f60e1249]:
+              - listitem [ref=f60e1250]:
+                - generic [ref=f60e1251]:
+                  - paragraph
+                - generic [ref=f60e1252]:
+                  - paragraph
+                  - paragraph
+                  - paragraph
+              - listitem [ref=f60e1253]:
+                - generic [ref=f60e1254]:
+                  - paragraph
+              - listitem [ref=f60e1255]:
+                - generic [ref=f60e1256]:
+                  - paragraph
+              - listitem [ref=f60e1257]:
+                - generic [ref=f60e1258]:
+                  - paragraph
+        - generic [ref=f60e1261]:
+          - generic [ref=f60e1263]:
+            - heading "Detalles del plan de aprendizaje" [level=2] [ref=f60e1264]
+            - paragraph [ref=f60e1265]: Disponible en SB4S desde 26 Feb 2026
+            - paragraph [ref=f60e1266]: De Your Learning Builder - Plans
+            - paragraph [ref=f60e1267]:
+              - generic [ref=f60e1268]:
+                - generic [ref=f60e1269]: ID de actividad formativa
+                - text: PLAN-5B465A40F315
+          - generic [ref=f60e1270]:
+            - heading "Aportado por" [level=2] [ref=f60e1271]
+            - generic [ref=f60e1272]:
+              - generic [ref=f60e1277]:
+                - text: Rita Oliveira
+                - link "rita.oliveira@ibm.com" [ref=f60e1279] [cursor=pointer]:
+                  - /url: mailto:rita.oliveira@ibm.com
+              - generic [ref=f60e1284]:
+                - text: Daniel Plata
+                - link "daniel.plata@ibm.com" [ref=f60e1286] [cursor=pointer]:
+                  - /url: mailto:daniel.plata@ibm.com
+      - generic [ref=f60e643]: "Se ha accedido a: Alianza Junior Achievement | IBM SkillsBuild: IA y Habilidades del Futuro, Plan de formación"
+    - contentinfo [ref=f60e644]:
+      - list [ref=f60e648]:
+        - listitem [ref=f60e649]:
+          - link "Términos de uso" [ref=f60e650] [cursor=pointer]:
+            - /url: /terms
+        - listitem [ref=f60e651]:
+          - link "Solicitar asistencia de accesibilidad para la formación" [ref=f60e652] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=f60e653]:
+          - link "Privacidad de los datos" [ref=f60e654] [cursor=pointer]:
+            - /url: /data-privacy
+        - listitem [ref=f60e655]:
+          - link "Preferencias de cookies" [ref=f60e656] [cursor=pointer]:
+            - /url: /
+  - banner "consent_blackbar"
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - region "Chat":
+            - generic [ref=f60e657]:
+              - button "Hi! I’m a virtual assistant. How can I help you today?" [ref=f60e658]
+              - button "Open the chat window" [ref=f60e661] [cursor=pointer]
+              - button "Close the chat launcher" [ref=f60e665]:
+                - generic [ref=f60e666]: Close
+          - generic [ref=f60e670]: Click the suggestions button to view suggestions. The chat window has been closed

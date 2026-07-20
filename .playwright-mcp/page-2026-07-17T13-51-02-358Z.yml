@@ -1,0 +1,347 @@
+- generic [ref=f67e1]:
+  - generic:
+    - generic:
+      - generic:
+        - main
+  - iframe [active] [ref=f67e4]:
+    - generic [ref=f68e10]:
+      - generic:
+        - generic:
+          - contentinfo "Encabezado del reproductor" [ref=f68e11]:
+            - generic [ref=f68e12]: De la Conservación a la Sostenibilidad
+            - button "cerrar reproductor" [ref=f68e14] [cursor=pointer]
+          - generic:
+            - region [ref=f68e21]:
+              - iframe [active] [ref=f68e22]:
+                - iframe [active] [ref=f70e3]:
+                  - generic [ref=f71e2]:
+                    - log [ref=f71e3]
+                    - log [ref=f71e4]: "Correcto. Respuesta correcta: Nube híbrida. Tu respuesta: Nube híbrida. La tecnología de nube híbrida permitirá a esta empresa de piscicultura proteger sus recetas patentadas, al tiempo que comparte otros aspectos de su trabajo con otros piscicultores de su región."
+                    - log [ref=f71e5]
+                    - log [ref=f71e6]
+                    - generic [ref=f71e7]:
+                      - generic [ref=f71e919]:
+                        - generic [ref=f71e920]:
+                          - generic [ref=f71e921]: Cuestionario
+                          - generic [ref=f71e922]: Parte superior de la página
+                        - button [ref=f71e923] [cursor=pointer]
+                        - generic [ref=f71e935]:
+                          - navigation "Menú de navegación":
+                            - generic:
+                              - button "Cerrar el menú" [expanded] [ref=f71e937] [cursor=pointer]
+                              - button "TERMINAR CURSO" [ref=f71e941] [cursor=pointer]
+                            - generic [ref=f71e942]:
+                              - generic [ref=f71e945]:
+                                - button "Abrir el menú de búsqueda" [ref=f71e947] [cursor=pointer]
+                                - generic [ref=f71e950]:
+                                  - link "De la Conservación a la Sostenibilidad" [ref=f71e951] [cursor=pointer]:
+                                    - /url: "#/"
+                                  - generic [ref=f71e952]: 67% COMPLETA
+                              - region "Tabla de contenidos" [ref=f71e957]:
+                                - list [ref=f71e958]:
+                                  - listitem [ref=f71e959]:
+                                    - button "RESUMEN DEL CURSO" [expanded] [ref=f71e960] [cursor=pointer]
+                                    - list [ref=f71e964]:
+                                      - listitem [ref=f71e965]:
+                                        - link [ref=f71e967] [cursor=pointer]:
+                                          - /url: "#/lessons/EZfgzSXAs5yFg3AMCwfnlESTzi83OqTn"
+                                          - text: El mundo necesita "sostenibilidores"
+                                          - img "Completado" [ref=f71e972]
+                                      - listitem [ref=f71e976]:
+                                        - link [ref=f71e978] [cursor=pointer]:
+                                          - /url: "#/lessons/ZLdZ2HT401xB-W54JF_Jar1Bqk1JpnJA"
+                                          - text: Acerca de este curso
+                                          - img "Completado" [ref=f71e983]
+                                      - listitem [ref=f71e987]:
+                                        - link [ref=f71e989] [cursor=pointer]:
+                                          - /url: "#/lessons/h42YEmgmvPCXElG9_4cjPFwCSf8DdIAs"
+                                          - text: ¡Gane una credencial!
+                                          - img "Completado" [ref=f71e994]
+                                      - listitem [ref=f71e998]:
+                                        - link [ref=f71e1000] [cursor=pointer]:
+                                          - /url: "#/lessons/ycwrBDG0CUFNxOcZPJQm2mTx6IDNOs3Z"
+                                          - text: Diseño del curso
+                                          - img "Completado" [ref=f71e1005]
+                                  - listitem [ref=f71e1009]:
+                                    - 'button "MÓDULO 1: EL PROBLEMA DE LA CONSERVACIÓN" [expanded] [ref=f71e1010] [cursor=pointer]'
+                                    - list [ref=f71e1014]:
+                                      - listitem [ref=f71e1015]:
+                                        - link [ref=f71e1017] [cursor=pointer]:
+                                          - /url: "#/lessons/Ls7Umtd1JzW4zcZuV4vz72Q0Gsrro_OW"
+                                          - text: "Acerca de este módulo: El problema de la conservación"
+                                          - img "Completado" [ref=f71e1022]
+                                      - listitem [ref=f71e1026]:
+                                        - link [ref=f71e1028] [cursor=pointer]:
+                                          - /url: "#/lessons/Hpq5Jf4la2FQZ3YvEREvncirGsUtvcue"
+                                          - text: Ahora es su turno
+                                          - img "Completado" [ref=f71e1033]
+                                      - listitem [ref=f71e1037]:
+                                        - link [ref=f71e1039] [cursor=pointer]:
+                                          - /url: "#/lessons/4xLFPjE9KUQyp8d06nbwBUeHuqCV04VO"
+                                          - text: ¿Cree que entiende de conservación?
+                                          - img "Completado" [ref=f71e1044]
+                                      - listitem [ref=f71e1048]:
+                                        - link [ref=f71e1050] [cursor=pointer]:
+                                          - /url: "#/lessons/iG3XziDQ2GYqhE0C_VoMzobzdKB_-_ze"
+                                          - text: Cuestionario
+                                          - img "Completado" [ref=f71e1057]
+                                  - listitem [ref=f71e1061]:
+                                    - 'button "MÓDULO 2: LA SOLUCIÓN DE SOSTENIBILIDAD" [expanded] [ref=f71e1062] [cursor=pointer]'
+                                    - list [ref=f71e1066]:
+                                      - listitem [ref=f71e1067]:
+                                        - link [ref=f71e1069] [cursor=pointer]:
+                                          - /url: "#/lessons/5XvpDQnmVhpt5nGub1spktnjvShbXW0H"
+                                          - text: "Acerca de este módulo: La solución de sostenibilidad"
+                                          - img "Completado" [ref=f71e1074]
+                                      - listitem [ref=f71e1078]:
+                                        - link [ref=f71e1080] [cursor=pointer]:
+                                          - /url: "#/lessons/7-s51WSDaPbjFd0I1zLtXXfM8Z6Pls9h"
+                                          - text: ¿Qué es la sostenibilidad?
+                                          - img "Completado" [ref=f71e1085]
+                                      - listitem [ref=f71e1089]:
+                                        - link [ref=f71e1091] [cursor=pointer]:
+                                          - /url: "#/lessons/BtM73cvO9EBGMFm749jN0axF9pxNy55G"
+                                          - text: Sostenibilidad en la empresa y el gobierno
+                                          - img "Completado" [ref=f71e1096]
+                                      - listitem [ref=f71e1100]:
+                                        - link [ref=f71e1102] [cursor=pointer]:
+                                          - /url: "#/lessons/7_xgoB3Tu5URpqb1HDzYxvLP9nBs8ANV"
+                                          - text: Identificar el pilar de ESG
+                                          - img "Completado" [ref=f71e1107]
+                                      - listitem [ref=f71e1111]:
+                                        - link [ref=f71e1113] [cursor=pointer]:
+                                          - /url: "#/lessons/_02TwobwPnZZvxg80Hz2YQrd3ureUjwq"
+                                          - text: Cuestionario
+                                          - img "Completado" [ref=f71e1120]
+                                  - listitem [ref=f71e1124]:
+                                    - 'button "MÓDULO 3: TECNOLOGÍAS QUE MEJORAN LA SOSTENIBILIDAD" [expanded] [ref=f71e1125] [cursor=pointer]'
+                                    - list [ref=f71e1129]:
+                                      - listitem [ref=f71e1130]:
+                                        - link [ref=f71e1132] [cursor=pointer]:
+                                          - /url: "#/lessons/cc3Czplv_Yc7SJu-6ovqeZH3jZ8tu8-a"
+                                          - text: "Acerca de este módulo: Tecnologías que mejoran la sostenibilidad"
+                                          - img "Completado" [ref=f71e1137]
+                                      - listitem [ref=f71e1141]:
+                                        - link [ref=f71e1143] [cursor=pointer]:
+                                          - /url: "#/lessons/NqSbj4d5flyOciuY3ZovMy5tX1vHQ5ic"
+                                          - text: La tecnología puede fomentar la sostenibilidad
+                                          - img "Completado" [ref=f71e1148]
+                                      - listitem [ref=f71e1152]:
+                                        - link [ref=f71e1587] [cursor=pointer]:
+                                          - /url: "#/lessons/lctMRLBuujMwydxFylKOiO93LsY4bEZa"
+                                          - text: Cuestionario
+                                          - img "Completado" [ref=f71e1588]
+                                  - listitem [ref=f71e1164]:
+                                    - 'button "MÓDULO 4: ¿CÓMO PUEDE AYUDAR?" [expanded] [ref=f71e1165] [cursor=pointer]'
+                                    - list [ref=f71e1169]:
+                                      - listitem [ref=f71e1170]:
+                                        - link [ref=f71e1590] [cursor=pointer]:
+                                          - /url: "#/lessons/I5E4Edlo3wFaj57uWAyCnl25W0n0G5Cz"
+                                          - text: "Acerca de este módulo: ¿Cómo puede ayudar?"
+                                          - img "Sin comenzar" [ref=f71e1595]
+                                      - listitem [ref=f71e1177]:
+                                        - link [ref=f71e1598] [cursor=pointer]:
+                                          - /url: "#/lessons/vHFZlep0FTs2fF9cyNs517BVmOI49op6"
+                                          - text: Vivir de forma sostenible
+                                          - img "Sin comenzar" [ref=f71e1603]
+                                      - listitem [ref=f71e1184]:
+                                        - link [ref=f71e1606] [cursor=pointer]:
+                                          - /url: "#/lessons/gOzDCpjciLHeYCeeGthth_wN15msExpB"
+                                          - text: Desplazamientos y compras sostenibles
+                                          - img "Sin comenzar" [ref=f71e1611]
+                                      - listitem [ref=f71e1191]:
+                                        - link [ref=f71e1614] [cursor=pointer]:
+                                          - /url: "#/lessons/reFxsQvvVZjWVwWwgLj3YMbZU7ghJDi8"
+                                          - text: Cuestionario
+                                          - img "Sin comenzar" [ref=f71e1621]
+                                  - listitem [ref=f71e1200]:
+                                    - button "RESUMEN Y EVALUACIÓN FINAL" [expanded] [ref=f71e1201] [cursor=pointer]
+                                    - list [ref=f71e1205]:
+                                      - listitem [ref=f71e1206]:
+                                        - 'link "¡Ha llegado muy lejos! Sin comenzar Esta lección no está disponible por ahora Debe pasar una prueba antes de continuar: \"Cuestionario\"" [disabled] [ref=f71e1208]':
+                                          - text: ¡Ha llegado muy lejos!
+                                          - generic:
+                                            - generic:
+                                              - img "Sin comenzar"
+                                          - generic [ref=f71e1211]: Esta lección no está disponible por ahora
+                                          - generic [ref=f71e1212]: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                                      - listitem [ref=f71e1213]:
+                                        - 'link "Principales puntos que recordar Sin comenzar Esta lección no está disponible por ahora Debe pasar una prueba antes de continuar: \"Cuestionario\"" [disabled] [ref=f71e1215]':
+                                          - text: Principales puntos que recordar
+                                          - generic:
+                                            - generic:
+                                              - img "Sin comenzar"
+                                          - generic [ref=f71e1218]: Esta lección no está disponible por ahora
+                                          - generic [ref=f71e1219]: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                                      - listitem [ref=f71e1220]:
+                                        - 'link "Evaluación final Sin comenzar Esta lección no está disponible por ahora Debe pasar una prueba antes de continuar: \"Cuestionario\"" [disabled] [ref=f71e1222]':
+                                          - text: Evaluación final
+                                          - generic:
+                                            - generic:
+                                              - img "Sin comenzar"
+                                          - generic [ref=f71e1227]: Esta lección no está disponible por ahora
+                                          - generic [ref=f71e1228]: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                                      - listitem [ref=f71e1229]:
+                                        - 'link "Finalización del curso Sin comenzar Esta lección no está disponible por ahora Debe pasar una prueba antes de continuar: \"Cuestionario\"" [disabled] [ref=f71e1231]':
+                                          - text: Finalización del curso
+                                          - generic:
+                                            - generic:
+                                              - img "Sin comenzar"
+                                          - generic [ref=f71e1234]: Esta lección no está disponible por ahora
+                                          - generic [ref=f71e1235]: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                          - main [ref=f71e1244]:
+                            - generic [ref=f71e1245]: Contenido de la lección
+                            - generic [ref=f71e1253]:
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - heading [level=1]: Pregunta 2 de 3
+                                              - generic: Pregunta
+                                              - generic: 02/03
+                                            - generic:
+                                              - generic:
+                                                - paragraph: Seleccione y arrastre las tecnologías de la izquierda hasta su descripción en la derecha.
+                                            - generic:
+                                              - generic:
+                                                - list:
+                                                  - listitem:
+                                                    - generic: "4"
+                                                  - listitem
+                                                  - listitem
+                                                  - listitem:
+                                                    - generic: "1"
+                                                - list:
+                                                  - listitem:
+                                                    - generic: Computación cuántica
+                                                  - listitem:
+                                                    - generic: Nube híbrida
+                                                  - listitem:
+                                                    - generic: Inteligencia artificial
+                                                  - listitem:
+                                                    - generic: Análisis de datos
+                                                - list:
+                                                  - listitem:
+                                                    - generic: Implica reunir muchos datos y es la base de todas las tecnologías de sostenibilidad
+                                                  - listitem:
+                                                    - generic: El uso de servidores de Internet permite mantener la privacidad de ciertos datos y compart
+                                                  - listitem:
+                                                    - generic: Se refiere a la ciencia y la ingeniería de la fabricación de máquinas y programas informát
+                                                  - listitem:
+                                                    - generic: Tiene potencial para resolver problemas de análisis de datos demasiado complejos para los
+                                            - generic:
+                                              - generic:
+                                                - group:
+                                                  - generic: 
+                                                  - generic: Incorrecto
+                                                  - generic:
+                                                    - generic:
+                                                      - generic:
+                                                        - paragraph: Se trata de tecnologías que están transformando los esfuerzos de sostenibilidad.
+                                            - generic:
+                                              - generic:
+                                                - button [disabled]: ENVIAR
+                                              - generic:
+                                                - button [disabled]: SIGUIENTE
+                              - generic [ref=f71e1540]:
+                                - generic [ref=f71e1541]:
+                                  - heading "Pregunta 3 de 3" [level=1] [ref=f71e1542]
+                                  - generic [ref=f71e1543]: Pregunta
+                                  - generic [ref=f71e1544]: 03/03
+                                - generic [ref=f71e1546]:
+                                  - paragraph [ref=f71e1547]: Una empresa de cría de peces para alimentación le ha pedido que le asesore sobre cómo aplicar procedimientos a prácticas más sostenibles. Quieren mantener la propiedad de algunos aspectos de su trabajo, lo que significa utilizar recetas alimentarias secretas para los peces que crían. Pero quieren compartir otros conocimientos sobre piscicultura con otras empresas de la misma región que cultiven distintos tipos de marisco.
+                                  - paragraph [ref=f71e1548]
+                                  - paragraph [ref=f71e1549]: ¿Cuál de las siguientes tecnologías les recomendaría que considerasen como factor principal para lograr su objetivo?
+                                - radiogroup "Una empresa de cría de peces para alimentación le ha pedido que le asesore sobre cómo aplicar procedimientos a prácticas más sostenibles. Quieren mantener la propiedad de algunos aspectos de su trabajo, lo que significa utilizar recetas alimentarias secretas para los peces que crían. Pero quieren compartir otros conocimientos sobre piscicultura con otras empresas de la misma región que cultiven distintos tipos de marisco. ¿Cuál de las siguientes tecnologías les recomendaría que considerasen como factor principal para lograr su objetivo?" [ref=f71e1551]:
+                                  - generic [ref=f71e1552]:
+                                    - radio "Nube híbrida" [checked] [disabled] [ref=f71e1553]
+                                    - paragraph [ref=f71e1560]: Nube híbrida
+                                    - generic [ref=f71e1627]: Correctamente seleccionado
+                                  - generic [ref=f71e1561]:
+                                    - radio "Farmacéuticos" [disabled] [ref=f71e1562]
+                                    - paragraph [ref=f71e1567]: Farmacéuticos
+                                    - generic [ref=f71e1630]: Correctamente descartado
+                                  - generic [ref=f71e1568]:
+                                    - radio "Inteligencia artificial" [disabled] [ref=f71e1569]
+                                    - paragraph [ref=f71e1574]: Inteligencia artificial
+                                    - generic [ref=f71e1633]: Correctamente descartado
+                                  - generic [ref=f71e1575]:
+                                    - radio "Computación cuántica" [disabled] [ref=f71e1576]
+                                    - paragraph [ref=f71e1581]: Computación cuántica
+                                    - generic [ref=f71e1636]: Correctamente descartado
+                                - group "Comentarios" [ref=f71e1639]:
+                                  - generic [ref=f71e1640]: 
+                                  - generic [ref=f71e1642]: Correcto
+                                  - paragraph [ref=f71e1646]: La tecnología de nube híbrida permitirá a esta empresa de piscicultura proteger sus recetas patentadas, al tiempo que comparte otros aspectos de su trabajo con otros piscicultores de su región.
+                                - generic [ref=f71e1582]:
+                                  - generic:
+                                    - button [disabled]: ENVIAR
+                                  - button "SIGUIENTE" [active] [ref=f71e1647] [cursor=pointer]
+                              - generic:
+                                - generic:
+                                  - generic:
+                                    - generic:
+                                      - generic:
+                                        - generic:
+                                          - heading [level=1]: Resultados del cuestionario
+                                        - generic:
+                                          - generic: Tu calificación 67%
+                                          - generic: Aprobado
+                                          - generic: APROBADO 66%
+                                        - generic:
+                                          - generic:
+                                            - generic:
+                                              - generic: Tu calificación
+                                              - generic: Tu calificación 67%
+                                              - generic: Tu calificación 67%
+                                            - generic:
+                                              - generic: APROBADO
+                                              - generic: 66%
+                                        - generic:
+                                          - button:
+                                            - generic:
+                                              - text: INTENTAR DE NUEVO
+                                              - generic: 
+                                          - link:
+                                            - /url: "#/lessons/I5E4Edlo3wFaj57uWAyCnl25W0n0G5Cz"
+                                            - text: Continuar
+                      - generic:
+                        - generic: Completado
+                        - generic: Completado
+                        - generic: Completado
+                        - generic: Completado
+                        - generic: Completado
+                        - generic: Completado
+                        - generic: Completado
+                        - generic: Completado
+                        - generic: Completado
+                        - generic: Completado
+                        - generic: Completado
+                        - generic: Completado
+                        - generic: Completado
+                        - generic: Completado
+                        - generic: Completado
+                        - generic: Completado
+                        - generic: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                        - generic: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                        - generic: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                        - generic: "Debe pasar una prueba antes de continuar: \"Cuestionario\""
+                        - generic: Sin comenzar
+                        - generic: Sin comenzar
+                        - generic: Sin comenzar
+                        - generic: Sin comenzar
+            - main "Controles del reproductor" [ref=f68e23]:
+              - generic [ref=f68e24]:
+                - button "note panel" [ref=f68e28] [cursor=pointer]
+                - generic [ref=f68e33]:
+                  - generic "Opciones" [ref=f68e35]:
+                    - button "configuración" [ref=f68e37] [cursor=pointer]
+                  - button "Pasar a pantalla completa" [ref=f68e41] [cursor=pointer]
+                  - generic [ref=f68e46]:
+                    - generic "Ir a Módulo anterior" [ref=f68e48]:
+                      - button "Ir a Módulo anterior" [disabled] [ref=f68e49] [cursor=pointer]
+                    - button "Salir" [ref=f68e52] [cursor=pointer]

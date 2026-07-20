@@ -1,0 +1,131 @@
+- generic [ref=f60e1]:
+  - generic [ref=f60e2]:
+    - banner [ref=f60e3]:
+      - generic [ref=f60e6]:
+        - link "Saltar al contenido principal" [ref=f60e7] [cursor=pointer]:
+          - /url: "#main-content-starting-point"
+        - generic [ref=f60e9]:
+          - link "SkillsBuild" [ref=f60e10] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f60e13]:
+            - menubar "Menú de navegación" [ref=f60e14]:
+              - menuitem "Recomendaciones" [ref=f60e15] [cursor=pointer]
+              - menuitem "Progreso" [ref=f60e18] [cursor=pointer]
+            - button "Búsqueda" [ref=f60e22] [cursor=pointer]
+            - menubar [ref=f60e25]:
+              - menuitem "help" [ref=f60e26] [cursor=pointer]
+              - menuitem "profile" [ref=f60e28] [cursor=pointer]
+              - menuitem "more" [ref=f60e32] [cursor=pointer]
+    - main [ref=f60e34]:
+      - generic [ref=f60e682]:
+        - generic [ref=f60e683]:
+          - button "Compartir" [ref=f60e685] [cursor=pointer]
+          - generic [ref=f60e691]:
+            - generic [ref=f60e692]: eLearning
+            - heading "Explorar la Inteligencia Artificial" [level=1] [ref=f60e693]
+            - generic [ref=f60e694]:
+              - generic [ref=f60e695]:
+                - generic [ref=f60e696]: La duración es
+                - text: 1 hora 30 minutos
+              - generic "42257 alumnos han realizado esta actividad durante los últimos 12 meses." [ref=f60e697]:
+                - generic [ref=f60e705]:
+                  - text: "42.257"
+                  - generic [ref=f60e706]: 42257 alumnos han realizado esta actividad durante los últimos 12 meses.
+              - generic "Calificación media de 4.5 estrellas por 87 alumnos durante los últimos 12 meses." [ref=f60e707]:
+                - generic [ref=f60e708]:
+                  - button "1 estrella" [ref=f60e709] [cursor=pointer]
+                  - button "2 estrellas" [ref=f60e712] [cursor=pointer]
+                  - button "3 estrellas" [ref=f60e715] [cursor=pointer]
+                  - button "4 estrellas" [ref=f60e718] [cursor=pointer]
+                  - button "5 estrellas" [ref=f60e721] [cursor=pointer]
+                  - generic [ref=f60e724]: "87"
+                  - generic [ref=f60e726]: Calificación media de 4.5 estrellas por 87 alumnos durante los últimos 12 meses.
+        - generic [ref=f60e728]:
+          - generic [ref=f60e730]:
+            - generic [ref=f60e731]:
+              - link "Ir a la actividad" [ref=f60e732] [cursor=pointer]:
+                - /url: https://alm.ibm.com/ibm-skillsbuildhighschool/trainingId/course:3825248/trainingInstanceId/course:3825248_4396925/es-ES
+              - button "Acciones" [ref=f60e738] [cursor=pointer]
+            - link "¿Ha realizado esta actividad?" [ref=f60e742] [cursor=pointer]:
+              - /url: "#"
+          - generic [ref=f60e743]:
+            - generic [ref=f60e746]:
+              - heading "Acerca de esta actividad formativa" [level=2] [ref=f60e747]
+              - generic [ref=f60e748]:
+                - paragraph [ref=f60e749]: "Explorar la Inteligencia Artificial ha sido diseñado para presentarte el mundo de la inteligencia artificial (IA): qué es, cuáles son sus tipos, qué tecnologías la habilitan y cómo impulsa la eficiencia y la innovación en diferentes industrias."
+                - paragraph [ref=f60e750]
+                - paragraph [ref=f60e751]: "Este módulo es apropiado para todos: estudiantes, profesionales en activo, solicitantes de empleo y cualquiera que desee ampliar sus habilidades o hacer la transición a roles relacionados con la IA."
+                - paragraph [ref=f60e752]:
+                  - strong [ref=f60e753]
+                - paragraph [ref=f60e754]:
+                  - strong [ref=f60e755]: Lo que aprenderás
+                - paragraph [ref=f60e756]: "Después de completar este módulo, deberías poder:"
+                - paragraph [ref=f60e757]: · Definir la IA
+                - paragraph [ref=f60e758]: · Determinar los pasos que sigue la IA para aprender y mejorar
+                - paragraph [ref=f60e759]: · Diferenciar la IA de otras tecnologías, como la automatización
+                - paragraph [ref=f60e760]: · Identificar las diferentes formas de la IA
+                - paragraph [ref=f60e761]: · Identificar las tres tecnologías que permiten las aplicaciones de IA
+                - paragraph [ref=f60e762]: · Identificar las ventajas y aplicaciones de la IA en diferentes industrias
+                - paragraph [ref=f60e763]
+                - paragraph [ref=f60e764]:
+                  - strong [ref=f60e765]: Lecciones
+                - paragraph [ref=f60e766]: 1. Introducción a la IA
+                - paragraph [ref=f60e767]: 2. Formas de IA
+                - paragraph [ref=f60e768]: 3. Tecnologías facilitadoras detrás de la IA
+                - paragraph [ref=f60e769]: 4. Ventajas y aplicaciones de la IA
+                - paragraph [ref=f60e770]: 5. ¡La IA y tú!
+                - paragraph [ref=f60e771]
+            - generic [ref=f60e773]:
+              - heading "Detalles de la actividad" [level=2] [ref=f60e774]
+              - paragraph [ref=f60e775]: Disponible en SB4S desde 06 Mar 2025
+              - paragraph [ref=f60e776]: De Adobe Learning Manager
+              - paragraph [ref=f60e777]:
+                - generic [ref=f60e778]:
+                  - generic [ref=f60e779]: ID de actividad formativa
+                  - text: ALM-COURSE_3825248
+            - generic [ref=f60e780]:
+              - heading "Aportado por" [level=2] [ref=f60e781]
+              - generic [ref=f60e787]:
+                - text: SkillsBuild
+                - link "skllsbld@us.ibm.com" [ref=f60e789] [cursor=pointer]:
+                  - /url: mailto:skllsbld@us.ibm.com
+      - generic [ref=f60e790]:
+        - generic [ref=f60e791]:
+          - link "Volver al plan" [ref=f60e792] [cursor=pointer]:
+            - /url: /activity/PLAN-5B465A40F315?focuslmsId=ALM-COURSE_3825248
+          - link "Anterior" [ref=f60e795] [cursor=pointer]:
+            - /url: /activity/ALM-COURSE_4071170?planId=PLAN-5B465A40F315&sectionId=SECTION-A&planIdFromParentTab=PLAN-5B465A40F315&sectionIdFromParentTab=SECTION-A&planIdForChildTab=PLAN-5B465A40F315
+          - link "Siguiente" [ref=f60e798] [cursor=pointer]:
+            - /url: /activity/ALM-COURSE_4059000?planId=PLAN-5B465A40F315&sectionId=SECTION-B&planIdFromParentTab=PLAN-5B465A40F315&sectionIdFromParentTab=SECTION-A&planIdForChildTab=PLAN-5B465A40F315
+        - generic [ref=f60e803] [cursor=pointer]:
+          - combobox "Explorar la Inteligencia Artificial Open menu" [ref=f60e804]:
+            - generic [ref=f60e805]: Explorar la Inteligencia Artificial
+            - img "Open menu" [ref=f60e808]
+          - listbox
+      - generic [ref=f60e643]: "Se ha accedido a: Explorar la Inteligencia Artificial, eLearning"
+    - contentinfo [ref=f60e644]:
+      - list [ref=f60e648]:
+        - listitem [ref=f60e649]:
+          - link "Términos de uso" [ref=f60e650] [cursor=pointer]:
+            - /url: /terms
+        - listitem [ref=f60e651]:
+          - link "Solicitar asistencia de accesibilidad para la formación" [ref=f60e652] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=f60e653]:
+          - link "Privacidad de los datos" [ref=f60e654] [cursor=pointer]:
+            - /url: /data-privacy
+        - listitem [ref=f60e655]:
+          - link "Preferencias de cookies" [ref=f60e656] [cursor=pointer]:
+            - /url: /
+  - banner "consent_blackbar"
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - region "Chat":
+            - generic [ref=f60e657]:
+              - button "Hi! I’m a virtual assistant. How can I help you today?" [ref=f60e658]
+              - button "Open the chat window" [ref=f60e661] [cursor=pointer]
+              - button "Close the chat launcher" [ref=f60e665]:
+                - generic [ref=f60e666]: Close
+          - generic [ref=f60e670]: Click the suggestions button to view suggestions. The chat window has been closed

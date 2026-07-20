@@ -1,0 +1,898 @@
+[   24698ms] [ERROR] Error in checking logged in @ https://alm.ibm.com/etc.clientlibs/learning/clientlibs/clientlib-site.lc-e5084779bf2856e67ebc4de953060388-lc.min.js:931
+[   27292ms] Uncaught Error: +++ DBDM-ERROR: Another version of the IBM Analytics Platform library has been loaded.
+    at <anonymous> (https://1.www.s81c.com/common/stats/ibm-common.js:7:87341)
+    at <anonymous> (https://1.www.s81c.com/common/stats/ibm-common.js:7:306911)
+    at <anonymous> (https://1.www.s81c.com/common/stats/ibm-common.js:7:306915)
+[   32698ms] [WARNING] WARNING: Tags are firing before consent is initialized. Please ensure that the consent mode default is initialized before firing tags. @ https://consent.trustarc.com/asset/notice.js/v/v1.7-484:45
+[   40304ms] Uncaught Error: +++ DBDM-ERROR: Another version of the IBM Analytics Platform library has been loaded.
+    at <anonymous> (https://1.www.s81c.com/common/stats/ibm-common.js:7:87341)
+    at <anonymous> (https://1.www.s81c.com/common/stats/ibm-common.js:7:306911)
+    at <anonymous> (https://1.www.s81c.com/common/stats/ibm-common.js:7:306915)
+[   40341ms] [WARNING] WARNING: Tags are firing before consent is initialized. Please ensure that the consent mode default is initialized before firing tags. @ https://consent.trustarc.com/asset/notice.js/v/v1.7-484:45
+[   55302ms] Uncaught Error: +++ DBDM-ERROR: Another version of the IBM Analytics Platform library has been loaded.
+    at <anonymous> (https://1.www.s81c.com/common/stats/ibm-common.js:7:87341)
+    at <anonymous> (https://1.www.s81c.com/common/stats/ibm-common.js:7:306911)
+    at <anonymous> (https://1.www.s81c.com/common/stats/ibm-common.js:7:306915)
+[   55388ms] [WARNING] WARNING: Tags are firing before consent is initialized. Please ensure that the consent mode default is initialized before firing tags. @ https://consent.trustarc.com/asset/notice.js/v/v1.7-484:45
+[   59489ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://www.ibm.com/akam/13/1960ac30:0
+[   59594ms] [WARNING] [URX ibmStats] window.ibmStats not available — LoadEvent dropped @ https://www.ibm.com/account/reg/_next/static/chunks/0jm-swtt71rwc.js:0
+[   59595ms] [LOG] Attempt 1: window.digitalData.user.location not available yet @ https://www.ibm.com/account/reg/_next/static/chunks/09c95rja_92w9.js:0
+[   59602ms] [WARNING] A preload for 'https://1.www.s81c.com/common/carbon-for-ibm-dotcom/version/v2.35.0-rc.0/footer.min.js' is found, but is not used because the request credentials mode does not match. Consider taking a look at crossorigin attribute. @ https://www.ibm.com/account/reg/_next/static/chunks/0ldjy6k9qdk0j.js:0
+[   59840ms] [ERROR] Refused to set unsafe header "origin" @ https://1.www.s81c.com/common/carbon-for-ibm-dotcom/version/v2.35.0-rc.0/Locale.js:119
+[   59860ms] [INFO] URX: Cookie consent ready @ https://www.ibm.com/account/reg/_next/static/chunks/039wb44810bi6.js:0
+[   59988ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://1.www.s81c.com/common/carbon-for-ibm-dotcom/translations/masthead-footer/v2.1/es.json:0
+[   59989ms] [ERROR] Refused to set unsafe header "origin" @ https://1.www.s81c.com/common/carbon-for-ibm-dotcom/version/v2.35.0-rc.0/Locale.js:119
+[   60004ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://1.www.s81c.com/common/js/dynamicnav/www/countrylist/jsononly/undefinedes-utf8.json:0
+[   60569ms] [LOG] Page event called @ https://cloud.ibm.com/analytics/build/bluemix-analytics.min.js:1
+[   60606ms] [LOG] Country detected from digitalData: EC @ https://www.ibm.com/account/reg/_next/static/chunks/09c95rja_92w9.js:0
+[   63104ms] [WARNING] WARNING: Tags are firing before consent is initialized. Please ensure that the consent mode default is initialized before firing tags. @ https://consent.trustarc.com/asset/notice.js/v/v1.7-484:45
+[   64013ms] [WARNING] [bluemix-analytics] Cannot attribute referringLink: No href found @ https://cloud.ibm.com/analytics/build/bluemix-analytics.min.js:1
+[   64017ms] [LOG] Page event called @ https://cloud.ibm.com/analytics/build/bluemix-analytics.min.js:1
+[   64523ms] [LOG] Load triggered @ https://login.ibm.com/js/login-redirect.js:17
+[   65021ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   65038ms] [LOG] v3.0 @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   65236ms] [LOG] Image loaded successfully @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   67612ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   70036ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   70146ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   70291ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   70375ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   70512ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   70620ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   70807ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   70992ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   71159ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   71336ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   71462ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   71550ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   71649ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   71779ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   71883ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   72036ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   72309ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   72456ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   72624ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   72749ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   72826ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   72965ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   73064ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   73170ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   73341ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   73443ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   74201ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   74676ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   74844ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   75043ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   75206ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   75314ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   75434ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   75530ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   75639ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   75717ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   75887ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   76017ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   76136ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   76255ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   76426ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   76588ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   76958ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   77073ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   77282ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   77337ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   77510ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   77967ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   77969ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   77972ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   78041ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   78183ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   78370ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   79124ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   79228ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   79369ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   79463ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   79710ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   79811ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   79999ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   81894ms] [LOG] case prod @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   81895ms] [LOG] oidcUrl true @ https://www.ibm.com/account/ibmidutil/login-ui/main.js:1
+[   82331ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://login.ibm.com/authsvc/mtfim/sps/authsvc?PolicyId=urn:ibm:security:authentication:asf:basicldapuser&Target=https%3A%2F%2Flogin.ibm.com%2Foidc%2Fendpoint%2Fdefault%2Fauthorize%3FqsId%3D8f8e8ded-4fd6-4d1d-be6a-966db6536570%26client_id%3DZTY0MDc5OGUtOTE3OC00:0
+[   86977ms] [LOG] 1146.199999999255 ms: base baseline @ https://login.ibm.com/risk/v3.0/authz/pages/compute?Target=https%3A%2F%2Flogin.ibm.com%2Foidc%2Fendpoint%2Fdefault%2Fauthorize%3FqsId%3D88607e26-3e16-414b-a3f2-10454a49a4e4%26client_id%3DZTY0MDc5OGUtOTE3OC00:64
+[   87280ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin1.woff2:0
+[   87409ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://1.www.s81c.com/common/carbon/plex/fonts/IBM-Plex-Sans/IBM-Plex-Sans/fonts/complete/woff/IBMPlexSans-Regular.woff:0
+[   88070ms] [LOG] 1092.9000000003725 ms: getFlow() called 1 times... @ https://login.ibm.com/risk/v3.0/authz/pages/compute?Target=https%3A%2F%2Flogin.ibm.com%2Foidc%2Fendpoint%2Fdefault%2Fauthorize%3FqsId%3D88607e26-3e16-414b-a3f2-10454a49a4e4%26client_id%3DZTY0MDc5OGUtOTE3OC00:79
+[   88070ms] [LOG] 1093 ms: Sleeping for 500 milliseconds... @ https://login.ibm.com/risk/v3.0/authz/pages/compute?Target=https%3A%2F%2Flogin.ibm.com%2Foidc%2Fendpoint%2Fdefault%2Fauthorize%3FqsId%3D88607e26-3e16-414b-a3f2-10454a49a4e4%26client_id%3DZTY0MDc5OGUtOTE3OC00:90
+[   88070ms] [LOG] 1093.1000000014901 ms: getFlow() called 1 times... Done @ https://login.ibm.com/risk/v3.0/authz/pages/compute?Target=https%3A%2F%2Flogin.ibm.com%2Foidc%2Fendpoint%2Fdefault%2Fauthorize%3FqsId%3D88607e26-3e16-414b-a3f2-10454a49a4e4%26client_id%3DZTY0MDc5OGUtOTE3OC00:85
+[   88575ms] [LOG] 1597.800000000745 ms: Waited for CSID collection, now submitting... @ https://login.ibm.com/risk/v3.0/authz/pages/compute?Target=https%3A%2F%2Flogin.ibm.com%2Foidc%2Fendpoint%2Fdefault%2Fauthorize%3FqsId%3D88607e26-3e16-414b-a3f2-10454a49a4e4%26client_id%3DZTY0MDc5OGUtOTE3OC00:93
+[   90043ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://login.ibm.com/authsvc/mtfim/sps/authsvc?Target=https%3A%2F%2Flogin.ibm.com%2Foidc%2Fendpoint%2Fdefault%2Fauthorize%3FqsId%3D70e94448-9989-48f8-9c2d-e09cb36913a1%26client_id%3DZTY0MDc5OGUtOTE3OC00&PolicyId=urn%3Aibm%3Asecurity%3Aauthentication%3Aasf%3Amacotp&jwt=eyJhbGciOiJSUzI1NiIsImtpZCI6ImxvZ2luLmlibS5jb20tMjAyNTA4MDgifQ.eyJUYXJnZXQiOiJodHRwczpcL1wvbG9naW4uaWJtLmNvbVwvb2lkY1wvZW5kcG9pbnRcL2RlZmF1bHRcL2F1dGhvcml6ZT9xc0lkPTcwZTk0NDQ4LTk5ODktNDhmOC05YzJkLWUwOWNiMzY5MTNhMSZjbGllbnRfaWQ9WlRZME1EYzVPR1V0T1RFM09DMDAiLCJBMl90YWd2YWx1ZV9zZXNzaW9uX2luZGV4IjoiZDU3ZmMwMDQtODEyMS0xMWYxLWJiNjktMDA1MDU2OTU3OWI3IiwiQTJfYXBwX2lkIjoiNjc4ODg2ODA1MjQwNTU4NzI2NyIsImlzcyI6Imh0dHBzOlwvXC9sb2dpbi5pYm0uY29tIiwiQTJfcG9saWN5X2lkIjoiMjQ5NjMiLCJBMl91aWQiOiI2OTQwMDFSUEtHIiwiZXhwIjoxNzg0MjEzNjAzLCJBMl9BWk5fQ1JFRF9TRVNTSU9OX0lEIjoiZDU3ZmMwMDQtODEyMS0xMWYxLWJiNjktMDA1MDU2OTU3OWI3LTEwLWNsb3VkSWRlbnRpdHlSZWFsbSIsIlBvbGljeUlkIjoidXJuOmlibTpzZWN1cml0eTphdXRoZW50aWNhdGlvbjphc2Y6bWFjb3RwIiwianRpIjoiNTVkOGNjZWEtZTI4My00Y2EwLWJlMzktMTU3ZGY4NWE5M2VmIn0.bvT2-bpdrggmOJr_6K1OkobtnnvrE071sXvZRfvpSGvcuy2F4UEQc_9JIimx4WA-fy7xERlgeut2D4YfCzZJFaSymmtW1zXmSJNmaYdIpvj-E9NfnXV6n8Mkvf2x08nTCXikwhC5c7vy8VGRQq733fOQkOe3Vq3BqeIuN_msiwKub2BhShiaODZJBs1OLVecIH5pyJV3a1oW8zSVlwhRAcEs3LPpEJsdsqDi0zYEzhmODBgGh9M0d7bu6jPZXoLhR4y8pdioiECSpBCLlNCslt0UaJgzB1jqavkE2qqjPsuvijqT2c4UwGWC0N6uCi4dTTX5ajbdCIa1LjAjoYdUQw:0
+[  105617ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://login.ibm.com/authsvc/mtfim/sps/authsvc?StateId=b58d8454-8007-4ecf-9047-a64d0d297924:0
+[  115913ms] [WARNING] A preload for 'https://1.www.s81c.com/common/carbon-for-ibm-dotcom/version/v2.35.0-rc.0/footer.min.js' is found, but is not used because the request credentials mode does not match. Consider taking a look at crossorigin attribute. @ https://www.ibm.com/account/reg/_next/static/chunks/0ldjy6k9qdk0j.js:0
+[  116604ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://www.ibm.com/akam/13/1960ac30:0
+[  116662ms] [WARNING] A preload for 'https://1.www.s81c.com/common/carbon-for-ibm-dotcom/version/v2.35.0-rc.0/footer.min.js' is found, but is not used because the request credentials mode does not match. Consider taking a look at crossorigin attribute. @ https://www.ibm.com/account/reg/_next/static/chunks/0ldjy6k9qdk0j.js:0
+[  116704ms] [ERROR] Refused to set unsafe header "origin" @ https://1.www.s81c.com/common/carbon-for-ibm-dotcom/version/v2.35.0-rc.0/Locale.js:119
+[  116900ms] [WARNING] WARNING: Tags are firing before consent is initialized. Please ensure that the consent mode default is initialized before firing tags. @ https://consent.trustarc.com/asset/notice.js/v/v1.7-484:45
+[  117483ms] [LOG] Page event called @ https://cloud.ibm.com/analytics/build/bluemix-analytics.min.js:1
+[  117651ms] [LOG] Page event called @ https://cloud.ibm.com/analytics/build/bluemix-analytics.min.js:1
+[  122352ms] [ERROR] Error in checking logged in @ https://alm.ibm.com/etc.clientlibs/learning/clientlibs/clientlib-site.lc-e5084779bf2856e67ebc4de953060388-lc.min.js:931
+[  126799ms] [WARNING] Allow attribute will take precedence over 'allowfullscreen'. @ https://alm.ibm.com/etc.clientlibs/clientlibs/granite/coralui3.lc-128ef7bb116bd33e075784c264c98ea8-lc.min.js:1
+[  127665ms] [ERROR] Incorrect environment provided prodfr, Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  127665ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  127665ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  127666ms] [ERROR] Incorrect hostname provided https://learningmanagerfr.adobe.com, Must be a valid hostname @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  127666ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  127666ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  127666ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  127666ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128124ms] [LOG] app.vue @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128125ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128125ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128125ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128125ms] [ERROR] Incorrect hostname provided https://learningmanagerfr.adobe.com, Must be a valid hostname @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128125ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128125ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128125ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128125ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128126ms] [LOG] App player parameters read @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128126ms] [LOG] Syncing Params @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128126ms] [LOG] {loId: course:4058652, instanceId: , moduleId: , serverApiEndpoint: https://learningmanagerfr.adobe.com/, userId: } @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128129ms] [LOG] attaching event listeners @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128133ms] [LOG] IndexComponent created @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128134ms] [LOG] format here @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128136ms] [LOG] courseNamePanel created @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128141ms] [LOG] >>>>>>> panelRef watch null @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128143ms] [LOG] Reporting loaded @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128143ms] [LOG] CourseNamePanel null @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128145ms] [LOG] pulloutcomp mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128146ms] [LOG] BottomPanel mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128146ms] [LOG] WebUI loaded @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128147ms] [LOG] Mounted  of index component  Proxy(Object) Proxy(Object) @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128147ms] [LOG] Inserted playerlayout view @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128148ms] [LOG] Error component @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128150ms] [LOG] Configure Quality component @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128157ms] [LOG] tocPanelOpener created @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128158ms] [LOG] FullScreen created @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128161ms] [LOG] here after render @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128163ms] [LOG] tocPanelOpener mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128164ms] [LOG] NotesPanelOpener mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128164ms] [LOG] PulloutOpener mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128164ms] [LOG] FullScreen @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128164ms] [LOG] prev mod @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128164ms] [LOG] NextModule mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128164ms] [LOG] here after render @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128164ms] [LOG] >>>>>>> bottomPanelRef JSHandle@node @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128164ms] [LOG] >>>>>>> bottomPanelRef Proxy(Object) Proxy(Object) @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128165ms] [LOG] >>>>>>> panelRef watch JSHandle@node @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128381ms] [LOG] App handleAfterModel @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128381ms] [LOG] Initilizing application controller @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128382ms] [LOG] loadIndex watch @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128382ms] [LOG] Received appCtrlData Proxy(Object) @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128383ms] [LOG] Initializing index controller @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128385ms] [LOG] [MQA] hasContentDrivenAttemptTracking: false @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128388ms] [LOG] [Index] Before initializeCmi - window.API exists: object LMSInitialize: function @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128389ms] [LOG] format here @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128390ms] [LOG] ModulePlayer created @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128396ms] [LOG] loadIndex watch @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128397ms] [LOG] ModulePlayer mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128397ms] [LOG] OptionsControl mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128402ms] [LOG] Worker: Port set @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128403ms] [LOG] Worker: App initialised. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128403ms] [LOG] Worker: Received {"command":"startWorker","type":"accessToken","value":"","user":"22269687"} @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128414ms] [LOG] Worker: object store created. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  128415ms] [LOG] Worker: Database initialised @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  132636ms] [LOG] k.Event @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  132636ms] [LOG] k.Event @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  133387ms] [LOG] flushStatementQueue called. There are 2 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  133624ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  133625ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  133625ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  133625ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  133625ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  133625ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  133625ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  133625ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  133625ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  133625ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  133625ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  133625ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  133625ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  133625ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  133625ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  133625ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  133652ms] [LOG] Download the Apollo DevTools for a better development experience: %s https://chrome.google.com/webstore/detail/apollo-client-developer-t/jdkknkkbebbapilgoeccciglkfbmbnfm @ https://alm.ibm.com/etc.clientlibs/learning/clientlibs/clientlib-alm.lc-2b310f79c1e81951878a59b5b08e1036-lc.min.js:123
+[  138388ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  148394ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  149389ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  149598ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  149598ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  149598ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  149598ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  149598ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  149598ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  149598ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  149598ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  149598ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  149598ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  149599ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  149599ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  149599ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  149599ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  149599ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  149599ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  158392ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  168386ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  169377ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  169588ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  169588ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  169588ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  169588ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  169589ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  169589ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  169589ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  169589ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  169589ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  169589ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  169589ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  169589ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  169589ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  169589ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  169589ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  169589ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  171515ms] [LOG] k.Event @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  171516ms] [LOG] k.Event @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  178397ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  188399ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  189371ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  189379ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  189601ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  189601ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  189601ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  189601ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  189602ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  189602ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  189602ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  189602ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  189602ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  189602ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  189602ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  189602ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  189602ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  189602ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  189602ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  189602ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  193389ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  193603ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  193603ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  193603ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  193603ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  193603ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  193603ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  193604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  193604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  193604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  193604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  193604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  193604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  193604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  193604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  193604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  193604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  198388ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  203915ms] [LOG] k.Event @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  203915ms] [LOG] k.Event @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  208391ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  209381ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  209594ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  209594ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  209594ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  209594ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  209594ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  209594ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  209595ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  209595ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  209595ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  209595ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  209595ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  209595ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  209595ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  209595ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  209595ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  209595ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  211933ms] [LOG] k.Event @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  211934ms] [LOG] k.Event @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  218387ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  224476ms] [LOG] k.Event @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  224476ms] [LOG] k.Event @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  228398ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  229392ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  229605ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  229605ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  229605ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  229605ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  229605ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  229606ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  229606ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  229606ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  229606ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  229606ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  229606ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  229606ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  229606ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  229606ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  229606ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  229606ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  238389ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  248401ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  249370ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  249382ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  249606ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  249607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  249607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  249607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  249607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  249607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  249607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  249607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  249607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  249607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  249607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  249607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  249607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  249607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  249607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  249607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  253396ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  253607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  253607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  253607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  253607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  253607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  253607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  253607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  253607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  253607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  253607ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  253608ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  253608ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  253608ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  253608ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  253608ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  253608ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  258387ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  268393ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  269380ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  269590ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  269590ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  269590ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  269590ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  269590ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  269590ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  269590ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  269590ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  269590ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  269590ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  269590ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  269590ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  269590ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  269590ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  269591ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  269591ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  278391ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  288395ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  289387ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  289599ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  289599ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  289599ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  289599ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  289599ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  289599ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  289599ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  289599ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  289599ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  289599ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  289599ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  289599ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  289599ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  289599ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  289599ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  289599ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  298392ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  308391ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  309359ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  309379ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  309597ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  309597ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  309597ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  309597ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  309597ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  309597ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  309597ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  309597ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  309597ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  309597ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  309597ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  309597ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  309597ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  309597ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  309597ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  309597ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  313392ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  313604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  313604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  313604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  313604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  313604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  313604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  313604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  313604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  313604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  313604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  313604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  313604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  313604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  313604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  313604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  313604ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  318394ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  319697ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  319713ms] [LOG] flushStatementQueue called. There are 1 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  319916ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  319916ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  319916ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  319916ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  319916ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  319916ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  319917ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  319917ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  319917ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  319917ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  319917ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  319917ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  319917ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  319917ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  319917ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  319917ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  323388ms] [LOG] flushStatementQueue called. There are 3 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  323622ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  323622ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  323622ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  323622ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  323622ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  323622ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  323622ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  323622ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  323622ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  323622ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  323622ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  323622ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  323622ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  323622ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  323622ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  323622ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  328385ms] [LOG] flushStatementQueue called. There are 0 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  335713ms] [LOG] Spinner component mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  336218ms] [LOG] rcvd close msg @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  336218ms] [LOG] rcvd close msg @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  336635ms] [LOG] player closed !! @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  336637ms] [WARNING] Scripts may close only the windows that were opened by them. @ https://alm.ibm.com/etc.clientlibs/learning/clientlibs/clientlib-alm.lc-2b310f79c1e81951878a59b5b08e1036-lc.min.js:123
+[  336637ms] [LOG] rcvd close msg @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  336638ms] [LOG] pagehide PageTransitionEvent @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  336638ms] [LOG] Unload Event @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  336878ms] [ERROR] Incorrect environment provided prodfr, Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  336878ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  336878ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  336878ms] [ERROR] Incorrect hostname provided https://learningmanagerfr.adobe.com, Must be a valid hostname @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  336879ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  336879ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  336879ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  336879ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337222ms] [LOG] app.vue @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337222ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337222ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337222ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337222ms] [ERROR] Incorrect hostname provided https://learningmanagerfr.adobe.com, Must be a valid hostname @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337222ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337222ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337222ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337223ms] [ERROR] Incorrect environment provided , Must be one of dev/ qe/ stage @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337223ms] [LOG] App player parameters read @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337223ms] [LOG] Syncing Params @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337223ms] [LOG] {loId: course:4058652, instanceId: , moduleId: , serverApiEndpoint: https://learningmanagerfr.adobe.com/, userId: } @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337225ms] [LOG] attaching event listeners @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337226ms] [LOG] IndexComponent created @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337227ms] [LOG] format here @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337228ms] [LOG] courseNamePanel created @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337230ms] [LOG] >>>>>>> panelRef watch null @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337230ms] [LOG] Reporting loaded @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337231ms] [LOG] CourseNamePanel null @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337231ms] [LOG] pulloutcomp mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337232ms] [LOG] BottomPanel mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337232ms] [LOG] WebUI loaded @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337232ms] [LOG] Mounted  of index component  Proxy(Object) Proxy(Object) @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337232ms] [LOG] Inserted playerlayout view @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337233ms] [LOG] Error component @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337234ms] [LOG] Configure Quality component @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337239ms] [LOG] tocPanelOpener created @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337240ms] [LOG] FullScreen created @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337241ms] [LOG] here after render @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337242ms] [LOG] tocPanelOpener mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337242ms] [LOG] NotesPanelOpener mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337242ms] [LOG] PulloutOpener mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337242ms] [LOG] FullScreen @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337242ms] [LOG] prev mod @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337242ms] [LOG] NextModule mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337242ms] [LOG] here after render @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337243ms] [LOG] >>>>>>> bottomPanelRef JSHandle@node @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337243ms] [LOG] >>>>>>> bottomPanelRef Proxy(Object) Proxy(Object) @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337243ms] [LOG] >>>>>>> panelRef watch JSHandle@node @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337422ms] [LOG] Worker: Port set @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337422ms] [LOG] Worker: App initialised. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337422ms] [LOG] Worker: Received {"command":"startWorker","type":"accessToken","value":"","user":"22269687"} @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337422ms] [LOG] Worker: Database initialised @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337485ms] [LOG] App handleAfterModel @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337485ms] [LOG] Initilizing application controller @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337485ms] [LOG] loadIndex watch @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337485ms] [LOG] Received appCtrlData Proxy(Object) @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337486ms] [LOG] Initializing index controller @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337486ms] [LOG] [MQA] hasContentDrivenAttemptTracking: false @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337489ms] [LOG] [Index] Before initializeCmi - window.API exists: object LMSInitialize: function @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337490ms] [LOG] format here @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337491ms] [LOG] ModulePlayer created @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337496ms] [LOG] loadIndex watch @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337496ms] [LOG] ModulePlayer mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  337497ms] [LOG] OptionsControl mounted @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  341585ms] [LOG] flushStatementQueue called. There are 3 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  341600ms] [LOG] flushStatementQueue called. There are 3 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  341816ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  341816ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  341816ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  341816ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  341816ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  341816ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  341816ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  341816ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  341816ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  341816ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  341816ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  341816ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  341816ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  341816ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  341816ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  341816ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  342488ms] [LOG] flushStatementQueue called. There are 3 statements to be flushed. @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  342708ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  342708ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  342709ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  342709ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  342709ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  342709ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  342709ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  342709ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  342709ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  342709ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  342709ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  342709ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  342709ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  342709ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  342709ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  342709ms] [INFO] success callback @ https://cpcontents.adobe.com/fr/public/prime-player/js/chunk-vendors.bdcf9ac4.js:239
+[  346801ms] [LOG] rcvd close msg @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  346802ms] [ERROR] Ajax error occured for  https://learningmanagerfr.adobe.com//primeapi/v2/users/22269687/moduleReset?loId=course:4058652&loResourceId=course:4058652_4630432_9266806_1&i_qp_reset=false&i_qp_started_time=1784212143&close=true&access_token=e29ce9452090c2a24ae8607206c678c9 GET @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  346803ms] [LOG] Worker: Received {"command":"failedApi","value":"{\"url\":\"https://learningmanagerfr.adobe.com//primeapi/v2/users/22269687/moduleReset?loId=course:4058652&loResourceId=course:4058652_4630432_9266806_1&i_qp_reset=false&i_qp_started_time=1784212143&close=true&access_token=e29ce9452090c2a24ae8607206c678c9\",\"type\":\"GET\",\"isLocal\":false,\"global\":true,\"processData\":false,\"async\":false,\"contentType\":\"application/json;charset=UTF-8\",\"accepts\":{\"*\":\"*/*\",\"text\":\"text/plain\",\"html\":\"text/html\",\"xml\":\"application/xml, text/xml\",\"json\":\"application/json, text/javascript\",\"script\":\"text/javascript, application/javascript, application/ecmascript, application/x-ecmascript\"},\"contents\":{\"xml\":{},\"html\":{},\"json\":{},\"script\":false},\"responseFields\":{\"xml\":\"responseXML\",\"text\":\"responseText\",\"json\":\"responseJSON\"},\"converters\":{\"text html\":true},\"flatOptions\":{\"url\":true,\"context\":true},\"jsonp\":\"callback\",\"dataType\":\"json\",\"xhrFields\":{\"withCredentials\":true},\"crossDomain\":true,\"dataTypes\":[\"json\"],\"hasContent\":false}"} @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  346804ms] [LOG] Worker: Successfully stored failed api https://learningmanagerfr.adobe.com//primeapi/v2/users/22269687/moduleReset?loId=course:4058652&loResourceId=course:4058652_4630432_9266806_1&i_qp_reset=false&i_qp_started_time=1784212143&close=true&access_token=e29ce9452090c2a24ae8607206c678c9 @ https://cpcontents.adobe.com/fr/public/prime-player/js/app.b6cc27fc.js:0
+[  346845ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://login.ibm.com/authsvc/mtfim/sps/authsvc?StateId=b58d8454-8007-4ecf-9047-a64d0d297924:0
+[  348070ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "new-password"): (More info: https://goo.gl/9p2vKq) %o @ https://login.ibm.com/authsvc/mtfim/sps/authsvc?Target=https%3A%2F%2Flogin.ibm.com%2Foidc%2Fendpoint%2Fdefault%2Fauthorize%3FqsId%3D70e94448-9989-48f8-9c2d-e09cb36913a1%26client_id%3DZTY0MDc5OGUtOTE3OC00&PolicyId=urn%3Aibm%3Asecurity%3Aauthentication%3Aasf%3Amacotp&jwt=eyJhbGciOiJSUzI1NiIsImtpZCI6ImxvZ2luLmlibS5jb20tMjAyNTA4MDgifQ.eyJUYXJnZXQiOiJodHRwczpcL1wvbG9naW4uaWJtLmNvbVwvb2lkY1wvZW5kcG9pbnRcL2RlZmF1bHRcL2F1dGhvcml6ZT9xc0lkPTcwZTk0NDQ4LTk5ODktNDhmOC05YzJkLWUwOWNiMzY5MTNhMSZjbGllbnRfaWQ9WlRZME1EYzVPR1V0T1RFM09DMDAiLCJBMl90YWd2YWx1ZV9zZXNzaW9uX2luZGV4IjoiZDU3ZmMwMDQtODEyMS0xMWYxLWJiNjktMDA1MDU2OTU3OWI3IiwiQTJfYXBwX2lkIjoiNjc4ODg2ODA1MjQwNTU4NzI2NyIsImlzcyI6Imh0dHBzOlwvXC9sb2dpbi5pYm0uY29tIiwiQTJfcG9saWN5X2lkIjoiMjQ5NjMiLCJBMl91aWQiOiI2OTQwMDFSUEtHIiwiZXhwIjoxNzg0MjEzNjAzLCJBMl9BWk5fQ1JFRF9TRVNTSU9OX0lEIjoiZDU3ZmMwMDQtODEyMS0xMWYxLWJiNjktMDA1MDU2OTU3OWI3LTEwLWNsb3VkSWRlbnRpdHlSZWFsbSIsIlBvbGljeUlkIjoidXJuOmlibTpzZWN1cml0eTphdXRoZW50aWNhdGlvbjphc2Y6bWFjb3RwIiwianRpIjoiNTVkOGNjZWEtZTI4My00Y2EwLWJlMzktMTU3ZGY4NWE5M2VmIn0.bvT2-bpdrggmOJr_6K1OkobtnnvrE071sXvZRfvpSGvcuy2F4UEQc_9JIimx4WA-fy7xERlgeut2D4YfCzZJFaSymmtW1zXmSJNmaYdIpvj-E9NfnXV6n8Mkvf2x08nTCXikwhC5c7vy8VGRQq733fOQkOe3Vq3BqeIuN_msiwKub2BhShiaODZJBs1OLVecIH5pyJV3a1oW8zSVlwhRAcEs3LPpEJsdsqDi0zYEzhmODBgGh9M0d7bu6jPZXoLhR4y8pdioiECSpBCLlNCslt0UaJgzB1jqavkE2qqjPsuvijqT2c4UwGWC0N6uCi4dTTX5ajbdCIa1LjAjoYdUQw:0
+[  349043ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://www.ibm.com/content/adobe-cms/mx/es/homepage/jcr:content/root/leadspace_container/leadspace_expanded/image.coreimg.jpeg/1783691636492/ibv_adobe_hero_cover_4x3.jpg:0
+[  349774ms] [WARNING] Warning: c4d-masthead's "navLinks" property is deprecated. Use "l0Data" property instead. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-masthead-container.lc-7dce7de0786a01feb617055aa1e84f2b-lc.min.js:1272
+[  349774ms] [WARNING] Warning: c4d-masthead's "navLinks" property is deprecated. Use "l0Data" property instead. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-masthead-container.lc-7dce7de0786a01feb617055aa1e84f2b-lc.min.js:1272
+[  349809ms] [WARNING] Warning: c4d-masthead's "navLinks" property is deprecated. Use "l0Data" property instead. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-masthead-container.lc-7dce7de0786a01feb617055aa1e84f2b-lc.min.js:1272
+[  349809ms] [WARNING] Warning: c4d-masthead's "navLinks" property is deprecated. Use "l0Data" property instead. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-masthead-container.lc-7dce7de0786a01feb617055aa1e84f2b-lc.min.js:1272
+[  349809ms] [WARNING] Warning: c4d-masthead's "navLinks" property is deprecated. Use "l0Data" property instead. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-masthead-container.lc-7dce7de0786a01feb617055aa1e84f2b-lc.min.js:1272
+[  349809ms] [WARNING] Warning: c4d-masthead's "navLinks" property is deprecated. Use "l0Data" property instead. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-masthead-container.lc-7dce7de0786a01feb617055aa1e84f2b-lc.min.js:1272
+[  349810ms] [WARNING] Warning: c4d-masthead's "navLinks" property is deprecated. Use "l0Data" property instead. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-masthead-container.lc-7dce7de0786a01feb617055aa1e84f2b-lc.min.js:1272
+[  349810ms] [WARNING] Warning: c4d-masthead's "navLinks" property is deprecated. Use "l0Data" property instead. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-masthead-container.lc-7dce7de0786a01feb617055aa1e84f2b-lc.min.js:1272
+[  349837ms] [WARNING] Attempting to re-define cds-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-video-player-v7.lc-0fc75664800c48cc18fd7d290f228055-lc.min.js:1
+[  349837ms] [WARNING] Attempting to re-define c4d-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-video-player-v7.lc-0fc75664800c48cc18fd7d290f228055-lc.min.js:1
+[  349867ms] [WARNING] Attempting to re-define cds-link @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-link-list.lc-8a977707d3503b45fd39eb5bf3358f30-lc.min.js:1
+[  349894ms] [WARNING] Attempting to re-define c4d-expressive-modal @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-lightbox-media-viewer.lc-a451905bb6e966133c7f74a9c7503296-lc.min.js:37
+[  349894ms] [WARNING] Attempting to re-define cds-modal-close-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-lightbox-media-viewer.lc-a451905bb6e966133c7f74a9c7503296-lc.min.js:37
+[  349894ms] [WARNING] Attempting to re-define c4d-expressive-modal-close-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-lightbox-media-viewer.lc-a451905bb6e966133c7f74a9c7503296-lc.min.js:37
+[  349894ms] [WARNING] Attempting to re-define c4d-lightbox-image-viewer @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-lightbox-media-viewer.lc-a451905bb6e966133c7f74a9c7503296-lc.min.js:37
+[  349894ms] [WARNING] Attempting to re-define cds-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-lightbox-media-viewer.lc-a451905bb6e966133c7f74a9c7503296-lc.min.js:37
+[  349895ms] [WARNING] Attempting to re-define c4d-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-lightbox-media-viewer.lc-a451905bb6e966133c7f74a9c7503296-lc.min.js:37
+[  349895ms] [WARNING] Attempting to re-define c4d-image @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-lightbox-media-viewer.lc-a451905bb6e966133c7f74a9c7503296-lc.min.js:37
+[  349896ms] [WARNING] Attempting to re-define c4d-video-player-v7 @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-lightbox-media-viewer.lc-a451905bb6e966133c7f74a9c7503296-lc.min.js:37
+[  349896ms] [WARNING] Attempting to re-define c4d-video-player-composite-v7 @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-lightbox-media-viewer.lc-a451905bb6e966133c7f74a9c7503296-lc.min.js:37
+[  349898ms] [WARNING] Attempting to re-define c4d-video-player-container-v7 @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-lightbox-media-viewer.lc-a451905bb6e966133c7f74a9c7503296-lc.min.js:37
+[  349921ms] [WARNING] Attempting to re-define c4d-expressive-modal @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-image.lc-b8a6b6c314bdb2638177f027ac8ce002-lc.min.js:1
+[  349921ms] [WARNING] Attempting to re-define cds-modal-close-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-image.lc-b8a6b6c314bdb2638177f027ac8ce002-lc.min.js:1
+[  349921ms] [WARNING] Attempting to re-define c4d-expressive-modal-close-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-image.lc-b8a6b6c314bdb2638177f027ac8ce002-lc.min.js:1
+[  349921ms] [WARNING] Attempting to re-define c4d-lightbox-image-viewer @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-image.lc-b8a6b6c314bdb2638177f027ac8ce002-lc.min.js:1
+[  349922ms] [WARNING] Attempting to re-define cds-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-image.lc-b8a6b6c314bdb2638177f027ac8ce002-lc.min.js:1
+[  349923ms] [WARNING] Attempting to re-define c4d-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-image.lc-b8a6b6c314bdb2638177f027ac8ce002-lc.min.js:1
+[  349923ms] [WARNING] Attempting to re-define c4d-image @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-image.lc-b8a6b6c314bdb2638177f027ac8ce002-lc.min.js:1
+[  349962ms] [WARNING] Attempting to re-define cds-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cibm-cta.lc-fb6c62d71c6b1c998d8d2979b1453237-lc.min.js:1
+[  349963ms] [WARNING] Attempting to re-define c4d-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cibm-cta.lc-fb6c62d71c6b1c998d8d2979b1453237-lc.min.js:1
+[  349966ms] [WARNING] The c4d-buton-cta component has been deprecated. All its features have been absorbed into
+  the base c4d-button component. See migration guide for more information. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cibm-cta.lc-fb6c62d71c6b1c998d8d2979b1453237-lc.min.js:79
+[  349966ms] [WARNING] Attempting to re-define cds-link @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cibm-cta.lc-fb6c62d71c6b1c998d8d2979b1453237-lc.min.js:1
+[  349973ms] [WARNING] Attempting to re-define c4d-expressive-modal @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cibm-cta.lc-fb6c62d71c6b1c998d8d2979b1453237-lc.min.js:1
+[  349973ms] [WARNING] Attempting to re-define cds-modal-close-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cibm-cta.lc-fb6c62d71c6b1c998d8d2979b1453237-lc.min.js:1
+[  349973ms] [WARNING] Attempting to re-define c4d-expressive-modal-close-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cibm-cta.lc-fb6c62d71c6b1c998d8d2979b1453237-lc.min.js:1
+[  349973ms] [WARNING] Attempting to re-define c4d-lightbox-image-viewer @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cibm-cta.lc-fb6c62d71c6b1c998d8d2979b1453237-lc.min.js:1
+[  349973ms] [WARNING] Attempting to re-define c4d-image @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cibm-cta.lc-fb6c62d71c6b1c998d8d2979b1453237-lc.min.js:1
+[  349974ms] [WARNING] Attempting to re-define c4d-link-with-icon @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cibm-cta.lc-fb6c62d71c6b1c998d8d2979b1453237-lc.min.js:1
+[  349975ms] [WARNING] The c4d-card-cta component has been deprecated. All its features have been absorbed into
+  the base c4d-card component. See migration guide for more information. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cibm-cta.lc-fb6c62d71c6b1c998d8d2979b1453237-lc.min.js:359
+[  349975ms] [WARNING] The card-link component has been deprecated in favor of the card (link variant) component. See card documentation for more information. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cibm-cta.lc-fb6c62d71c6b1c998d8d2979b1453237-lc.min.js:359
+[  349976ms] [WARNING] The c4d-feature-cta component has been deprecated. All its features have been absorbed into
+  the base c4d-feature-card component. See migration guide for more information. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cibm-cta.lc-fb6c62d71c6b1c998d8d2979b1453237-lc.min.js:379
+[  349981ms] [WARNING] The c4d-feature-cta component has been deprecated. All its features have been absorbed into
+  the base c4d-feature-card component. See migration guide for more information. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cibm-cta.lc-fb6c62d71c6b1c998d8d2979b1453237-lc.min.js:383
+[  349982ms] [WARNING] Attempting to re-define c4d-video-player-v7 @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cibm-cta.lc-fb6c62d71c6b1c998d8d2979b1453237-lc.min.js:1
+[  349982ms] [WARNING] Attempting to re-define c4d-video-player-composite-v7 @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cibm-cta.lc-fb6c62d71c6b1c998d8d2979b1453237-lc.min.js:1
+[  349984ms] [WARNING] Attempting to re-define c4d-video-player-container-v7 @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cibm-cta.lc-fb6c62d71c6b1c998d8d2979b1453237-lc.min.js:1
+[  349984ms] [WARNING] Attempting to re-define c4d-lightbox-video-player @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cibm-cta.lc-fb6c62d71c6b1c998d8d2979b1453237-lc.min.js:1
+[  349984ms] [WARNING] Attempting to re-define c4d-lightbox-video-player-composite @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cibm-cta.lc-fb6c62d71c6b1c998d8d2979b1453237-lc.min.js:1
+[  349985ms] [WARNING] The c4d-cta component has been deprecated in favor of the c4d-card, c4d-feature-card, c4d-link-with-icon,
+  and c4d-button-group. See migration guide for more information. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cibm-cta.lc-fb6c62d71c6b1c998d8d2979b1453237-lc.min.js:508
+[  350026ms] [WARNING] Attempting to re-define cds-link @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card.lc-984bbd991cef2410518ef43d88fe72a0-lc.min.js:1
+[  350027ms] [WARNING] Attempting to re-define c4d-card @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card.lc-984bbd991cef2410518ef43d88fe72a0-lc.min.js:1
+[  350027ms] [WARNING] Attempting to re-define c4d-card-eyebrow @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card.lc-984bbd991cef2410518ef43d88fe72a0-lc.min.js:1
+[  350028ms] [WARNING] Attempting to re-define c4d-link-with-icon @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card.lc-984bbd991cef2410518ef43d88fe72a0-lc.min.js:1
+[  350028ms] [WARNING] Attempting to re-define c4d-card-footer @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card.lc-984bbd991cef2410518ef43d88fe72a0-lc.min.js:1
+[  350028ms] [WARNING] Attempting to re-define c4d-card-heading @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card.lc-984bbd991cef2410518ef43d88fe72a0-lc.min.js:1
+[  350028ms] [WARNING] Attempting to re-define c4d-expressive-modal @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card.lc-984bbd991cef2410518ef43d88fe72a0-lc.min.js:1
+[  350028ms] [WARNING] Attempting to re-define cds-modal-close-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card.lc-984bbd991cef2410518ef43d88fe72a0-lc.min.js:1
+[  350028ms] [WARNING] Attempting to re-define c4d-expressive-modal-close-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card.lc-984bbd991cef2410518ef43d88fe72a0-lc.min.js:1
+[  350029ms] [WARNING] Attempting to re-define c4d-lightbox-image-viewer @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card.lc-984bbd991cef2410518ef43d88fe72a0-lc.min.js:1
+[  350029ms] [WARNING] Attempting to re-define cds-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card.lc-984bbd991cef2410518ef43d88fe72a0-lc.min.js:1
+[  350029ms] [WARNING] Attempting to re-define c4d-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card.lc-984bbd991cef2410518ef43d88fe72a0-lc.min.js:1
+[  350030ms] [WARNING] Attempting to re-define c4d-image @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card.lc-984bbd991cef2410518ef43d88fe72a0-lc.min.js:1
+[  350063ms] [WARNING] Attempting to re-define cds-link @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card-group.lc-73755fdb62064c67943da226517231f1-lc.min.js:1
+[  350065ms] [WARNING] Attempting to re-define c4d-card @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card-group.lc-73755fdb62064c67943da226517231f1-lc.min.js:1
+[  350066ms] [WARNING] Attempting to re-define c4d-card-link @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card-group.lc-73755fdb62064c67943da226517231f1-lc.min.js:1
+[  350066ms] [WARNING] The card-link component has been deprecated in favor of the card (link variant) component. See card documentation for more information. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card-group.lc-73755fdb62064c67943da226517231f1-lc.min.js:120
+[  350066ms] [WARNING] Attempting to re-define c4d-card-heading @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card-group.lc-73755fdb62064c67943da226517231f1-lc.min.js:1
+[  350066ms] [WARNING] Attempting to re-define c4d-card-link-heading @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card-group.lc-73755fdb62064c67943da226517231f1-lc.min.js:1
+[  350067ms] [WARNING] Attempting to re-define c4d-link-with-icon @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card-group.lc-73755fdb62064c67943da226517231f1-lc.min.js:1
+[  350067ms] [WARNING] Attempting to re-define c4d-card-footer @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card-group.lc-73755fdb62064c67943da226517231f1-lc.min.js:1
+[  350067ms] [WARNING] Attempting to re-define c4d-card-cta-footer @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card-group.lc-73755fdb62064c67943da226517231f1-lc.min.js:1
+[  350067ms] [WARNING] Attempting to re-define c4d-card-link-cta @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card-group.lc-73755fdb62064c67943da226517231f1-lc.min.js:1
+[  350067ms] [WARNING] The card-group-card-link-item component has been deprecated in favor of default card or with content-item. See card-group documentation for more information. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card-group.lc-73755fdb62064c67943da226517231f1-lc.min.js:145
+[  350068ms] [WARNING] Attempting to re-define c4d-card-eyebrow @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card-group.lc-73755fdb62064c67943da226517231f1-lc.min.js:1
+[  350068ms] [WARNING] Attempting to re-define c4d-expressive-modal @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card-group.lc-73755fdb62064c67943da226517231f1-lc.min.js:1
+[  350068ms] [WARNING] Attempting to re-define cds-modal-close-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card-group.lc-73755fdb62064c67943da226517231f1-lc.min.js:1
+[  350069ms] [WARNING] Attempting to re-define c4d-expressive-modal-close-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card-group.lc-73755fdb62064c67943da226517231f1-lc.min.js:1
+[  350069ms] [WARNING] Attempting to re-define c4d-lightbox-image-viewer @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card-group.lc-73755fdb62064c67943da226517231f1-lc.min.js:1
+[  350069ms] [WARNING] Attempting to re-define cds-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card-group.lc-73755fdb62064c67943da226517231f1-lc.min.js:1
+[  350069ms] [WARNING] Attempting to re-define c4d-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card-group.lc-73755fdb62064c67943da226517231f1-lc.min.js:1
+[  350070ms] [WARNING] Attempting to re-define c4d-image @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card-group.lc-73755fdb62064c67943da226517231f1-lc.min.js:1
+[  350070ms] [WARNING] Attempting to re-define c4d-image-logo @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card-group.lc-73755fdb62064c67943da226517231f1-lc.min.js:1
+[  350071ms] [LOG] JSHandle@node @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-card-group.lc-73755fdb62064c67943da226517231f1-lc.min.js:1
+[  350147ms] [WARNING] Attempting to re-define cds-link @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cta-block.lc-8c560ee55c450f4e9e06d5f9a124673c-lc.min.js:1
+[  350163ms] [WARNING] Attempting to re-define c4d-link-with-icon @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cta-block.lc-8c560ee55c450f4e9e06d5f9a124673c-lc.min.js:1
+[  350164ms] [WARNING] Attempting to re-define cds-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cta-block.lc-8c560ee55c450f4e9e06d5f9a124673c-lc.min.js:1
+[  350164ms] [WARNING] Attempting to re-define c4d-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cta-block.lc-8c560ee55c450f4e9e06d5f9a124673c-lc.min.js:1
+[  350166ms] [WARNING] Attempting to re-define c4d-button-group-item @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cta-block.lc-8c560ee55c450f4e9e06d5f9a124673c-lc.min.js:1
+[  350170ms] [WARNING] The cta-block component has been deprecated in favor of the content-section/block and content-item components. See content-section/block and content-items documentation for more information. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cta-block.lc-8c560ee55c450f4e9e06d5f9a124673c-lc.min.js:210
+[  350170ms] [WARNING] The cta-block-item-row component has been deprecated in favor of the content-section/block and content-item components. See content-section/block and content-items documentation for more information. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cta-block.lc-8c560ee55c450f4e9e06d5f9a124673c-lc.min.js:210
+[  350175ms] [WARNING] The cta-block-item component has been deprecated in favor of the content-section/block and content-item components. See content-section/block and content-items documentation for more information. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cta-block.lc-8c560ee55c450f4e9e06d5f9a124673c-lc.min.js:230
+[  350175ms] [WARNING] Attempting to re-define c4d-text-cta @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cta-block.lc-8c560ee55c450f4e9e06d5f9a124673c-lc.min.js:1
+[  350176ms] [WARNING] The c4d-feature-cta component has been deprecated. All its features have been absorbed into
+  the base c4d-feature-card component. See migration guide for more information. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cta-block.lc-8c560ee55c450f4e9e06d5f9a124673c-lc.min.js:239
+[  350202ms] [WARNING] Attempting to re-define cds-button @ https://1.www.s81c.com/common/carbon/web-components/version/v2.21.0/carbon-element-017b212d.js:82
+[  350203ms] [WARNING] Attempting to re-define cds-modal-close-button @ https://1.www.s81c.com/common/carbon/web-components/version/v2.21.0/carbon-element-017b212d.js:82
+[  350296ms] [WARNING] Attempting to re-define cds-dropdown @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-footer.lc-39c0cac24775aec8af61c79fb70ca009-lc.min.js:1
+[  350298ms] [WARNING] Attempting to re-define c4d-expressive-modal @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-footer.lc-39c0cac24775aec8af61c79fb70ca009-lc.min.js:1
+[  350298ms] [WARNING] Attempting to re-define cds-modal-header @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-footer.lc-39c0cac24775aec8af61c79fb70ca009-lc.min.js:1
+[  350299ms] [WARNING] Attempting to re-define cds-modal-heading @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-footer.lc-39c0cac24775aec8af61c79fb70ca009-lc.min.js:1
+[  350299ms] [WARNING] Attempting to re-define cds-modal-close-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-footer.lc-39c0cac24775aec8af61c79fb70ca009-lc.min.js:1
+[  350299ms] [WARNING] Attempting to re-define c4d-expressive-modal-close-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-footer.lc-39c0cac24775aec8af61c79fb70ca009-lc.min.js:1
+[  350299ms] [WARNING] Attempting to re-define cds-link @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-footer.lc-39c0cac24775aec8af61c79fb70ca009-lc.min.js:1
+[  350300ms] [WARNING] Attempting to re-define c4d-link-with-icon @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-footer.lc-39c0cac24775aec8af61c79fb70ca009-lc.min.js:1
+[  350301ms] [WARNING] Attempting to re-define c4d-card @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-footer.lc-39c0cac24775aec8af61c79fb70ca009-lc.min.js:1
+[  350302ms] [WARNING] Attempting to re-define c4d-card-heading @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-footer.lc-39c0cac24775aec8af61c79fb70ca009-lc.min.js:1
+[  350302ms] [WARNING] Attempting to re-define c4d-card-footer @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-footer.lc-39c0cac24775aec8af61c79fb70ca009-lc.min.js:1
+[  350317ms] [WARNING] <c4d-footer>: locale-button slot is deprecated and will be removed. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-footer.lc-39c0cac24775aec8af61c79fb70ca009-lc.min.js:16
+[  350321ms] [ERROR] Refused to set unsafe header "origin" @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-footer.lc-39c0cac24775aec8af61c79fb70ca009-lc.min.js:1
+[  350331ms] [WARNING] Attempting to re-define cds-button @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-cweb-code-snippet.lc-24f99d6b7c4ddaab098e859bb80a2bd4-lc.min.js:1
+[  350355ms] [WARNING] digitalData not available in time: TypeError: Cannot read properties of null (reading 'split')
+    at https://www.ibm.com/etc.clientlibs/adobe-cms/components/structure/navigation/masthead/clientlibs/country-restoration.lc-849dd35b12585fe0bf0fee55c31b147c-lc.min.js:175:47 @ https://www.ibm.com/etc.clientlibs/adobe-cms/components/structure/navigation/masthead/clientlibs/country-restoration.lc-849dd35b12585fe0bf0fee55c31b147c-lc.min.js:195
+[  350371ms] [WARNING] Warning: c4d-masthead's "navLinks" property is deprecated. Use "l0Data" property instead. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-masthead-container.lc-7dce7de0786a01feb617055aa1e84f2b-lc.min.js:1272
+[  350371ms] [WARNING] Warning: c4d-masthead's "navLinks" property is deprecated. Use "l0Data" property instead. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-masthead-container.lc-7dce7de0786a01feb617055aa1e84f2b-lc.min.js:1272
+[  350424ms] [WARNING] Warning: c4d-masthead's "navLinks" property is deprecated. Use "l0Data" property instead. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-masthead-container.lc-7dce7de0786a01feb617055aa1e84f2b-lc.min.js:1272
+[  350424ms] [WARNING] Warning: c4d-masthead's "navLinks" property is deprecated. Use "l0Data" property instead. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-masthead-container.lc-7dce7de0786a01feb617055aa1e84f2b-lc.min.js:1272
+[  350424ms] [WARNING] Warning: c4d-masthead's "navLinks" property is deprecated. Use "l0Data" property instead. @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-masthead-container.lc-7dce7de0786a01feb617055aa1e84f2b-lc.min.js:1272
+[  350483ms] [LOG] Fetched Data: {categories: Array(1)} @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-new-design.lc-5e838b2bcba17c567d4bc7353c1b8760-lc.min.js:2
+[  350595ms] [LOG] Smartling Context Tracker is enabled. @ https://d2c7xlmseob604.cloudfront.net/tracker.min.js:0
+[  350815ms] [WARNING] WARNING: Tags are firing before consent is initialized. Please ensure that the consent mode default is initialized before firing tags. @ https://consent.trustarc.com/asset/notice.js/v/v1.7-484:45
+[  351057ms] [LOG] webchat bundle deploy timestamp 20260624-171047 @ https://1.www.s81c.com/cognitive-tooling-unified-chat/v1/webchat.bundle.js:7
+[  351057ms] [LOG] webchat bundle commit d467766143ebb10303719d84867ff491cabb0619 @ https://1.www.s81c.com/cognitive-tooling-unified-chat/v1/webchat.bundle.js:7
+[  351106ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ https://assets.adobedtm.com/0f2de1d5b89a/565c2aeb0d39/launch-560e54b3e83c.min.js:0
+[  351906ms] [INFO] %c @playkit-js/kaltura-player-js 3.17.88 color: #ff98f9;  font-size: large @ https://cdnapisec.kaltura.com/p/1773841/embedPlaykitJs/uiconf_id/57792212:17
+[  351906ms] [INFO] %c For more details see https://github.com/kaltura/kaltura-player-js color: #ff98f9; @ https://cdnapisec.kaltura.com/p/1773841/embedPlaykitJs/uiconf_id/57792212:17
+[  351941ms] [LOG] [Error] Category:7 | Code:7003 | preventSeekForward @ https://cdnapisec.kaltura.com/p/1773841/embedPlaykitJs/uiconf_id/57792212:17
+[  351941ms] [LOG] [Error] Category:7 | Code:7003 | preventSeek @ https://cdnapisec.kaltura.com/p/1773841/embedPlaykitJs/uiconf_id/57792212:17
+[  352224ms] [LOG] [Error] Category:7 | Code:7003 | preventSeekForward @ https://cdnapisec.kaltura.com/p/1773841/embedPlaykitJs/uiconf_id/57792212:17
+[  352225ms] [LOG] [Error] Category:7 | Code:7003 | preventSeek @ https://cdnapisec.kaltura.com/p/1773841/embedPlaykitJs/uiconf_id/57792212:17
+[  352226ms] [LOG] [Error] Category:7 | Code:7003 | preventSeekForward @ https://cdnapisec.kaltura.com/p/1773841/embedPlaykitJs/uiconf_id/57792212:17
+[  352236ms] [LOG] [Error] Category:7 | Code:7003 | preventSeek @ https://cdnapisec.kaltura.com/p/1773841/embedPlaykitJs/uiconf_id/57792212:17
+[  353649ms] [LOG] No language texts found for Digital Enablers with key:  es-ec @ https://1.www.s81c.com/cognitive-tooling-unified-chat/v1/webchat.bundle.js:7
+[  353650ms] [LOG] No language texts found for Digital Enablers with key:  es-ec @ https://1.www.s81c.com/cognitive-tooling-unified-chat/v1/webchat.bundle.js:7
+[  353971ms] [ERROR] [IBM] Marketo Known Visitor: Error fetching lead data SyntaxError: Unexpected token '<', " 
+<!DOCTYPE "... is not valid JSON @ https://www.ibm.com/etc.clientlibs/adobe-cms/clientlibs/clientlib-components-main.lc-b6e0edd679bfeefd320874625a244245-lc.min.js:0
+[  358254ms] [ERROR] Loading the script 'https://momentjs.com/downloads/moment-timezone-with-data.js' violates the following Content Security Policy directive: "script-src 'unsafe-inline' 'unsafe-eval' 'self' *.ibm.com *.s81c.com *.assistant.watson.appdomain.cloud *.cloudflare.com tags.tiqcdn.com *.liveperson.net *.truste.com *.coremetrics.com *.mathtag.com *.crwdcntrl.net *.cloudfront.net *.hotjar.com *.tealiumiq.com *.lpsnmedia.net *.optimizely.com angular-ui.github.io code.jquery.com *.bootstrapcdn.com *.googleapis.com www.google.com js-agent.newrelic.com bam.nr-data.net ak1s.abmr.net js.adsrvr.org www.youtube.com s.ytimg.com data.cmcore.com secure-ds.serving-sys.com bs.serving-sys.com ibm.sp1.convertro.com www.googleadservices.com services.xg4ken.com *.ibmserviceengage.com googleads.g.doubleclick.net cdn.jsdelivr.net *.trustarc.com scripts.demandbase.com *.akamaihd.net cookie-sync.mybluemix.net nebula-cdn.kampyle.com cdn.segment.com *.cdn.s-bluemix.net www.googletagmanager.com www.google-analytics.com *.medallia.eu". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked. @ https://myibm.ibm.com/dashboard/:0
+[  358330ms] [LOG] initializing @ https://myibm.ibm.com/dashboard/dashboard/client/page-setup.js:76
+[  358600ms] [LOG] Pricing table script loaded: https://myibm.ibm.com/marketplace/static/components/v10/pricing-table.min.js @ https://myibm.ibm.com/dashboard/:270
+[  358678ms] [ERROR] Refused to set unsafe header "origin" @ https://1.www.s81c.com/common/carbon-for-ibm-dotcom/version/v1.33.0/index3.js:94
+[  358720ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://myibm.ibm.com/dashboard/static/versionInfo.json:0
+[  358725ms] [WARNING] Detected that `<link rel="alternate">` is likely missing. The locale search UI will yield to an empty result. @ https://1.www.s81c.com/common/carbon-for-ibm-dotcom/version/v1.33.0/locale-modal-composite.js:111
+[  358727ms] [WARNING] Detected that `<link rel="alternate">` is likely missing. The locale search UI will yield to an empty result. @ https://1.www.s81c.com/common/carbon-for-ibm-dotcom/version/v1.33.0/locale-modal-composite.js:111
+[  358892ms] [ERROR] Loading the script 'https://bat.bing.com/bat.js' violates the following Content Security Policy directive: "script-src 'unsafe-inline' 'unsafe-eval' 'self' *.ibm.com *.s81c.com *.assistant.watson.appdomain.cloud *.cloudflare.com tags.tiqcdn.com *.liveperson.net *.truste.com *.coremetrics.com *.mathtag.com *.crwdcntrl.net *.cloudfront.net *.hotjar.com *.tealiumiq.com *.lpsnmedia.net *.optimizely.com angular-ui.github.io code.jquery.com *.bootstrapcdn.com *.googleapis.com www.google.com js-agent.newrelic.com bam.nr-data.net ak1s.abmr.net js.adsrvr.org www.youtube.com s.ytimg.com data.cmcore.com secure-ds.serving-sys.com bs.serving-sys.com ibm.sp1.convertro.com www.googleadservices.com services.xg4ken.com *.ibmserviceengage.com googleads.g.doubleclick.net cdn.jsdelivr.net *.trustarc.com scripts.demandbase.com *.akamaihd.net cookie-sync.mybluemix.net nebula-cdn.kampyle.com cdn.segment.com *.cdn.s-bluemix.net www.googletagmanager.com www.google-analytics.com *.medallia.eu". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked. @ https://tags.tiqcdn.com/utag/ibm/web/prod/utag.js:383
+[  358894ms] [ERROR] Loading the script 'https://analytics.o11.tech/1/e/tcs.dhj?aqet=pv&evid=2182d8e8-cd97-4e5c-a618-cedfca25b877&aq_m=1&pubid=b0a6ae0081d4f8392fc41064e9ae7fb9&dmn=myibm.ibm.com' violates the following Content Security Policy directive: "script-src 'unsafe-inline' 'unsafe-eval' 'self' *.ibm.com *.s81c.com *.assistant.watson.appdomain.cloud *.cloudflare.com tags.tiqcdn.com *.liveperson.net *.truste.com *.coremetrics.com *.mathtag.com *.crwdcntrl.net *.cloudfront.net *.hotjar.com *.tealiumiq.com *.lpsnmedia.net *.optimizely.com angular-ui.github.io code.jquery.com *.bootstrapcdn.com *.googleapis.com www.google.com js-agent.newrelic.com bam.nr-data.net ak1s.abmr.net js.adsrvr.org www.youtube.com s.ytimg.com data.cmcore.com secure-ds.serving-sys.com bs.serving-sys.com ibm.sp1.convertro.com www.googleadservices.com services.xg4ken.com *.ibmserviceengage.com googleads.g.doubleclick.net cdn.jsdelivr.net *.trustarc.com scripts.demandbase.com *.akamaihd.net cookie-sync.mybluemix.net nebula-cdn.kampyle.com cdn.segment.com *.cdn.s-bluemix.net www.googletagmanager.com www.google-analytics.com *.medallia.eu". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked. @ https://tags.tiqcdn.com/utag/ibm/web/prod/utag.300.js?utv=ut4.54.202606151841:5
+[  358894ms] [ERROR] Loading the script 'https://analytics.o11.tech/1/e/tcs.dhj?aqet=pv&evid=2182d8e8-cd97-4e5c-a618-cedfca25b877&aq_m=1&pubid=4908fe26891c9b4c6351c2cee71801d1&dmn=myibm.ibm.com' violates the following Content Security Policy directive: "script-src 'unsafe-inline' 'unsafe-eval' 'self' *.ibm.com *.s81c.com *.assistant.watson.appdomain.cloud *.cloudflare.com tags.tiqcdn.com *.liveperson.net *.truste.com *.coremetrics.com *.mathtag.com *.crwdcntrl.net *.cloudfront.net *.hotjar.com *.tealiumiq.com *.lpsnmedia.net *.optimizely.com angular-ui.github.io code.jquery.com *.bootstrapcdn.com *.googleapis.com www.google.com js-agent.newrelic.com bam.nr-data.net ak1s.abmr.net js.adsrvr.org www.youtube.com s.ytimg.com data.cmcore.com secure-ds.serving-sys.com bs.serving-sys.com ibm.sp1.convertro.com www.googleadservices.com services.xg4ken.com *.ibmserviceengage.com googleads.g.doubleclick.net cdn.jsdelivr.net *.trustarc.com scripts.demandbase.com *.akamaihd.net cookie-sync.mybluemix.net nebula-cdn.kampyle.com cdn.segment.com *.cdn.s-bluemix.net www.googletagmanager.com www.google-analytics.com *.medallia.eu". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked. @ https://tags.tiqcdn.com/utag/ibm/web/prod/utag.300.js?utv=ut4.54.202606151841:5
+[  358894ms] [ERROR] Loading the script 'https://analytics.o11.tech/1/e/tcs.dhj?aqet=pv&evid=2182d8e8-cd97-4e5c-a618-cedfca25b877&aq_m=1&pubid=32c5475300e9fc6db3d3688149e141ea&dmn=myibm.ibm.com' violates the following Content Security Policy directive: "script-src 'unsafe-inline' 'unsafe-eval' 'self' *.ibm.com *.s81c.com *.assistant.watson.appdomain.cloud *.cloudflare.com tags.tiqcdn.com *.liveperson.net *.truste.com *.coremetrics.com *.mathtag.com *.crwdcntrl.net *.cloudfront.net *.hotjar.com *.tealiumiq.com *.lpsnmedia.net *.optimizely.com angular-ui.github.io code.jquery.com *.bootstrapcdn.com *.googleapis.com www.google.com js-agent.newrelic.com bam.nr-data.net ak1s.abmr.net js.adsrvr.org www.youtube.com s.ytimg.com data.cmcore.com secure-ds.serving-sys.com bs.serving-sys.com ibm.sp1.convertro.com www.googleadservices.com services.xg4ken.com *.ibmserviceengage.com googleads.g.doubleclick.net cdn.jsdelivr.net *.trustarc.com scripts.demandbase.com *.akamaihd.net cookie-sync.mybluemix.net nebula-cdn.kampyle.com cdn.segment.com *.cdn.s-bluemix.net www.googletagmanager.com www.google-analytics.com *.medallia.eu". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked. @ https://tags.tiqcdn.com/utag/ibm/web/prod/utag.300.js?utv=ut4.54.202606151841:5
+[  358924ms] [ERROR] Framing 'https://s.company-target.com/' violates the following Content Security Policy directive: "frame-src 'self' *.ibm.com api.usersnap.com *.medallia.eu *.youtube.com bs.serving-sys.com insight.adsrvr.org pixel.mathtag.com *.hotjar.com lpcdn.lpsnmedia.net *.liveperson.net *.optimizely.com *.ustream.tv survey.vovici.com *.crwdcntrl.net *.doubleclick.net *.truste.com *.trustarc.com nebula-cdn.kampyle.com www.youtube-nocookie.com". The request has been blocked.
+ @ https://scripts.demandbase.com/:0
+[  358956ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin1.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  358956ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359057ms] [ERROR] Connecting to 'https://tag-logger.demandbase.com/bg9s?x-amz-cf-id=fkUB_EquGKeK_wPcUD-p0-1K90CMifzM3blERyTlY_dqdNQxnjhFaw==&api-version=v3' violates the following Content Security Policy directive: "connect-src 'self' cdn.segment.com *.ibm.com *.s81c.com *.assistant.watson.appdomain.cloud *.ibmcloud.com *.tealiumiq.com *.hotjar.com *.optimizely.com www.googleapis.com *.mybluemix.net console.bluemix.net wss://*.hotjar.com graylog.hotjar.com:12443 api.company-target.com api.segment.io api.amplitude.com *.braze.com *.liveperson.net lpcdn.lpsnmedia.net wss://va.msg.liveperson.net sbt-prod.kampyle.com nebula-cdn.kampyle.com udc-neb.kampyle.com *.medallia.eu lib-us-2.brilliantcollector.com *.crwdcntrl.net www.google-analytics.com". The action has been blocked. @ https://scripts.demandbase.com/ab057a07.min.js:2
+[  359062ms] [ERROR] Connecting to 'https://consent.trustarc.com/analytics?action=0&domain=ibm.com&implied=1&session=bf1ccada55d442b7874646aa1368adb7&new=1&referer=https://myibm.ibm.com' violates the following Content Security Policy directive: "connect-src 'self' cdn.segment.com *.ibm.com *.s81c.com *.assistant.watson.appdomain.cloud *.ibmcloud.com *.tealiumiq.com *.hotjar.com *.optimizely.com www.googleapis.com *.mybluemix.net console.bluemix.net wss://*.hotjar.com graylog.hotjar.com:12443 api.company-target.com api.segment.io api.amplitude.com *.braze.com *.liveperson.net lpcdn.lpsnmedia.net wss://va.msg.liveperson.net sbt-prod.kampyle.com nebula-cdn.kampyle.com udc-neb.kampyle.com *.medallia.eu lib-us-2.brilliantcollector.com *.crwdcntrl.net www.google-analytics.com". The action has been blocked. @ https://myibm.ibm.com/dashboard/assets/index-CDFgAsIE.js:200
+[  359062ms] [ERROR] Fetch API cannot load https://consent.trustarc.com/analytics?action=0&domain=ibm.com&implied=1&session=bf1ccada55d442b7874646aa1368adb7&new=1&referer=https://myibm.ibm.com. Refused to connect because it violates the document's Content Security Policy. @ https://myibm.ibm.com/dashboard/assets/index-CDFgAsIE.js:200
+[  359066ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin1.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359066ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359071ms] [ERROR] Connecting to 'https://consent.trustarc.com/cm/ibm.com/opt-out/domains?type=ibm_redesign_gdpr_v21&layout=gdpr&domain=ibm.com&locale=en&behavior=implied&country=ec&consent=0|1|2&categories=7&userType=NEW&session=bf1ccada-55d4-42b7-8746-46aa1368adb7' violates the following Content Security Policy directive: "connect-src 'self' cdn.segment.com *.ibm.com *.s81c.com *.assistant.watson.appdomain.cloud *.ibmcloud.com *.tealiumiq.com *.hotjar.com *.optimizely.com www.googleapis.com *.mybluemix.net console.bluemix.net wss://*.hotjar.com graylog.hotjar.com:12443 api.company-target.com api.segment.io api.amplitude.com *.braze.com *.liveperson.net lpcdn.lpsnmedia.net wss://va.msg.liveperson.net sbt-prod.kampyle.com nebula-cdn.kampyle.com udc-neb.kampyle.com *.medallia.eu lib-us-2.brilliantcollector.com *.crwdcntrl.net www.google-analytics.com". The action has been blocked. @ https://myibm.ibm.com/dashboard/assets/index-CDFgAsIE.js:200
+[  359072ms] [ERROR] Fetch API cannot load https://consent.trustarc.com/cm/ibm.com/opt-out/domains?type=ibm_redesign_gdpr_v21&layout=gdpr&domain=ibm.com&locale=en&behavior=implied&country=ec&consent=0|1|2&categories=7&userType=NEW&session=bf1ccada-55d4-42b7-8746-46aa1368adb7. Refused to connect because it violates the document's Content Security Policy. @ https://myibm.ibm.com/dashboard/assets/index-CDFgAsIE.js:200
+[  359074ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin1.woff2 @ https://consent.trustarc.com/asset/notice.js/v/v1.7-484:16
+[  359074ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://consent.trustarc.com/asset/notice.js/v/v1.7-484:16
+[  359076ms] [WARNING] WARNING: Tags are firing before consent is initialized. Please ensure that the consent mode default is initialized before firing tags. @ https://consent.trustarc.com/asset/notice.js/v/v1.7-484:45
+[  359077ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin1.woff2 @ https://tags.tiqcdn.com/utag/ibm/web/prod/utag.js:134
+[  359077ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://tags.tiqcdn.com/utag/ibm/web/prod/utag.js:134
+[  359099ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin1.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359099ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359099ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin1.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359099ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359099ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin1.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359099ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359099ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin1.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359099ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359154ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin2.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359154ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359154ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin2.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359154ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359154ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin2.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359154ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359154ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin2.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359154ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359294ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin2.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359294ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359294ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin2.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359294ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359294ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin2.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359294ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359294ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin2.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359294ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359342ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin3.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359343ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359343ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin3.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359343ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359343ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin3.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359343ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359343ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Latin3.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359343ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359481ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin3.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359481ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359481ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin3.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359481ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359481ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin3.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359481ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359481ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Latin3.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359481ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359520ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Pi.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359520ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359520ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Pi.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359520ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359520ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Pi.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359520ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359520ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Pi.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359520ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359695ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Cyrillic.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359695ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359695ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Cyrillic.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359695ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359695ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Cyrillic.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359695ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359695ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Regular-Cyrillic.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359695ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359729ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Pi.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359729ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359729ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Pi.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359729ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359729ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Pi.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359729ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359729ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Pi.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359729ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359971ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Cyrillic.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359971ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359971ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Cyrillic.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359971ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359971ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Cyrillic.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359971ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  359971ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-SemiBold-Cyrillic.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  359971ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  360907ms] [LOG] Initializing polling @ https://myibm.ibm.com/dashboard/assets/index-CDFgAsIE.js:109
+[  360907ms] [LOG] Polling list empty. Finished polling. @ https://myibm.ibm.com/dashboard/assets/index-CDFgAsIE.js:109
+[  360910ms] [LOG] Page event called @ https://cloud.ibm.com/analytics/build/bluemix-analytics.min.js:1
+[  361158ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin1.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  361159ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  361159ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin1.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  361159ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  361159ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin1.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  361159ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  361159ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin1.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  361159ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  361401ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin2.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  361401ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  361401ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin2.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  361401ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  361401ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin2.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  361401ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  361401ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin2.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  361401ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  361601ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin3.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  361602ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  361602ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin3.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  361602ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  361602ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin3.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  361602ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  361602ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Latin3.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  361602ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  361824ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Pi.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  361824ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  361824ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Pi.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  361824ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  361824ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Pi.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  361824ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  361824ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Pi.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  361824ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  362043ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Cyrillic.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  362043ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  362043ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Cyrillic.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  362043ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  362043ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Cyrillic.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  362043ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  362043ms] [WARNING] Failed to decode downloaded font: https://myibm.ibm.com/dashboard/~@ibm/plex/IBM-Plex-Sans/fonts/split/woff2/IBMPlexSans-Light-Cyrillic.woff2 @ https://myibm.ibm.com/dashboard/:0
+[  362043ms] [WARNING] OTS parsing error: invalid sfntVersion: 1008807213 @ https://myibm.ibm.com/dashboard/:0
+[  367922ms] [ERROR] Loading the script 'https://www.clarity.ms/tag/sn4ohglc4z' violates the following Content Security Policy directive: "script-src 'unsafe-inline' 'unsafe-eval' 'self' *.ibm.com *.s81c.com *.assistant.watson.appdomain.cloud *.cloudflare.com tags.tiqcdn.com *.liveperson.net *.truste.com *.coremetrics.com *.mathtag.com *.crwdcntrl.net *.cloudfront.net *.hotjar.com *.tealiumiq.com *.lpsnmedia.net *.optimizely.com angular-ui.github.io code.jquery.com *.bootstrapcdn.com *.googleapis.com www.google.com js-agent.newrelic.com bam.nr-data.net ak1s.abmr.net js.adsrvr.org www.youtube.com s.ytimg.com data.cmcore.com secure-ds.serving-sys.com bs.serving-sys.com ibm.sp1.convertro.com www.googleadservices.com services.xg4ken.com *.ibmserviceengage.com googleads.g.doubleclick.net cdn.jsdelivr.net *.trustarc.com scripts.demandbase.com *.akamaihd.net cookie-sync.mybluemix.net nebula-cdn.kampyle.com cdn.segment.com *.cdn.s-bluemix.net www.googletagmanager.com www.google-analytics.com *.medallia.eu". Note that 'script-src-elem' was not explicitly set, so 'script-src' is used as a fallback. The action has been blocked. @ https://tags.tiqcdn.com/utag/ibm/web/prod/utag.js:383
+[  368873ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://students.yourlearning.ibm.com/activity/PLAN-5B465A40F315:0
+[  368910ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ https://students.yourlearning.ibm.com/activity/PLAN-5B465A40F315:0
+[  368934ms] [ERROR] o @ https://students.yourlearning.ibm.com/static-nextgen/15527/js/main.b11749e0.js:0
+[  368938ms] [ERROR] o @ https://students.yourlearning.ibm.com/static-nextgen/15527/js/main.b11749e0.js:0
+[  369670ms] [LOG] Service worker found. Proceed as normal. {url: /service-worker.15527.js, registration: ServiceWorkerRegistration} @ https://students.yourlearning.ibm.com/static-nextgen/15527/js/main.b11749e0.js:0
+[  370354ms] [WARNING] WARNING: Tags are firing before consent is initialized. Please ensure that the consent mode default is initialized before firing tags. @ https://consent.trustarc.com/asset/notice.js/v/v1.7-484:45
+[  370509ms] [WARNING] [Chat] Listening for event customResponse. The customResponse event has been renamed to userDefinedResponse. The existing event will continue to function but is deprecated and will be removed in a future release. @ https://web-chat.global.assistant.watson.appdomain.cloud/versions/8.12.5/chat~cds-ai-chat-bootstrap.js:1
+[  374374ms] [LOG] Content is cached for offline use. @ https://students.yourlearning.ibm.com/static-nextgen/15527/js/main.b11749e0.js:0
+[  489973ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://students.yourlearning.ibm.com/activity/PLAN-5B465A40F315:0
+[  489974ms] [LOG] Service worker found. Proceed as normal. {url: /service-worker.15527.js, registration: ServiceWorkerRegistration} @ https://students.yourlearning.ibm.com/static-nextgen/15527/js/main.b11749e0.js:0
+[  490024ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ https://students.yourlearning.ibm.com/activity/PLAN-5B465A40F315:0
+[  490339ms] [WARNING] WARNING: Tags are firing before consent is initialized. Please ensure that the consent mode default is initialized before firing tags. @ https://consent.trustarc.com/asset/notice.js/v/v1.7-484:45
+[  490441ms] [WARNING] [Chat] Listening for event customResponse. The customResponse event has been renamed to userDefinedResponse. The existing event will continue to function but is deprecated and will be removed in a future release. @ https://web-chat.global.assistant.watson.appdomain.cloud/versions/8.12.5/chat~cds-ai-chat-bootstrap.js:1
+[  654386ms] [LOG] Service worker found. Proceed as normal. {url: /service-worker.15527.js, registration: ServiceWorkerRegistration} @ https://students.yourlearning.ibm.com/static-nextgen/15527/js/main.b11749e0.js:0
+[  654408ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://students.yourlearning.ibm.com/activity/PLAN-5B465A40F315:0
+[  654436ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ https://students.yourlearning.ibm.com/activity/PLAN-5B465A40F315:0
+[  655146ms] [WARNING] WARNING: Tags are firing before consent is initialized. Please ensure that the consent mode default is initialized before firing tags. @ https://consent.trustarc.com/asset/notice.js/v/v1.7-484:45
+[  655462ms] [WARNING] [Chat] Listening for event customResponse. The customResponse event has been renamed to userDefinedResponse. The existing event will continue to function but is deprecated and will be removed in a future release. @ https://web-chat.global.assistant.watson.appdomain.cloud/versions/8.12.5/chat~cds-ai-chat-bootstrap.js:1
+[  671324ms] [LOG] Service worker found. Proceed as normal. {url: /service-worker.15527.js, registration: ServiceWorkerRegistration} @ https://students.yourlearning.ibm.com/static-nextgen/15527/js/main.b11749e0.js:0
+[  671326ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://students.yourlearning.ibm.com/activity/PLAN-5B465A40F315:0
+[  671370ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ https://students.yourlearning.ibm.com/activity/PLAN-5B465A40F315:0
+[  671576ms] [WARNING] WARNING: Tags are firing before consent is initialized. Please ensure that the consent mode default is initialized before firing tags. @ https://consent.trustarc.com/asset/notice.js/v/v1.7-484:45
+[  671736ms] [WARNING] [Chat] Listening for event customResponse. The customResponse event has been renamed to userDefinedResponse. The existing event will continue to function but is deprecated and will be removed in a future release. @ https://web-chat.global.assistant.watson.appdomain.cloud/versions/8.12.5/chat~cds-ai-chat-bootstrap.js:1
+[  691273ms] [LOG] Service worker found. Proceed as normal. {url: /service-worker.15527.js, registration: ServiceWorkerRegistration} @ https://students.yourlearning.ibm.com/static-nextgen/15527/js/main.b11749e0.js:0
+[  691274ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://students.yourlearning.ibm.com/activity/PLAN-5B465A40F315:0
+[  691320ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ https://students.yourlearning.ibm.com/activity/PLAN-5B465A40F315:0
+[  691542ms] [WARNING] WARNING: Tags are firing before consent is initialized. Please ensure that the consent mode default is initialized before firing tags. @ https://consent.trustarc.com/asset/notice.js/v/v1.7-484:45
+[  691716ms] [WARNING] [Chat] Listening for event customResponse. The customResponse event has been renamed to userDefinedResponse. The existing event will continue to function but is deprecated and will be removed in a future release. @ https://web-chat.global.assistant.watson.appdomain.cloud/versions/8.12.5/chat~cds-ai-chat-bootstrap.js:1
+[  709402ms] [LOG] Service worker found. Proceed as normal. {url: /service-worker.15527.js, registration: ServiceWorkerRegistration} @ https://students.yourlearning.ibm.com/static-nextgen/15527/js/main.b11749e0.js:0
+[  709406ms] [WARNING] <meta name="apple-mobile-web-app-capable" content="yes"> is deprecated. Please include <meta name="mobile-web-app-capable" content="yes"> @ https://students.yourlearning.ibm.com/activity/PLAN-5B465A40F315:0
+[  709449ms] [INFO] Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner. @ https://students.yourlearning.ibm.com/activity/PLAN-5B465A40F315:0
+[  709643ms] [WARNING] WARNING: Tags are firing before consent is initialized. Please ensure that the consent mode default is initialized before firing tags. @ https://consent.trustarc.com/asset/notice.js/v/v1.7-484:45
+[  709825ms] [WARNING] [Chat] Listening for event customResponse. The customResponse event has been renamed to userDefinedResponse. The existing event will continue to function but is deprecated and will be removed in a future release. @ https://web-chat.global.assistant.watson.appdomain.cloud/versions/8.12.5/chat~cds-ai-chat-bootstrap.js:1

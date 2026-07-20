@@ -1,0 +1,359 @@
+- generic [ref=f60e1]:
+  - generic [ref=f60e2]:
+    - banner [ref=f60e3]:
+      - generic [ref=f60e6]:
+        - link "Saltar al contenido principal" [ref=f60e7] [cursor=pointer]:
+          - /url: "#main-content-starting-point"
+        - generic [ref=f60e9]:
+          - link "SkillsBuild" [ref=f60e10] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f60e13]:
+            - menubar "Menú de navegación" [ref=f60e14]:
+              - menuitem "Recomendaciones" [ref=f60e15] [cursor=pointer]
+              - menuitem "Progreso" [ref=f60e18] [cursor=pointer]
+            - button "Búsqueda" [ref=f60e22] [cursor=pointer]
+            - menubar [ref=f60e25]:
+              - menuitem "help" [ref=f60e26] [cursor=pointer]
+              - menuitem "profile" [ref=f60e28] [cursor=pointer]
+              - menuitem "more" [ref=f60e32] [cursor=pointer]
+    - main [ref=f60e34]:
+      - generic [ref=f60e1109]:
+        - generic [ref=f60e1110]:
+          - button "Compartir" [ref=f60e1112] [cursor=pointer]
+          - generic [ref=f60e1118]:
+            - generic [ref=f60e1119]: Plan de formación
+            - 'heading "Alianza Junior Achievement | IBM SkillsBuild: IA y Habilidades del Futuro" [level=1] [ref=f60e1120]'
+            - generic [ref=f60e1121]:
+              - generic [ref=f60e1126]:
+                - generic [ref=f60e1127]: La duración es
+                - text: Aproximadamente 11 horas
+              - generic "58 alumnos han realizado esta actividad durante los últimos 12 meses." [ref=f60e1128]:
+                - generic [ref=f60e1136]:
+                  - text: "58"
+                  - generic [ref=f60e1137]: 58 alumnos han realizado esta actividad durante los últimos 12 meses.
+        - generic [ref=f60e1139]:
+          - heading "Estado" [level=2] [ref=f60e1140]
+          - generic [ref=f60e1141]:
+            - generic [ref=f60e1142]: En curso
+            - generic [ref=f60e1146]:
+              - generic [ref=f60e1147]:
+                - generic [ref=f60e1148]: 50%
+                - generic [ref=f60e1152]: 4 realizadas de 8 obligatorias
+              - button "Actualizar" [ref=f60e1154] [cursor=pointer]
+          - generic [ref=f60e1155]:
+            - generic [ref=f60e1160]: Fecha límite de la formación obligatoria asignada
+            - generic [ref=f60e1161]: 01 Aug 2026
+          - button "Mostrar más" [ref=f60e1163] [cursor=pointer]
+        - generic [ref=f60e1164]:
+          - heading "Mapa de avance" [level=2] [ref=f60e1165]
+          - generic [ref=f60e1167]:
+            - button "Descubre y Explora Finalizado" [ref=f60e1309] [cursor=pointer]:
+              - generic [ref=f60e1174]:
+                - generic [ref=f60e1175]: Descubre y Explora
+                - generic [ref=f60e1176]: Finalizado
+            - button "Desarrolla Conocimientos 0 de 2 actividades cursadas" [active] [ref=f60e1177] [cursor=pointer]:
+              - generic [ref=f60e1180]:
+                - generic [ref=f60e1181]: Desarrolla Conocimientos
+                - generic [ref=f60e1182]: 0 de 2 actividades cursadas
+            - button "Aplica tus Habilidades y Obtén Credenciales 0 de 2 actividades cursadas" [ref=f60e1183] [cursor=pointer]:
+              - generic [ref=f60e1186]:
+                - generic [ref=f60e1187]: Aplica tus Habilidades y Obtén Credenciales
+                - generic [ref=f60e1188]: 0 de 2 actividades cursadas
+        - generic [ref=f60e1192]:
+          - button "Acciones" [ref=f60e1198] [cursor=pointer]
+          - generic [ref=f60e1203]:
+            - heading "Acerca de este plan de formación" [level=2] [ref=f60e1204]
+            - generic [ref=f60e1205]:
+              - generic [ref=f60e1208]:
+                - paragraph [ref=f60e1209]: Este plan de aprendizaje ofrece una ruta para que desarrolles conocimientos fundamentales en inteligencia artificial, mentalidad digital y tecnologías emergentes. Explora cómo funciona la IA, cómo se aplica en la vida real y cómo puedes usarla de manera responsable para prepararte para tu futuro académico y profesional.
+                - paragraph [ref=f60e1210]
+              - link "Mostrar más" [ref=f60e1211] [cursor=pointer]:
+                - /url: /activity/PLAN-5B465A40F315
+        - generic [ref=f60e1212]:
+          - heading "Secciones del plan de aprendizaje" [level=2] [ref=f60e1213]
+          - generic [ref=f60e1215]:
+            - link "Contraer todo" [ref=f60e1216] [cursor=pointer]:
+              - /url: /
+            - button "Cambiar el tipo de visualización a lista" [ref=f60e1219] [cursor=pointer]
+          - generic [ref=f60e1222]:
+            - list [ref=f60e1310]:
+              - listitem [ref=f60e1311]:
+                - button "Descubre y Explora Finalizado" [expanded] [ref=f60e1312] [cursor=pointer]:
+                  - generic [ref=f60e1316]:
+                    - generic [ref=f60e1317]: Descubre y Explora
+                    - generic [ref=f60e1318]: Finalizado
+                - generic [ref=f60e1325]:
+                  - heading "Descubre y Explora" [level=3] [ref=f60e1326]
+                  - generic [ref=f60e1327]: Realice las 4 actividades obligatorias
+                  - generic [ref=f60e1328]:
+                    - paragraph [ref=f60e1329]: Acerca de esta sección
+                    - paragraph [ref=f60e1334]: Explora experiencias de aprendizaje breves y dinámicas para despertar tu curiosidad sobre la inteligencia artificial, la mentalidad digital y las tecnologías emergentes.
+                  - generic [ref=f60e1336]:
+                    - link "¿Cómo se usa la tecnología en los conciertos?" [ref=f60e1337] [cursor=pointer]:
+                      - /url: /activity/ALM-COURSE_4058652?planId=PLAN-5B465A40F315&sectionId=SECTION-A&planIdFromParentTab=PLAN-5B465A40F315&sectionIdFromParentTab=SECTION-A&planIdForChildTab=PLAN-5B465A40F315
+                      - generic [ref=f60e1341]:
+                        - generic [ref=f60e1342]: eLearning
+                        - generic [ref=f60e1344]: ¿Cómo se usa la tecnología en los conciertos?
+                        - generic [ref=f60e1345]:
+                          - generic [ref=f60e1346]:
+                            - generic [ref=f60e1347]: La duración es
+                            - text: 15 minutos
+                          - generic [ref=f60e1348]:
+                            - generic [ref=f60e1352]: Finalizado
+                            - generic [ref=f60e1354]: 16 Jul 2026
+                    - generic [ref=f60e1356]:
+                      - link "Ver detalles" [ref=f60e1357] [cursor=pointer]:
+                        - /url: /activity/ALM-COURSE_4058652?planId=PLAN-5B465A40F315&sectionId=SECTION-A&planIdFromParentTab=PLAN-5B465A40F315&sectionIdFromParentTab=SECTION-A&planIdForChildTab=PLAN-5B465A40F315
+                      - link "Ir a la actividad" [ref=f60e1359] [cursor=pointer]:
+                        - /url: https://alm.ibm.com/ibm-skillsbuildhighschool/trainingId/course:4058652/trainingInstanceId/course:4058652_4630432/es-ES
+                    - button "Acciones - ¿Cómo se usa la tecnología en los conciertos?" [ref=f60e1363] [cursor=pointer]:
+                      - img "Acciones" [ref=f60e1364]
+                  - generic [ref=f60e1369]:
+                    - link "Crea un Elevator Pitch usando Inteligencia Artificial Generativa" [ref=f60e1370] [cursor=pointer]:
+                      - /url: /activity/ALM-COURSE_4058653?planId=PLAN-5B465A40F315&sectionId=SECTION-A&planIdFromParentTab=PLAN-5B465A40F315&sectionIdFromParentTab=SECTION-A&planIdForChildTab=PLAN-5B465A40F315
+                      - generic [ref=f60e1374]:
+                        - generic [ref=f60e1375]: eLearning
+                        - generic [ref=f60e1377]: Crea un Elevator Pitch usando Inteligencia Artificial Generativa
+                        - generic [ref=f60e1378]:
+                          - generic [ref=f60e1379]:
+                            - generic [ref=f60e1380]: La duración es
+                            - text: 15 minutos
+                          - generic [ref=f60e1381]:
+                            - generic [ref=f60e1385]: Finalizado
+                            - generic [ref=f60e1387]: 16 Jul 2026
+                    - generic [ref=f60e1389]:
+                      - link "Ver detalles" [ref=f60e1390] [cursor=pointer]:
+                        - /url: /activity/ALM-COURSE_4058653?planId=PLAN-5B465A40F315&sectionId=SECTION-A&planIdFromParentTab=PLAN-5B465A40F315&sectionIdFromParentTab=SECTION-A&planIdForChildTab=PLAN-5B465A40F315
+                      - link "Ir a la actividad" [ref=f60e1392] [cursor=pointer]:
+                        - /url: https://alm.ibm.com/ibm-skillsbuildhighschool/trainingId/course:4058653/trainingInstanceId/course:4058653_4630433/es-ES
+                    - button "Acciones - Crea un Elevator Pitch usando Inteligencia Artificial Generativa" [ref=f60e1396] [cursor=pointer]:
+                      - img "Acciones" [ref=f60e1397]
+                  - generic [ref=f60e1402]:
+                    - 'link "IA en el fútbol: Entienda cómo funciona la nueva era del deporte" [ref=f60e1403] [cursor=pointer]':
+                      - /url: /activity/ALM-COURSE_4071170?planId=PLAN-5B465A40F315&sectionId=SECTION-A&planIdFromParentTab=PLAN-5B465A40F315&sectionIdFromParentTab=SECTION-A&planIdForChildTab=PLAN-5B465A40F315
+                      - generic [ref=f60e1407]:
+                        - generic [ref=f60e1408]: eLearning
+                        - generic [ref=f60e1410]: "IA en el fútbol: Entienda cómo funciona la nueva era del deporte"
+                        - generic [ref=f60e1411]:
+                          - generic [ref=f60e1412]:
+                            - generic [ref=f60e1413]: La duración es
+                            - text: 20 minutos
+                          - generic [ref=f60e1414]:
+                            - generic [ref=f60e1418]: Finalizado
+                            - generic [ref=f60e1420]: 16 Jul 2026
+                    - generic [ref=f60e1422]:
+                      - link "Ver detalles" [ref=f60e1423] [cursor=pointer]:
+                        - /url: /activity/ALM-COURSE_4071170?planId=PLAN-5B465A40F315&sectionId=SECTION-A&planIdFromParentTab=PLAN-5B465A40F315&sectionIdFromParentTab=SECTION-A&planIdForChildTab=PLAN-5B465A40F315
+                      - link "Ir a la actividad" [ref=f60e1425] [cursor=pointer]:
+                        - /url: https://alm.ibm.com/ibm-skillsbuildhighschool/trainingId/course:4071170/trainingInstanceId/course:4071170_4643730/es-ES
+                    - 'button "Acciones - IA en el fútbol: Entienda cómo funciona la nueva era del deporte" [ref=f60e1429] [cursor=pointer]':
+                      - img "Acciones" [ref=f60e1430]
+                  - generic [ref=f60e1435]:
+                    - link "Explorar la Inteligencia Artificial" [ref=f60e1436] [cursor=pointer]:
+                      - /url: /activity/ALM-COURSE_3825248?planId=PLAN-5B465A40F315&sectionId=SECTION-A&planIdFromParentTab=PLAN-5B465A40F315&sectionIdFromParentTab=SECTION-A&planIdForChildTab=PLAN-5B465A40F315
+                      - generic [ref=f60e1440]:
+                        - generic [ref=f60e1441]: eLearning
+                        - generic [ref=f60e1443]: Explorar la Inteligencia Artificial
+                        - generic [ref=f60e1444]:
+                          - generic [ref=f60e1445]:
+                            - generic [ref=f60e1446]: La duración es
+                            - text: 1 hora 30 minutos
+                          - generic [ref=f60e1447]:
+                            - generic [ref=f60e1451]: Finalizado
+                            - generic [ref=f60e1453]: 16 Jul 2026
+                    - generic [ref=f60e1455]:
+                      - link "Ver detalles" [ref=f60e1456] [cursor=pointer]:
+                        - /url: /activity/ALM-COURSE_3825248?planId=PLAN-5B465A40F315&sectionId=SECTION-A&planIdFromParentTab=PLAN-5B465A40F315&sectionIdFromParentTab=SECTION-A&planIdForChildTab=PLAN-5B465A40F315
+                      - link "Ir a la actividad" [ref=f60e1458] [cursor=pointer]:
+                        - /url: https://alm.ibm.com/ibm-skillsbuildhighschool/trainingId/course:3825248/trainingInstanceId/course:3825248_4396925/es-ES
+                    - button "Acciones - Explorar la Inteligencia Artificial" [ref=f60e1462] [cursor=pointer]:
+                      - img "Acciones" [ref=f60e1463]
+            - list [ref=f60e1467]:
+              - listitem [ref=f60e1468]:
+                - button "Desarrolla Conocimientos 0% 0 realizadas de 2 obligatorias" [expanded] [ref=f60e1469] [cursor=pointer]:
+                  - generic [ref=f60e1473]:
+                    - generic [ref=f60e1474]: Desarrolla Conocimientos
+                    - generic [ref=f60e1476]:
+                      - generic [ref=f60e1477]: 0%
+                      - generic [ref=f60e1480]: 0 realizadas de 2 obligatorias
+                - generic [ref=f60e1482]:
+                  - heading "Desarrolla Conocimientos" [level=3] [ref=f60e1483]
+                  - generic [ref=f60e1484]: Realice las 2 actividades obligatorias
+                  - generic [ref=f60e1485]:
+                    - paragraph [ref=f60e1486]: Acerca de esta sección
+                    - paragraph [ref=f60e1491]: Desarrolla tu comprensión a través de cursos estructurados diseñados para fortalecer tus conocimientos en inteligencia artificial, mentalidad digital y habilidades clave para el futuro.
+                  - generic [ref=f60e1493]:
+                    - link "De la Conservación a la Sostenibilidad" [ref=f60e1494] [cursor=pointer]:
+                      - /url: /activity/ALM-COURSE_4059000?planId=PLAN-5B465A40F315&sectionId=SECTION-B&planIdFromParentTab=PLAN-5B465A40F315&sectionIdFromParentTab=SECTION-B&planIdForChildTab=PLAN-5B465A40F315
+                      - generic [ref=f60e1498]:
+                        - generic [ref=f60e1499]: eLearning
+                        - generic [ref=f60e1501]: De la Conservación a la Sostenibilidad
+                        - generic [ref=f60e1502]:
+                          - generic [ref=f60e1503]:
+                            - generic [ref=f60e1504]: La duración es
+                            - text: 1 hora
+                          - generic "4876 alumnos han realizado esta actividad durante los últimos 12 meses." [ref=f60e1505]:
+                            - generic [ref=f60e1513]:
+                              - text: "4.876"
+                              - generic [ref=f60e1514]: 4876 alumnos han realizado esta actividad durante los últimos 12 meses.
+                          - generic "Calificación media de 5 estrellas por 11 alumnos durante los últimos 12 meses." [ref=f60e1515]:
+                            - generic [ref=f60e1516]:
+                              - button "1 estrella" [ref=f60e1517]
+                              - button "2 estrellas" [ref=f60e1520]
+                              - button "3 estrellas" [ref=f60e1523]
+                              - button "4 estrellas" [ref=f60e1526]
+                              - button "5 estrellas" [ref=f60e1529]
+                              - generic [ref=f60e1532]: "11"
+                              - generic [ref=f60e1534]: Calificación media de 5 estrellas por 11 alumnos durante los últimos 12 meses.
+                    - generic [ref=f60e1536]:
+                      - link "Ver detalles" [ref=f60e1537] [cursor=pointer]:
+                        - /url: /activity/ALM-COURSE_4059000?planId=PLAN-5B465A40F315&sectionId=SECTION-B&planIdFromParentTab=PLAN-5B465A40F315&sectionIdFromParentTab=SECTION-B&planIdForChildTab=PLAN-5B465A40F315
+                      - link "Ir a la actividad" [ref=f60e1539] [cursor=pointer]:
+                        - /url: https://alm.ibm.com/ibm-skillsbuildhighschool/trainingId/course:4059000/trainingInstanceId/course:4059000_4630795/es-ES
+                    - button "Acciones - De la Conservación a la Sostenibilidad" [ref=f60e1543] [cursor=pointer]:
+                      - img "Acciones" [ref=f60e1544]
+                  - generic [ref=f60e1549]:
+                    - link "Genera Impacto con la IA" [ref=f60e1550] [cursor=pointer]:
+                      - /url: /activity/ALM-COURSE_4059001?planId=PLAN-5B465A40F315&sectionId=SECTION-B&planIdFromParentTab=PLAN-5B465A40F315&sectionIdFromParentTab=SECTION-B&planIdForChildTab=PLAN-5B465A40F315
+                      - generic [ref=f60e1554]:
+                        - generic [ref=f60e1555]: eLearning
+                        - generic [ref=f60e1557]: Genera Impacto con la IA
+                        - generic [ref=f60e1558]:
+                          - generic [ref=f60e1559]:
+                            - generic [ref=f60e1560]: La duración es
+                            - text: 1 hora 30 minutos
+                          - generic "4535 alumnos han realizado esta actividad durante los últimos 12 meses." [ref=f60e1561]:
+                            - generic [ref=f60e1569]:
+                              - text: "4.535"
+                              - generic [ref=f60e1570]: 4535 alumnos han realizado esta actividad durante los últimos 12 meses.
+                          - generic "Calificación media de 5 estrellas por 8 alumnos durante los últimos 12 meses." [ref=f60e1571]:
+                            - generic [ref=f60e1572]:
+                              - button "1 estrella" [ref=f60e1573]
+                              - button "2 estrellas" [ref=f60e1576]
+                              - button "3 estrellas" [ref=f60e1579]
+                              - button "4 estrellas" [ref=f60e1582]
+                              - button "5 estrellas" [ref=f60e1585]
+                              - generic [ref=f60e1588]: "8"
+                              - generic [ref=f60e1590]: Calificación media de 5 estrellas por 8 alumnos durante los últimos 12 meses.
+                    - generic [ref=f60e1592]:
+                      - link "Ver detalles" [ref=f60e1593] [cursor=pointer]:
+                        - /url: /activity/ALM-COURSE_4059001?planId=PLAN-5B465A40F315&sectionId=SECTION-B&planIdFromParentTab=PLAN-5B465A40F315&sectionIdFromParentTab=SECTION-B&planIdForChildTab=PLAN-5B465A40F315
+                      - link "Ir a la actividad" [ref=f60e1595] [cursor=pointer]:
+                        - /url: https://alm.ibm.com/ibm-skillsbuildhighschool/trainingId/course:4059001/trainingInstanceId/course:4059001_4630796/es-ES
+                    - button "Acciones - Genera Impacto con la IA" [ref=f60e1599] [cursor=pointer]:
+                      - img "Acciones" [ref=f60e1600]
+            - list [ref=f60e1604]:
+              - listitem [ref=f60e1605]:
+                - button "Aplica tus Habilidades y Obtén Credenciales 0% 0 realizadas de 2 obligatorias" [expanded] [ref=f60e1606] [cursor=pointer]:
+                  - generic [ref=f60e1610]:
+                    - generic [ref=f60e1611]: Aplica tus Habilidades y Obtén Credenciales
+                    - generic [ref=f60e1613]:
+                      - generic [ref=f60e1614]: 0%
+                      - generic [ref=f60e1617]: 0 realizadas de 2 obligatorias
+                - generic [ref=f60e1619]:
+                  - heading "Aplica tus Habilidades y Obtén Credenciales" [level=3] [ref=f60e1620]
+                  - generic [ref=f60e1621]: Realice las 2 actividades obligatorias
+                  - generic [ref=f60e1622]:
+                    - paragraph [ref=f60e1623]: Acerca de esta sección
+                    - paragraph [ref=f60e1628]: Lleva tu aprendizaje al siguiente nivel aplicando tus habilidades, profundizando tus conocimientos y obteniendo credenciales reconocidas.
+                  - generic [ref=f60e1630]:
+                    - link "Mentalidad digital (¡Gane una credencial!)" [ref=f60e1631] [cursor=pointer]:
+                      - /url: /activity/PLAN-57E4BBCD654F/track-progress?planIdFromParentTab=PLAN-5B465A40F315&sectionIdFromParentTab=SECTION-C&planIdForChildTab=PLAN-57E4BBCD654F
+                      - generic [ref=f60e1635]:
+                        - generic [ref=f60e1636]: Plan de formación
+                        - generic [ref=f60e1638]: Mentalidad digital (¡Gane una credencial!)
+                        - generic [ref=f60e1639]:
+                          - generic [ref=f60e1644]:
+                            - generic [ref=f60e1645]: La duración es
+                            - text: Aproximadamente 4 horas
+                          - generic "3695 alumnos han realizado esta actividad durante los últimos 12 meses." [ref=f60e1646]:
+                            - generic [ref=f60e1654]:
+                              - text: "3.695"
+                              - generic [ref=f60e1655]: 3695 alumnos han realizado esta actividad durante los últimos 12 meses.
+                          - generic "Calificación media de 4.5 estrellas por 43 alumnos durante los últimos 12 meses." [ref=f60e1656]:
+                            - generic [ref=f60e1657]:
+                              - button "1 estrella" [ref=f60e1658]
+                              - button "2 estrellas" [ref=f60e1661]
+                              - button "3 estrellas" [ref=f60e1664]
+                              - button "4 estrellas" [ref=f60e1667]
+                              - button "5 estrellas" [ref=f60e1670]
+                              - generic [ref=f60e1673]: "43"
+                              - generic [ref=f60e1675]: Calificación media de 4.5 estrellas por 43 alumnos durante los últimos 12 meses.
+                    - link "Ver detalles" [ref=f60e1678] [cursor=pointer]:
+                      - /url: /activity/PLAN-57E4BBCD654F/track-progress?planIdFromParentTab=PLAN-5B465A40F315&sectionIdFromParentTab=SECTION-C&planIdForChildTab=PLAN-57E4BBCD654F
+                    - button "Acciones - Mentalidad digital (¡Gane una credencial!)" [ref=f60e1682] [cursor=pointer]:
+                      - img "Acciones" [ref=f60e1683]
+                  - generic [ref=f60e1688]:
+                    - link "Alfabetización en IA (¡Obtén una credencial digital!)" [ref=f60e1689] [cursor=pointer]:
+                      - /url: /activity/PLAN-18EB492D5259/track-progress?planIdFromParentTab=PLAN-5B465A40F315&sectionIdFromParentTab=SECTION-C&planIdForChildTab=PLAN-18EB492D5259
+                      - generic [ref=f60e1693]:
+                        - generic [ref=f60e1694]: Plan de formación
+                        - generic [ref=f60e1696]: Alfabetización en IA (¡Obtén una credencial digital!)
+                        - generic [ref=f60e1697]:
+                          - generic [ref=f60e1702]:
+                            - generic [ref=f60e1703]: La duración es
+                            - text: Aproximadamente 4 horas
+                          - generic "10097 alumnos han realizado esta actividad durante los últimos 12 meses." [ref=f60e1704]:
+                            - generic [ref=f60e1712]:
+                              - text: "10.097"
+                              - generic [ref=f60e1713]: 10097 alumnos han realizado esta actividad durante los últimos 12 meses.
+                          - generic "Calificación media de 4.5 estrellas por 96 alumnos durante los últimos 12 meses." [ref=f60e1714]:
+                            - generic [ref=f60e1715]:
+                              - button "1 estrella" [ref=f60e1716]
+                              - button "2 estrellas" [ref=f60e1719]
+                              - button "3 estrellas" [ref=f60e1722]
+                              - button "4 estrellas" [ref=f60e1725]
+                              - button "5 estrellas" [ref=f60e1728]
+                              - generic [ref=f60e1731]: "96"
+                              - generic [ref=f60e1733]: Calificación media de 4.5 estrellas por 96 alumnos durante los últimos 12 meses.
+                    - link "Ver detalles" [ref=f60e1736] [cursor=pointer]:
+                      - /url: /activity/PLAN-18EB492D5259/track-progress?planIdFromParentTab=PLAN-5B465A40F315&sectionIdFromParentTab=SECTION-C&planIdForChildTab=PLAN-18EB492D5259
+                    - button "Acciones - Alfabetización en IA (¡Obtén una credencial digital!)" [ref=f60e1740] [cursor=pointer]:
+                      - img "Acciones" [ref=f60e1741]
+        - generic [ref=f60e1261]:
+          - generic [ref=f60e1263]:
+            - heading "Detalles del plan de aprendizaje" [level=2] [ref=f60e1264]
+            - paragraph [ref=f60e1265]: Disponible en SB4S desde 26 Feb 2026
+            - paragraph [ref=f60e1266]: De Your Learning Builder - Plans
+            - paragraph [ref=f60e1267]:
+              - generic [ref=f60e1268]:
+                - generic [ref=f60e1269]: ID de actividad formativa
+                - text: PLAN-5B465A40F315
+          - generic [ref=f60e1270]:
+            - heading "Aportado por" [level=2] [ref=f60e1271]
+            - generic [ref=f60e1272]:
+              - generic [ref=f60e1277]:
+                - text: Rita Oliveira
+                - link "rita.oliveira@ibm.com" [ref=f60e1279] [cursor=pointer]:
+                  - /url: mailto:rita.oliveira@ibm.com
+              - generic [ref=f60e1284]:
+                - text: Daniel Plata
+                - link "daniel.plata@ibm.com" [ref=f60e1286] [cursor=pointer]:
+                  - /url: mailto:daniel.plata@ibm.com
+      - generic [ref=f60e643]: "Se ha accedido a: Alianza Junior Achievement | IBM SkillsBuild: IA y Habilidades del Futuro, Plan de formación"
+    - contentinfo [ref=f60e644]:
+      - list [ref=f60e648]:
+        - listitem [ref=f60e649]:
+          - link "Términos de uso" [ref=f60e650] [cursor=pointer]:
+            - /url: /terms
+        - listitem [ref=f60e651]:
+          - link "Solicitar asistencia de accesibilidad para la formación" [ref=f60e652] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=f60e653]:
+          - link "Privacidad de los datos" [ref=f60e654] [cursor=pointer]:
+            - /url: /data-privacy
+        - listitem [ref=f60e655]:
+          - link "Preferencias de cookies" [ref=f60e656] [cursor=pointer]:
+            - /url: /
+  - banner "consent_blackbar"
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - region "Chat":
+            - generic [ref=f60e657]:
+              - button "Hi! I’m a virtual assistant. How can I help you today?" [ref=f60e658]
+              - button "Open the chat window" [ref=f60e661] [cursor=pointer]
+              - button "Close the chat launcher" [ref=f60e665]:
+                - generic [ref=f60e666]: Close
+          - generic [ref=f60e670]: Click the suggestions button to view suggestions. The chat window has been closed

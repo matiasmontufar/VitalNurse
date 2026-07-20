@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>VitalNurse - Iniciar Sesión</title>
+
+    <!-- Enlaces a las fuentes e iconos de tu plantilla SB Admin 2 -->
+    <link th:href="@{/vendor/fontawesome-free/css/all.min.css}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Estilos base de la plantilla -->
+    <link th:href="@{/css/sb-admin-2.min.css}" rel="stylesheet">
+
+    <!-- Ajuste para mostrar una imagen de un entorno hospitalario en la mitad de la pantalla -->
+    <style>
+        .bg-login-medical {
+            background: url('https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<!-- La clase bg-gradient-primary le da ese fondo azul profesional -->
+<body class="bg-gradient-primary">
+
+    <div class="container">
+
+        <!-- Fila exterior de centrado -->
+        <div class="row justify-content-center">
+
+            <!-- Define el ancho máximo de la tarjeta flotante -->
+            <div class="col-xl-10 col-lg-12 col-md-9">
+
+                <div class="card o-hidden border-0 shadow-lg my-5">
+                    <div class="card-body p-0">
+                        
+                        <!-- Fila interna que divide la tarjeta en 2 columnas -->
+                        <div class="row">
+                            <!-- Columna 1: La imagen (Se oculta automáticamente en celulares para ahorrar espacio) -->
+                            <div class="col-lg-6 d-none d-lg-block bg-login-medical"></div>
+                            
+                            <!-- Columna 2: El formulario -->
+                            <div class="col-lg-6">
+                                <div class="p-5">
+                                    <div class="text-center">
+                                        <div class="sidebar-brand-icon mb-2">
+                                            <i class="fas fa-stethoscope fa-3x text-primary"></i>
+                                        </div>
+                                        <h1 class="h4 text-gray-900 mb-4">Acceso a VitalNurse</h1>
+                                        <p class="text-muted small mb-4">Sistema centralizado de expedientes clínicos y soporte de enfermería.</p>
+                                    </div>
+
+                                    <!-- Alertas automáticas de Spring Security -->
+                                    <div th:if="${param.error}" class="alert alert-danger text-center shadow-sm" role="alert">
+                                        Credenciales incorrectas. Verifique su cédula y contraseña.
+                                    </div>
+                                    <div th:if="${param.logout}" class="alert alert-success text-center shadow-sm" role="alert">
+                                        Ha cerrado sesión de forma segura.
+                                    </div>
+
+                                    <!-- Formulario conectado a la ruta /login -->
+                                    <form class="user" th:action="@{/login}" method="post">
+                                        
+                                        <div class="form-group">
+                                            <!-- La clase form-control-user hace que los bordes sean muy redondeados -->
+                                            <input type="text" class="form-control form-control-user" 
+                                                   id="cedula" name="cedula" placeholder="Ingrese su número de cédula..." required>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input type="password" class="form-control form-control-user" 
+                                                   id="contrasena" name="contrasena" placeholder="Contraseña de seguridad" required>
+                                        </div>
+                                        
+                                        <!-- La clase btn-user le da el mismo diseño redondeado al botón -->
+                                        <button type="submit" class="btn btn-primary btn-user btn-block">
+                                            Iniciar Sesión Segura
+                                        </button>
+                                    </form>
+
+                                    <hr>
+                                    <div class="text-center">
+                                        <a class="small text-secondary" href="#">¿Problemas para acceder? Contacte a soporte IT.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Scripts obligatorios para las animaciones -->
+    <script th:src="@{/vendor/jquery/jquery.min.js}"></script>
+    <script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
+    <script th:src="@{/vendor/jquery-easing/jquery.easing.min.js}"></script>
+    <script th:src="@{/js/sb-admin-2.min.js}"></script>
+
+</body>
+</html>

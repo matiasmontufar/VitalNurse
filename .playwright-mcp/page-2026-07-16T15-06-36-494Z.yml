@@ -1,0 +1,119 @@
+- generic [ref=f60e1]:
+  - generic [ref=f60e2]:
+    - banner [ref=f60e3]:
+      - generic [ref=f60e6]:
+        - link "Saltar al contenido principal" [ref=f60e7] [cursor=pointer]:
+          - /url: "#main-content-starting-point"
+        - generic [ref=f60e9]:
+          - link "SkillsBuild" [ref=f60e10] [cursor=pointer]:
+            - /url: /
+          - generic [ref=f60e13]:
+            - menubar "Menú de navegación" [ref=f60e14]:
+              - menuitem "Recomendaciones" [ref=f60e15] [cursor=pointer]
+              - menuitem "Progreso" [ref=f60e18] [cursor=pointer]
+            - button "Búsqueda" [ref=f60e22] [cursor=pointer]
+            - menubar [ref=f60e25]:
+              - menuitem "help" [ref=f60e26] [cursor=pointer]
+              - menuitem "profile" [ref=f60e28] [cursor=pointer]
+              - menuitem "more" [ref=f60e32] [cursor=pointer]
+    - main [ref=f60e34]:
+      - generic [ref=f60e1745]:
+        - generic [ref=f60e1746]:
+          - button "Compartir" [ref=f60e1748] [cursor=pointer]
+          - generic [ref=f60e1754]:
+            - generic [ref=f60e1755]: eLearning
+            - heading "De la Conservación a la Sostenibilidad" [level=1] [ref=f60e1756]
+            - generic [ref=f60e1757]:
+              - generic [ref=f60e1758]:
+                - generic [ref=f60e1759]: La duración es
+                - text: 1 hora
+              - generic "4876 alumnos han realizado esta actividad durante los últimos 12 meses." [ref=f60e1760]:
+                - generic [ref=f60e1768]:
+                  - text: "4.876"
+                  - generic [ref=f60e1769]: 4876 alumnos han realizado esta actividad durante los últimos 12 meses.
+              - generic "Calificación media de 5 estrellas por 11 alumnos durante los últimos 12 meses." [ref=f60e1770]:
+                - generic [ref=f60e1771]:
+                  - button "1 estrella" [ref=f60e1772] [cursor=pointer]
+                  - button "2 estrellas" [ref=f60e1775] [cursor=pointer]
+                  - button "3 estrellas" [ref=f60e1778] [cursor=pointer]
+                  - button "4 estrellas" [ref=f60e1781] [cursor=pointer]
+                  - button "5 estrellas" [ref=f60e1784] [cursor=pointer]
+                  - generic [ref=f60e1787]: "11"
+                  - generic [ref=f60e1789]: Calificación media de 5 estrellas por 11 alumnos durante los últimos 12 meses.
+        - generic [ref=f60e1791]:
+          - generic [ref=f60e1793]:
+            - generic [ref=f60e1794]:
+              - link "Ir a la actividad" [ref=f60e1795] [cursor=pointer]:
+                - /url: https://alm.ibm.com/ibm-skillsbuildhighschool/trainingId/course:4059000/trainingInstanceId/course:4059000_4630795/es-ES
+              - button "Acciones" [ref=f60e1801] [cursor=pointer]
+            - link "¿Ha realizado esta actividad?" [ref=f60e1805] [cursor=pointer]:
+              - /url: "#"
+          - generic [ref=f60e1806]:
+            - generic [ref=f60e1809]:
+              - heading "Acerca de esta actividad formativa" [level=2] [ref=f60e1810]
+              - generic [ref=f60e1811]:
+                - paragraph [ref=f60e1812]:
+                  - text: La conservación (la preservación de la ecología y la riqueza mineral de la Tierra) siempre será importante. Pero la sostenibilidad requiere un enfoque más amplio, utilizando análisis de datos y tecnología avanzada para considerar cómo la ecología funciona junto con campos como la ingeniería, la medicina y las ciencias sociales como un todo complejo.
+                  - strong [ref=f60e1813]: "Lo que aprenderás:"
+                  - text: "Después de completar este curso, deberías ser capaz de:"
+                - list [ref=f60e1814]:
+                  - listitem [ref=f60e1815]: Identificar las diferencias entre conservación y sostenibilidad
+                  - listitem [ref=f60e1816]: Deﬁnir los tres pilares medioambientales, sociales y de gobierno (ESG) que ayudan a guiar la sostenibilidad
+                  - listitem [ref=f60e1817]: Seleccionar las formas adecuadas en que las empresas pueden aplicar las iniciativas de ESG
+                  - listitem [ref=f60e1818]: Describir las principales iniciativas empresariales en materia de sostenibilidad
+                  - listitem [ref=f60e1819]: Identificar cómo las tecnologías avanzadas pueden promover la sostenibilidad
+                  - listitem [ref=f60e1820]: Practicar la sostenibilidad en su propia vida
+            - generic [ref=f60e1822]:
+              - heading "Detalles de la actividad" [level=2] [ref=f60e1823]
+              - paragraph [ref=f60e1824]: Disponible en SB4S desde 23 Oct 2025
+              - paragraph [ref=f60e1825]: De Adobe Learning Manager
+              - paragraph [ref=f60e1826]:
+                - generic [ref=f60e1827]:
+                  - generic [ref=f60e1828]: ID de actividad formativa
+                  - text: ALM-COURSE_4059000
+            - generic [ref=f60e1829]:
+              - heading "Aportado por" [level=2] [ref=f60e1830]
+              - generic [ref=f60e1836]:
+                - text: SkillsBuild
+                - link "skllsbld@us.ibm.com" [ref=f60e1838] [cursor=pointer]:
+                  - /url: mailto:skllsbld@us.ibm.com
+      - generic [ref=f60e1839]:
+        - generic [ref=f60e1840]:
+          - link "Volver al plan" [ref=f60e1841] [cursor=pointer]:
+            - /url: /activity/PLAN-5B465A40F315?focuslmsId=ALM-COURSE_4059000
+          - link "Anterior" [ref=f60e1844] [cursor=pointer]:
+            - /url: /activity/ALM-COURSE_3825248?planId=PLAN-5B465A40F315&sectionId=SECTION-A&planIdFromParentTab=PLAN-5B465A40F315&sectionIdFromParentTab=SECTION-B&planIdForChildTab=PLAN-5B465A40F315
+          - link "Siguiente" [ref=f60e1847] [cursor=pointer]:
+            - /url: /activity/ALM-COURSE_4059001?planId=PLAN-5B465A40F315&sectionId=SECTION-B&planIdFromParentTab=PLAN-5B465A40F315&sectionIdFromParentTab=SECTION-B&planIdForChildTab=PLAN-5B465A40F315
+        - generic [ref=f60e1852] [cursor=pointer]:
+          - combobox "De la Conservación a la Sostenibilidad Open menu" [ref=f60e1853]:
+            - generic [ref=f60e1854]: De la Conservación a la Sostenibilidad
+            - img "Open menu" [ref=f60e1857]
+          - listbox
+      - generic [ref=f60e643]: "Se ha accedido a: De la Conservación a la Sostenibilidad, eLearning"
+    - contentinfo [ref=f60e644]:
+      - list [ref=f60e648]:
+        - listitem [ref=f60e649]:
+          - link "Términos de uso" [ref=f60e650] [cursor=pointer]:
+            - /url: /terms
+        - listitem [ref=f60e651]:
+          - link "Solicitar asistencia de accesibilidad para la formación" [ref=f60e652] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=f60e653]:
+          - link "Privacidad de los datos" [ref=f60e654] [cursor=pointer]:
+            - /url: /data-privacy
+        - listitem [ref=f60e655]:
+          - link "Preferencias de cookies" [ref=f60e656] [cursor=pointer]:
+            - /url: /
+  - banner "consent_blackbar"
+  - generic:
+    - generic:
+      - generic:
+        - generic:
+          - region "Chat":
+            - generic [ref=f60e657]:
+              - button "Hi! I’m a virtual assistant. How can I help you today?" [ref=f60e658]
+              - button "Open the chat window" [ref=f60e661] [cursor=pointer]
+              - button "Close the chat launcher" [ref=f60e665]:
+                - generic [ref=f60e666]: Close
+          - generic [ref=f60e670]: Click the suggestions button to view suggestions. The chat window has been closed
