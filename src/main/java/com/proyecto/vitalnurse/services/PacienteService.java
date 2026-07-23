@@ -1,43 +1,65 @@
 package com.proyecto.vitalnurse.services;
 
+import com.proyecto.vitalnurse.entity.catalogo.CatSignoVital;
+import com.proyecto.vitalnurse.entity.catalogo.TipoEvaluacion;
+import com.proyecto.vitalnurse.entity.catalogo.UnidadMedida;
+import com.proyecto.vitalnurse.entity.clinical.EvaluacionCabecera;
+import com.proyecto.vitalnurse.entity.clinical.EvaluacionDetalleSigno;
+import com.proyecto.vitalnurse.entity.clinical.EvaluacionResultado;
+import com.proyecto.vitalnurse.entity.persona.Paciente;
+import com.proyecto.vitalnurse.entity.persona.Persona;
+import com.proyecto.vitalnurse.entity.seguridad.Usuario;
 import com.proyecto.vitalnurse.exception.PacienteDuplicadoException;
 import com.proyecto.vitalnurse.exception.RecursoNoEncontradoException;
-import com.proyecto.vitalnurse.models.Evaluacion;
-import com.proyecto.vitalnurse.models.Paciente;
-import com.proyecto.vitalnurse.models.SignoVital;
-import com.proyecto.vitalnurse.repositories.EvaluacionRepository;
-import com.proyecto.vitalnurse.repositories.PacienteRepository;
-import com.proyecto.vitalnurse.repositories.SignoVitalRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.proyecto.vitalnurse.repositories.*;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 @Service
 public class PacienteService {
 
-    @Autowired
-    private PacienteRepository pacienteRepository;
+    private final PacienteRepository pacienteRepository;
+    private final PersonaRepository personaRepository;
+    private final EvaluacionRepository evaluacionRepository;
+    private final SignoVitalRepository signoVitalRepository;
+    private final TipoEvaluacionRepository tipoEvaluacionRepository;
+    private final CatSignoVitalRepository catSignoVitalRepository;
+    private final UnidadMedidaRepository unidadMedidaRepository;
 
-    @Autowired
-    private EvaluacionRepository evaluacionRepository;
+    public PacienteService(PacienteRepository pacienteRepository, PersonaRepository personaRepository,
+                           EvaluacionRepository evaluacionRepository, SignoVitalRepository signoVitalRepository,
+                           TipoEvaluacionRepository tipoEvaluacionRepository,
+                           CatSignoVitalRepository catSignoVitalRepository,
+                           UnidadMedidaRepository unidadMedidaRepository) {
+        this.pacienteRepository = pacienteRepository;
+        this.personaRepository = personaRepository;
+        this.evaluacionRepository = evaluacionRepository;
+        this.signoVitalRepository = signoVitalRepository;
+        this.tipoEvaluacionRepository = tipoEvaluacionRepository;
+        this.catSignoVitalRepository = catSignoVitalRepository;
+        this.unidadMedidaRepository = unidadMedidaRepository;
+    }
 
-    @Autowired
-    private SignoVitalRepository signoVitalRepository;
-
-    public Paciente registrarPaciente(Paciente nuevoPaciente) {
-        if (pacienteRepository.existsByCedula(nuevoPaciente.getCedula())) {
-            throw new PacienteDuplicadoException(nuevoPaciente.getCedula());
+    @Transactional
+    public Paciente registrarPaciente(Persona persona) {
+        if (personaRepository.existsByCedulaAndIsDeletedFalse(persona.getCedula())) {
+            throw new PacienteDuplicadoException(persona.getCedula());
         }
-        return pacienteRepository.save(nuevoPaciente);
+        Persona savedPersona = personaRepository.save(persona);
+        Paciente paciente = new Paciente();
+        paciente.setPersona(savedPersona);
+        return pacienteRepository.save(paciente);
     }
 
     public boolean existsByCedula(String cedula) {
-        return pacienteRepository.existsByCedula(cedula);
+        return personaRepository.existsByCedulaAndIsDeletedFalse(cedula);
     }
 
     public List<Paciente> obtenerTodos() {
-        return pacienteRepository.findAll();
+        return pacienteRepository.findAllActiveWithPersona();
     }
 
     public double calcularIMC(double pesoKg, double tallaMetros) {
@@ -48,15 +70,10 @@ public class PacienteService {
     }
 
     public String clasificarIMC(double imc) {
-        if (imc < 18.5) {
-            return "Bajo peso (Alerta nutricional)";
-        } else if (imc < 25.0) {
-            return "Peso normal (Saludable)";
-        } else if (imc < 30.0) {
-            return "Sobrepeso (Precaución)";
-        } else {
-            return "Obesidad (Alerta médica de alto riesgo)";
-        }
+        if (imc < 18.5) return "Bajo peso (Alerta nutricional)";
+        else if (imc < 25.0) return "Peso normal (Saludable)";
+        else if (imc < 30.0) return "Sobrepeso (Precaución)";
+        else return "Obesidad (Alerta médica de alto riesgo)";
     }
 
     public int calcularGlasgow(int ocular, int verbal, int motor) {
@@ -67,15 +84,10 @@ public class PacienteService {
     }
 
     public String clasificarGlasgow(int puntaje) {
-        if (puntaje >= 13 && puntaje <= 15) {
-            return "TCE Leve (Paciente orientado/estable)";
-        } else if (puntaje >= 9 && puntaje <= 12) {
-            return "TCE Moderado (Alerta: Requiere monitorización estricta)";
-        } else if (puntaje >= 3 && puntaje <= 8) {
-            return "TCE Grave (Emergencia Médica: Requiere intubación/soporte inmediato)";
-        } else {
-            return "Puntaje inválido";
-        }
+        if (puntaje >= 13 && puntaje <= 15) return "TCE Leve (Paciente orientado/estable)";
+        else if (puntaje >= 9 && puntaje <= 12) return "TCE Moderado (Alerta: Requiere monitorización estricta)";
+        else if (puntaje >= 3 && puntaje <= 8) return "TCE Grave (Emergencia Médica: Requiere intubación/soporte inmediato)";
+        else return "Puntaje inválido";
     }
 
     public Paciente obtenerPorId(Long id) {
@@ -83,59 +95,92 @@ public class PacienteService {
                 .orElseThrow(() -> new RecursoNoEncontradoException("Paciente", id));
     }
 
-    public void guardarEvaluacionClinica(Paciente paciente, String tipo, String resultado, String diagnostico) {
-        Evaluacion nuevaEvaluacion = new Evaluacion();
-        nuevaEvaluacion.setFecha(java.time.LocalDateTime.now());
-        nuevaEvaluacion.setPaciente(paciente);
-        nuevaEvaluacion.setTipo(tipo);
-        nuevaEvaluacion.setResultado(resultado);
-        nuevaEvaluacion.setDiagnostico(diagnostico);
-        evaluacionRepository.save(nuevaEvaluacion);
+    public Persona obtenerPersonaPorId(Long id) {
+        Paciente pac = obtenerPorId(id);
+        return pac.getPersona();
     }
 
-    public List<Evaluacion> obtenerEvaluacionesPorPaciente(Long idPaciente) {
-        return evaluacionRepository.findByPacienteIdPacienteOrderByFechaDesc(idPaciente);
+    @Transactional
+    public void guardarEvaluacionClinica(Paciente paciente, TipoEvaluacion tipo, String resultadoTexto, String diagnostico, Usuario usuario) {
+        EvaluacionCabecera cabecera = new EvaluacionCabecera();
+        cabecera.setPaciente(paciente);
+        cabecera.setUsuario(usuario);
+        cabecera.setTipoEvaluacion(tipo);
+        cabecera.setNotas(diagnostico);
+        cabecera = evaluacionRepository.save(cabecera);
+
+        EvaluacionResultado resultado = new EvaluacionResultado();
+        resultado.setCabecera(cabecera);
+        resultado.setResultadoTexto(resultadoTexto);
+        resultado.setDiagnostico(diagnostico);
+        resultado.setCreatedAt(java.time.LocalDateTime.now());
+        resultado = com.proyecto.vitalnurse.repositories.BeanResolver.evaluacionResultadoRepo.save(resultado);
+        cabecera.setResultado(resultado);
+        evaluacionRepository.save(cabecera);
     }
 
+    @Transactional
+    public EvaluacionCabecera crearEvaluacionConSignos(Long idPaciente, Long idUsuario, Long idTipoEval,
+                                                        String notas, List<SignoVitalInput> signos) {
+        Paciente paciente = pacienteRepository.findById(idPaciente)
+                .orElseThrow(() -> new RecursoNoEncontradoException("Paciente", idPaciente));
+        Usuario usuario = com.proyecto.vitalnurse.repositories.BeanResolver.usuarioRepo.findById(idUsuario)
+                .orElseThrow(() -> new RecursoNoEncontradoException("Usuario", idUsuario));
+        TipoEvaluacion tipo = tipoEvaluacionRepository.findById(idTipoEval)
+                .orElseThrow(() -> new RecursoNoEncontradoException("TipoEvaluacion", idTipoEval));
+
+        EvaluacionCabecera cabecera = new EvaluacionCabecera();
+        cabecera.setPaciente(paciente);
+        cabecera.setUsuario(usuario);
+        cabecera.setTipoEvaluacion(tipo);
+        cabecera.setNotas(notas);
+        cabecera = evaluacionRepository.save(cabecera);
+
+        for (SignoVitalInput s : signos) {
+            CatSignoVital cat = catSignoVitalRepository.findByCodigo(s.codigoSigno)
+                    .orElseThrow(() -> new IllegalArgumentException("Signo vital no encontrado: " + s.codigoSigno));
+            UnidadMedida uni = unidadMedidaRepository.findById(s.idUnidad)
+                    .orElseThrow(() -> new IllegalArgumentException("Unidad no encontrada: " + s.idUnidad));
+
+            EvaluacionDetalleSigno detalle = new EvaluacionDetalleSigno();
+            detalle.setCabecera(cabecera);
+            detalle.setSignoVital(cat);
+            detalle.setValorMedido(BigDecimal.valueOf(s.valor));
+            detalle.setUnidad(uni);
+            signoVitalRepository.save(detalle);
+        }
+        return cabecera;
+    }
+
+    public List<EvaluacionCabecera> obtenerEvaluacionesPorPaciente(Long idPaciente) {
+        return evaluacionRepository.findByPacienteIdPacienteAndIsDeletedFalseOrderByFechaHoraDesc(idPaciente);
+    }
+
+    @Transactional
     public void guardar(Paciente paciente) {
         pacienteRepository.save(paciente);
     }
 
+    @Transactional
     public void eliminarPaciente(Long id) {
-        if (!pacienteRepository.existsById(id)) {
-            throw new RecursoNoEncontradoException("Paciente", id);
-        }
-        pacienteRepository.deleteById(id);
-    }
-
-    public void actualizarPaciente(Long id, Paciente pacienteActualizado) {
         Paciente paciente = pacienteRepository.findById(id)
                 .orElseThrow(() -> new RecursoNoEncontradoException("Paciente", id));
-        paciente.setNombres(pacienteActualizado.getNombres());
-        paciente.setApellidos(pacienteActualizado.getApellidos());
-        paciente.setEdad(pacienteActualizado.getEdad());
-        paciente.setSexo(pacienteActualizado.getSexo());
-        paciente.setEnfermedadesPreexistentes(pacienteActualizado.getEnfermedadesPreexistentes());
+        paciente.setIsDeleted(true);
+        paciente.getPersona().setIsDeleted(true);
         pacienteRepository.save(paciente);
     }
 
-    public void guardarSignosVitales(Long idPaciente, SignoVital signos) {
-        Paciente paciente = pacienteRepository.findById(idPaciente)
-                .orElseThrow(() -> new RecursoNoEncontradoException("Paciente", idPaciente));
-        signos.setFecha(java.time.LocalDateTime.now());
-        signos.setPaciente(paciente);
-        signoVitalRepository.save(signos);
+    @Transactional
+    public void actualizarPersonaPaciente(Long idPaciente, Persona personaActualizada) {
+        Paciente paciente = obtenerPorId(idPaciente);
+        Persona persona = paciente.getPersona();
+        persona.setNombres(personaActualizada.getNombres());
+        persona.setApellidos(personaActualizada.getApellidos());
+        persona.setEdad(personaActualizada.getEdad());
+        persona.setSexo(personaActualizada.getSexo());
+        persona.setFechaNacimiento(personaActualizada.getFechaNacimiento());
+        personaRepository.save(persona);
     }
 
-    public void guardarEvaluacion(Long idPaciente, Evaluacion evaluacion) {
-        Paciente paciente = pacienteRepository.findById(idPaciente)
-                .orElseThrow(() -> new RecursoNoEncontradoException("Paciente", idPaciente));
-        evaluacion.setFecha(java.time.LocalDateTime.now());
-        evaluacion.setPaciente(paciente);
-        evaluacionRepository.save(evaluacion);
-    }
-
-    public List<SignoVital> obtenerSignosPorPaciente(Long idPaciente) {
-        return signoVitalRepository.findByPacienteIdPacienteOrderByFechaDesc(idPaciente);
-    }
+    public record SignoVitalInput(String codigoSigno, double valor, Long idUnidad) {}
 }

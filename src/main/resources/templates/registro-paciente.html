@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="utf-8">
-    <title>VitalNurse - Admisión de Paciente</title>
+    <title>VitalNurse - AdmisiÃ³n de Paciente</title>
     <link th:href="@{/vendor/fontawesome-free/css/all.min.css}" rel="stylesheet" type="text/css">
     <link th:href="@{/css/sb-admin-2.min.css}" rel="stylesheet">
 </head>
@@ -10,7 +10,7 @@
 
 <div id="wrapper">
 
-    <!-- MENÚ LATERAL -->
+    <!-- MENÃš LATERAL -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
             <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-stethoscope"></i></div>
@@ -19,20 +19,20 @@
         <hr class="sidebar-divider my-0">
         <li class="nav-item"><a class="nav-link" href="/dashboard"><i class="fas fa-fw fa-tachometer-alt"></i><span>Panel Principal</span></a></li>
         <hr class="sidebar-divider">
-        <div class="sidebar-heading">Gestión de Pacientes</div>
-        <li class="nav-item active"><a class="nav-link" href="/pacientes/nuevo"><i class="fas fa-fw fa-user-plus"></i><span>Admisión</span></a></li>
+        <div class="sidebar-heading">GestiÃ³n de Pacientes</div>
+        <li class="nav-item active"><a class="nav-link" href="/pacientes/nuevo"><i class="fas fa-fw fa-user-plus"></i><span>AdmisiÃ³n</span></a></li>
         <li class="nav-item"><a class="nav-link" href="/pacientes"><i class="fas fa-fw fa-users"></i><span>Lista de Pacientes</span></a></li>
         <li class="nav-item"><a class="nav-link" href="/pacientes/signos"><i class="fas fa-fw fa-heartbeat"></i><span>Signos Vitales</span></a></li>
         <hr class="sidebar-divider">
-        <div class="sidebar-heading">Soporte Clínico</div>
+        <div class="sidebar-heading">Soporte ClÃ­nico</div>
         <li class="nav-item"><a class="nav-link" href="/calculadoras/imc"><i class="fas fa-fw fa-weight"></i><span>Triaje Nutricional</span></a></li>
         <li class="nav-item"><a class="nav-link" href="/calculadoras/glasgow"><i class="fas fa-fw fa-brain"></i><span>Escala de Glasgow</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="/calculadoras/dosis"><i class="fas fa-fw fa-capsules"></i><span>Conversión de Dosis</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/calculadoras/dosis"><i class="fas fa-fw fa-capsules"></i><span>ConversiÃ³n de Dosis</span></a></li>
 
         <hr class="sidebar-divider" sec:authorize="hasRole('SUPERVISOR')">
-        <div class="sidebar-heading" sec:authorize="hasRole('SUPERVISOR')">Administración</div>
+        <div class="sidebar-heading" sec:authorize="hasRole('SUPERVISOR')">AdministraciÃ³n</div>
         <li class="nav-item" sec:authorize="hasRole('SUPERVISOR')">
-            <a class="nav-link" href="/usuarios/nuevo"><i class="fas fa-fw fa-user-shield"></i><span>Gestión de Personal</span></a>
+            <a class="nav-link" href="/usuarios/nuevo"><i class="fas fa-fw fa-user-shield"></i><span>GestiÃ³n de Personal</span></a>
         </li>
     </ul>
 
@@ -43,20 +43,20 @@
                 <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                     <i class="fa fa-bars"></i>
                 </button>
-                <h1 class="h3 mb-0 text-gray-800 ml-3">Módulo de Admisión</h1>
+                <h1 class="h3 mb-0 text-gray-800 ml-3">MÃ³dulo de AdmisiÃ³n</h1>
                 <ul class="navbar-nav ml-auto">
 
                     <div class="topbar-divider d-none d-sm-block"></div>
 
                     <li class="nav-item dropdown no-arrow">
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="mr-2 d-none d-lg-inline text-gray-600 small font-weight-bold">Matías Montufar</span>
+                            <span class="mr-2 d-none d-lg-inline text-gray-600 small font-weight-bold">MatÃ­as Montufar</span>
                             <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                         </a>
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                 <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                Cerrar Sesión
+                                Cerrar SesiÃ³n
                             </a>
                         </div>
                     </li>
@@ -67,21 +67,21 @@
             <div class="container-fluid">
                 <div class="card shadow mb-4">
                     <div class="card-header py-3 bg-primary">
-                        <h6 class="m-0 font-weight-bold text-white"><i class="fas fa-user-plus"></i> Apertura de Nuevo Expediente Clínico</h6>
+                        <h6 class="m-0 font-weight-bold text-white"><i class="fas fa-user-plus"></i> Apertura de Nuevo Expediente ClÃ­nico</h6>
                     </div>
                     <div class="card-body">
                         
-                        <!-- Alerta de éxito -->
+                        <!-- Alerta de Ã©xito -->
                         <div th:if="${mensajeExito}" class="alert alert-success shadow-sm mb-4">
                             <i class="fas fa-check-circle"></i> <span th:text="${mensajeExito}"></span>
                         </div>
 
-                        <!-- Formulario conectado al objeto Paciente -->
-                        <form th:action="@{/pacientes/nuevo}" method="post" th:object="${paciente}">
+                        <!-- Formulario conectado al objeto Persona (nuevo esquema) -->
+                        <form th:action="@{/pacientes/nuevo}" method="post" th:object="${persona}">
                             
                             <div class="row">
                                 <div class="col-md-6 mb-3">
-                                    <label class="font-weight-bold">Cédula de Identidad:</label>
+                                    <label class="font-weight-bold">CÃ©dula de Identidad:</label>
                                     <input type="text" class="form-control" th:field="*{cedula}" required placeholder="Ej: 1700000000">
                                 </div>
                                 <div class="col-md-6 mb-3">
@@ -90,25 +90,19 @@
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label class="font-weight-bold">Apellidos:</label>
-                                    <input type="text" class="form-control" th:field="*{apellidos}" required placeholder="Ej: Pérez Gómez">
+                                    <input type="text" class="form-control" th:field="*{apellidos}" required placeholder="Ej: PÃ©rez GÃ³mez">
                                 </div>
                                 <div class="col-md-3 mb-3">
                                     <label class="font-weight-bold">Edad:</label>
                                     <input type="number" class="form-control" th:field="*{edad}" required placeholder="Ej: 45">
                                 </div>
                                 <div class="col-md-3 mb-3">
-                                    <label class="font-weight-bold">Sexo Biológico:</label>
+                                    <label class="font-weight-bold">Sexo BiolÃ³gico:</label>
                                     <select class="form-control" th:field="*{sexo}" required>
                                         <option value="Masculino">Masculino</option>
                                         <option value="Femenino">Femenino</option>
                                     </select>
                                 </div>
-                            </div>
-
-                            <!-- Área para Preexistencias -->
-                            <div class="form-group mb-4">
-                                <label class="font-weight-bold text-danger">Enfermedades Preexistentes (Alergias, Diabetes, etc.):</label>
-                                <textarea class="form-control" th:field="*{enfermedadesPreexistentes}" rows="3" placeholder="Si no tiene ninguna, escriba 'Ninguna'"></textarea>
                             </div>
                             
                             <hr>
@@ -128,21 +122,21 @@
 <script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
 <script th:src="@{/js/sb-admin-2.min.js}"></script>
 
-<!-- Modal de Cerrar Sesión -->
+<!-- Modal de Cerrar SesiÃ³n -->
 <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">¿Cerrar Sesión?</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Â¿Cerrar SesiÃ³n?</h5>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
+                    <span aria-hidden="true">Ã—</span>
                 </button>
             </div>
-            <div class="modal-body">Seleccione "Cerrar Sesión" si desea finalizar su sesión actual.</div>
+            <div class="modal-body">Seleccione "Cerrar SesiÃ³n" si desea finalizar su sesiÃ³n actual.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
                 <form th:action="@{/logout}" method="post">
-                    <button type="submit" class="btn btn-primary">Cerrar Sesión</button>
+                    <button type="submit" class="btn btn-primary">Cerrar SesiÃ³n</button>
                 </form>
             </div>
         </div>

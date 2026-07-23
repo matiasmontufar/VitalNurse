@@ -26,7 +26,7 @@ public class BackupService {
                      : "Error al crear la copia. Revisa la consola de IntelliJ.";
     }
 
-    private boolean ejecutarBackupMySQL() {
+    public boolean ejecutarBackupMySQL() {
         try {
             File carpeta = new File("backups_seguridad");
             if (!carpeta.exists()) {

@@ -2,20 +2,30 @@ package com.proyecto.vitalnurse.services;
 
 import com.lowagie.text.*;
 import com.lowagie.text.pdf.*;
-import com.proyecto.vitalnurse.models.Evaluacion;
-import com.proyecto.vitalnurse.models.Paciente;
-import com.proyecto.vitalnurse.models.SignoVital;
+import com.proyecto.vitalnurse.entity.clinical.EvaluacionCabecera;
+import com.proyecto.vitalnurse.entity.persona.Paciente;
+import com.proyecto.vitalnurse.entity.persona.Persona;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.stereotype.Service;
 
 import java.awt.Color;
 import java.io.IOException;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 @Service
 public class PdfService {
 
-    public void exportarFichaPdf(HttpServletResponse response, Paciente paciente, List<Evaluacion> historial, List<SignoVital> historialSignos) throws IOException {
+    private final PacienteService pacienteService;
+
+    public PdfService(PacienteService pacienteService) {
+        this.pacienteService = pacienteService;
+    }
+
+    public void exportarFichaPdf(HttpServletResponse response, Paciente paciente) throws IOException {
+        Persona per = paciente.getPersona();
+        List<EvaluacionCabecera> historial = pacienteService.obtenerEvaluacionesPorPaciente(paciente.getIdPaciente());
+
         Document document = new Document(PageSize.A4);
         PdfWriter.getInstance(document, response.getOutputStream());
         document.open();
@@ -32,38 +42,8 @@ public class PdfService {
         document.add(titulo);
 
         document.add(new Paragraph("Información del Paciente", fontSubtitulo));
-        document.add(new Paragraph("Nombre: " + paciente.getNombres() + " " + paciente.getApellidos(), fontCuerpo));
-        document.add(new Paragraph("Cédula: " + paciente.getCedula() + " | Edad: " + paciente.getEdad() + " | Sexo: " + paciente.getSexo(), fontCuerpo));
-        document.add(Chunk.NEWLINE);
-
-        document.add(new Paragraph("Monitoreo de Signos Vitales", fontSubtitulo));
-        document.add(new Paragraph(" ", fontCuerpo));
-
-        PdfPTable tablaSignos = new PdfPTable(7);
-        tablaSignos.setWidthPercentage(100);
-        String[] cabecerasSignos = {"Fecha", "P. Arterial", "FC", "FR", "Temp.", "O2", "Glicemia"};
-        for (String cabecera : cabecerasSignos) {
-            PdfPCell cell = new PdfPCell(new Phrase(cabecera, fontCabecera));
-            cell.setBackgroundColor(new Color(234, 236, 244));
-            tablaSignos.addCell(cell);
-        }
-
-        if (historialSignos.isEmpty()) {
-            PdfPCell emptyCell = new PdfPCell(new Phrase("Sin registros.", fontCelda));
-            emptyCell.setColspan(7);
-            tablaSignos.addCell(emptyCell);
-        } else {
-            for (SignoVital sv : historialSignos) {
-                tablaSignos.addCell(new Phrase(sv.getFechaFormateada(), fontCelda));
-                tablaSignos.addCell(new Phrase(sv.getPresionArterial(), fontCelda));
-                tablaSignos.addCell(new Phrase(sv.getFrecuenciaCardiaca() + " lpm", fontCelda));
-                tablaSignos.addCell(new Phrase(sv.getFrecuenciaRespiratoria() + " rpm", fontCelda));
-                tablaSignos.addCell(new Phrase(sv.getTemperatura() + " C", fontCelda));
-                tablaSignos.addCell(new Phrase(sv.getSaturacionOxigeno() + " %", fontCelda));
-                tablaSignos.addCell(new Phrase(sv.getGlicemia() + " mg/dl", fontCelda));
-            }
-        }
-        document.add(tablaSignos);
+        document.add(new Paragraph("Nombre: " + per.getNombres() + " " + per.getApellidos(), fontCuerpo));
+        document.add(new Paragraph("Cédula: " + per.getCedula() + " | Edad: " + per.getEdad() + " | Sexo: " + per.getSexo(), fontCuerpo));
         document.add(Chunk.NEWLINE);
 
         document.add(new Paragraph("Evaluaciones Clínicas (Triaje)", fontSubtitulo));
@@ -83,11 +63,12 @@ public class PdfService {
             emptyCell.setColspan(4);
             tablaEval.addCell(emptyCell);
         } else {
-            for (Evaluacion eval : historial) {
-                tablaEval.addCell(new Phrase(eval.getFechaFormateada(), fontCelda));
-                tablaEval.addCell(new Phrase(eval.getTipo(), fontCelda));
-                tablaEval.addCell(new Phrase(eval.getResultado(), fontCelda));
-                tablaEval.addCell(new Phrase(eval.getDiagnostico(), fontCelda));
+            DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm");
+            for (EvaluacionCabecera eval : historial) {
+                tablaEval.addCell(new Phrase(eval.getFechaHora().format(fmt), fontCelda));
+                tablaEval.addCell(new Phrase(eval.getTipoEvaluacion() != null ? eval.getTipoEvaluacion().getNombre() : "", fontCelda));
+                tablaEval.addCell(new Phrase(eval.getResultado() != null ? eval.getResultado().getResultadoTexto() : "", fontCelda));
+                tablaEval.addCell(new Phrase(eval.getResultado() != null ? eval.getResultado().getDiagnostico() : "", fontCelda));
             }
         }
         document.add(tablaEval);

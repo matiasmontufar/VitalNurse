@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="utf-8">
@@ -18,20 +18,20 @@
         <hr class="sidebar-divider my-0">
         <li class="nav-item"><a class="nav-link" href="/dashboard"><i class="fas fa-fw fa-tachometer-alt"></i><span>Panel Principal</span></a></li>
         <hr class="sidebar-divider">
-        <div class="sidebar-heading">Gestión de Pacientes</div>
-        <li class="nav-item"><a class="nav-link" href="/pacientes/nuevo"><i class="fas fa-fw fa-user-plus"></i><span>Admisión y Registro</span></a></li>
+        <div class="sidebar-heading">GestiÃ³n de Pacientes</div>
+        <li class="nav-item"><a class="nav-link" href="/pacientes/nuevo"><i class="fas fa-fw fa-user-plus"></i><span>AdmisiÃ³n y Registro</span></a></li>
         <li class="nav-item"><a class="nav-link" href="/pacientes"><i class="fas fa-fw fa-users"></i><span>Lista de Pacientes</span></a></li>
         <li class="nav-item"><a class="nav-link" href="/pacientes/signos"><i class="fas fa-fw fa-heartbeat"></i><span>Signos Vitales</span></a></li>
         <hr class="sidebar-divider">
-        <div class="sidebar-heading">Soporte Clínico</div>
+        <div class="sidebar-heading">Soporte ClÃ­nico</div>
         <li class="nav-item"><a class="nav-link" href="/calculadoras/imc"><i class="fas fa-fw fa-weight"></i><span>Triaje Nutricional</span></a></li>
         <li class="nav-item"><a class="nav-link" href="/calculadoras/glasgow"><i class="fas fa-fw fa-brain"></i><span>Escala de Glasgow</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="/calculadoras/dosis"><i class="fas fa-fw fa-capsules"></i><span>Conversión de Dosis</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/calculadoras/dosis"><i class="fas fa-fw fa-capsules"></i><span>ConversiÃ³n de Dosis</span></a></li>
 
         <hr class="sidebar-divider" sec:authorize="hasRole('SUPERVISOR')">
-        <div class="sidebar-heading" sec:authorize="hasRole('SUPERVISOR')">Administración</div>
+        <div class="sidebar-heading" sec:authorize="hasRole('SUPERVISOR')">AdministraciÃ³n</div>
         <li class="nav-item" sec:authorize="hasRole('SUPERVISOR')">
-            <a class="nav-link" href="/usuarios/nuevo"><i class="fas fa-fw fa-user-shield"></i><span>Gestión de Personal</span></a>
+            <a class="nav-link" href="/usuarios/nuevo"><i class="fas fa-fw fa-user-shield"></i><span>GestiÃ³n de Personal</span></a>
         </li>
     </ul>
 
@@ -42,18 +42,18 @@
                 <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                     <i class="fa fa-bars"></i>
                 </button>
-                <h1 class="h3 mb-0 text-gray-800 ml-3">Editar Expediente Clínico</h1>
+                <h1 class="h3 mb-0 text-gray-800 ml-3">Editar Expediente ClÃ­nico</h1>
                 <ul class="navbar-nav ml-auto">
 
                     <div class="topbar-divider d-none d-sm-block"></div>
 
                     <li class="nav-item dropdown no-arrow">
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="mr-2 d-none d-lg-inline text-gray-600 small font-weight-bold">Matías Montufar</span>
+                            <span class="mr-2 d-none d-lg-inline text-gray-600 small font-weight-bold">MatÃ­as Montufar</span>
                             <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                         </a>
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Cerrar Sesión</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Cerrar SesiÃ³n</a>
                         </div>
                     </li>
 
@@ -73,38 +73,33 @@
                         <form th:action="@{/pacientes/editar/{id}(id=${paciente.idPaciente})}" method="post">
                             <div class="row">
                                 <div class="form-group col-md-6">
-                                    <label class="font-weight-bold text-gray-800">Número de Cédula:</label>
-                                    <input type="text" class="form-control" name="cedula" maxlength="10" th:value="${paciente.cedula}" readonly>
+                                    <label class="font-weight-bold text-gray-800">NÃºmero de CÃ©dula:</label>
+                                    <input type="text" class="form-control" name="cedula" maxlength="10" th:value="${persona.cedula}" readonly>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label class="font-weight-bold text-gray-800">Edad:</label>
-                                    <input type="number" class="form-control" name="edad" min="0" th:value="${paciente.edad}" required>
+                                    <input type="number" class="form-control" name="edad" min="0" th:value="${persona.edad}" required>
                                 </div>
                             </div>
 
                             <div class="row">
                                 <div class="form-group col-md-6">
                                     <label class="font-weight-bold text-gray-800">Nombres:</label>
-                                    <input type="text" class="form-control" name="nombres" th:value="${paciente.nombres}" required>
+                                    <input type="text" class="form-control" name="nombres" th:value="${persona.nombres}" required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label class="font-weight-bold text-gray-800">Apellidos:</label>
-                                    <input type="text" class="form-control" name="apellidos" th:value="${paciente.apellidos}" required>
+                                    <input type="text" class="form-control" name="apellidos" th:value="${persona.apellidos}" required>
                                 </div>
                             </div>
 
                             <div class="form-group">
-                                <label class="font-weight-bold text-gray-800">Sexo Biológico:</label>
+                                <label class="font-weight-bold text-gray-800">Sexo BiolÃ³gico:</label>
                                 <select class="form-control" name="sexo" required>
                                     <option value="">Seleccione...</option>
-                                    <option value="Masculino" th:selected="${paciente.sexo == 'Masculino'}">Masculino</option>
-                                    <option value="Femenino" th:selected="${paciente.sexo == 'Femenino'}">Femenino</option>
+                                    <option value="Masculino" th:selected="${persona.sexo == 'Masculino'}">Masculino</option>
+                                    <option value="Femenino" th:selected="${persona.sexo == 'Femenino'}">Femenino</option>
                                 </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="font-weight-bold text-gray-800">Enfermedades Preexistentes:</label>
-                                <textarea class="form-control" name="enfermedadesPreexistentes" rows="3" th:text="${paciente.enfermedadesPreexistentes}"></textarea>
                             </div>
 
                             <button type="submit" class="btn btn-warning btn-block mt-4">
@@ -122,21 +117,21 @@
 <script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
 <script th:src="@{/js/sb-admin-2.min.js}"></script>
 
-<!-- Modal de Cerrar Sesión -->
+<!-- Modal de Cerrar SesiÃ³n -->
 <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">¿Cerrar Sesión?</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Â¿Cerrar SesiÃ³n?</h5>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
+                    <span aria-hidden="true">Ã—</span>
                 </button>
             </div>
-            <div class="modal-body">Seleccione "Cerrar Sesión" si desea finalizar su sesión actual.</div>
+            <div class="modal-body">Seleccione "Cerrar SesiÃ³n" si desea finalizar su sesiÃ³n actual.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
                 <form th:action="@{/logout}" method="post">
-                    <button type="submit" class="btn btn-primary">Cerrar Sesión</button>
+                    <button type="submit" class="btn btn-primary">Cerrar SesiÃ³n</button>
                 </form>
             </div>
         </div>
@@ -144,3 +139,4 @@
 </div>
 </body>
 </html>
+

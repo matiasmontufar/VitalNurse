@@ -1,39 +1,48 @@
 package com.proyecto.vitalnurse.services;
 
-import com.proyecto.vitalnurse.models.Usuario;
+import com.proyecto.vitalnurse.entity.seguridad.Usuario;
 import com.proyecto.vitalnurse.repositories.UsuarioRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
 
-    @Autowired
-    private UsuarioRepository usuarioRepository;
+    private final UsuarioRepository usuarioRepository;
+
+    public UserDetailsServiceImpl(UsuarioRepository usuarioRepository) {
+        this.usuarioRepository = usuarioRepository;
+    }
 
     @Override
     public UserDetails loadUserByUsername(String cedula) throws UsernameNotFoundException {
-
         System.out.println(">>> INTENTO DE LOGIN. Buscando cédula: " + cedula);
 
-        Usuario usuario = usuarioRepository.findByCedula(cedula).orElse(null);
+        Usuario usuario = usuarioRepository.findByUsernameWithRoles(cedula).orElse(null);
 
         if (usuario == null) {
-            System.out.println(">>> ERROR: No se encontró la cédula en la base de datos.");
-            throw new UsernameNotFoundException("Usuario o cédula no encontrada");
+            System.out.println(">>> ERROR: No se encontró el usuario en la base de datos.");
+            throw new UsernameNotFoundException("Usuario no encontrado: " + cedula);
         }
 
-        System.out.println(">>> ÉXITO: Usuario encontrado: " + usuario.getNombre());
-        System.out.println(">>> Hash en base de datos: " + usuario.getContrasena());
+        List<SimpleGrantedAuthority> authorities = usuario.getUsuarioRoles().stream()
+                .map(ur -> new SimpleGrantedAuthority("ROLE_" + ur.getRol().getCodigo().toUpperCase()))
+                .collect(Collectors.toList());
+
+        System.out.println(">>> ÉXITO: Usuario encontrado: " + usuario.getPersona().getNombres());
+        System.out.println(">>> Roles: " + authorities);
 
         return User.builder()
-                .username(usuario.getCedula())
-                .password(usuario.getContrasena())
-                .roles(usuario.getRol())
+                .username(usuario.getUsername())
+                .password(usuario.getContrasenaHash())
+                .authorities(authorities)
                 .build();
     }
 }

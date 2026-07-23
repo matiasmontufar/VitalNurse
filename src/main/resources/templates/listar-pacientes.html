@@ -1,18 +1,18 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="utf-8">
     <title>VitalNurse - Lista de Pacientes</title>
     <link th:href="@{/vendor/fontawesome-free/css/all.min.css}" rel="stylesheet" type="text/css">
     <link th:href="@{/css/sb-admin-2.min.css}" rel="stylesheet">
-    <!-- Estilos específicos para la tabla de datos -->
+    <!-- Estilos especÃ­ficos para la tabla de datos -->
     <link th:href="@{/vendor/datatables/dataTables.bootstrap4.min.css}" rel="stylesheet">
 </head>
 <body id="page-top">
 
 <div id="wrapper">
 
-    <!-- MENÚ LATERAL -->
+    <!-- MENÃš LATERAL -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
             <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-stethoscope"></i></div>
@@ -21,20 +21,20 @@
         <hr class="sidebar-divider my-0">
         <li class="nav-item"><a class="nav-link" href="/dashboard"><i class="fas fa-fw fa-tachometer-alt"></i><span>Panel Principal</span></a></li>
         <hr class="sidebar-divider">
-        <div class="sidebar-heading">Gestión de Pacientes</div>
-        <li class="nav-item"><a class="nav-link" href="/pacientes/nuevo"><i class="fas fa-fw fa-user-plus"></i><span>Admisión y Registro</span></a></li>
+        <div class="sidebar-heading">GestiÃ³n de Pacientes</div>
+        <li class="nav-item"><a class="nav-link" href="/pacientes/nuevo"><i class="fas fa-fw fa-user-plus"></i><span>AdmisiÃ³n y Registro</span></a></li>
         <li class="nav-item active"><a class="nav-link" href="/pacientes"><i class="fas fa-fw fa-users"></i><span>Lista de Pacientes</span></a></li>
         <li class="nav-item"><a class="nav-link" href="/pacientes/signos"><i class="fas fa-fw fa-heartbeat"></i><span>Signos Vitales</span></a></li>
         <hr class="sidebar-divider">
-        <div class="sidebar-heading">Soporte Clínico</div>
+        <div class="sidebar-heading">Soporte ClÃ­nico</div>
         <li class="nav-item"><a class="nav-link" href="/calculadoras/imc"><i class="fas fa-fw fa-weight"></i><span>Triaje Nutricional</span></a></li>
         <li class="nav-item"><a class="nav-link" href="/calculadoras/glasgow"><i class="fas fa-fw fa-brain"></i><span>Escala de Glasgow</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="/calculadoras/dosis"><i class="fas fa-fw fa-capsules"></i><span>Conversión de Dosis</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/calculadoras/dosis"><i class="fas fa-fw fa-capsules"></i><span>ConversiÃ³n de Dosis</span></a></li>
 
         <hr class="sidebar-divider" sec:authorize="hasRole('SUPERVISOR')">
-        <div class="sidebar-heading" sec:authorize="hasRole('SUPERVISOR')">Administración</div>
+        <div class="sidebar-heading" sec:authorize="hasRole('SUPERVISOR')">AdministraciÃ³n</div>
         <li class="nav-item" sec:authorize="hasRole('SUPERVISOR')">
-            <a class="nav-link" href="/usuarios/nuevo"><i class="fas fa-fw fa-user-shield"></i><span>Gestión de Personal</span></a>
+            <a class="nav-link" href="/usuarios/nuevo"><i class="fas fa-fw fa-user-shield"></i><span>GestiÃ³n de Personal</span></a>
         </li>
     </ul>
 
@@ -49,13 +49,13 @@
                 <!-- Tarjeta de la Tabla de Datos -->
                 <div class="card shadow mb-4">
                     <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                        <h6 class="m-0 font-weight-bold text-primary">Expedientes Clínicos Registrados</h6>
+                        <h6 class="m-0 font-weight-bold text-primary">Expedientes ClÃ­nicos Registrados</h6>
                         <a href="/pacientes/nuevo" class="btn btn-sm btn-primary shadow-sm">
                             <i class="fas fa-plus fa-sm text-white-50"></i> Nuevo Paciente
                         </a>
                     </div>
                     <div class="card-body">
-                        <!-- Alerta de éxito/eliminación -->
+                        <!-- Alerta de Ã©xito/eliminaciÃ³n -->
                         <div th:if="${mensajeExito}" class="alert alert-success alert-dismissible shadow-sm mb-4">
                             <button type="button" class="close" data-dismiss="alert">&times;</button>
                             <i class="fas fa-check-circle"></i> <span th:text="${mensajeExito}"></span>
@@ -64,7 +64,7 @@
                             <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
                                 <thead class="thead-light">
                                     <tr>
-                                        <th>Cédula</th>
+                                        <th>CÃ©dula</th>
                                         <th>Apellidos</th>
                                         <th>Nombres</th>
                                         <th>Edad</th>
@@ -77,9 +77,9 @@
                                     <!-- Bucle de Thymeleaf para recorrer la lista enviada desde Java -->
                                     <tr th:each="paciente : ${pacientes}">
                                         <td th:text="${paciente.cedula}">1700000000</td>
-                                        <td class="font-weight-bold" th:text="${paciente.apellidos}">Pérez</td>
+                                        <td class="font-weight-bold" th:text="${paciente.apellidos}">PÃ©rez</td>
                                         <td th:text="${paciente.nombres}">Juan</td>
-                                        <td th:text="${paciente.edad} + ' años'">35 años</td>
+                                        <td th:text="${paciente.edad} + ' aÃ±os'">35 aÃ±os</td>
                                         <td th:text="${paciente.sexo}">Masculino</td>
                                         <td th:text="${paciente.enfermedadesPreexistentes}">Ninguna</td>
                                         <td>
@@ -105,17 +105,17 @@
     </div>
 </div>
 
-<!-- Modal de confirmación para eliminar -->
+<!-- Modal de confirmaciÃ³n para eliminar -->
 <div class="modal fade" id="modalEliminar" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header bg-danger text-white">
-                <h5 class="modal-title"><i class="fas fa-exclamation-triangle"></i> Confirmar Eliminación</h5>
+                <h5 class="modal-title"><i class="fas fa-exclamation-triangle"></i> Confirmar EliminaciÃ³n</h5>
                 <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
-                <p>¿Está seguro de eliminar el expediente de <strong id="nombrePaciente"></strong>?</p>
-                <p class="text-danger mb-0"><small>Esta acción eliminará todos los registros asociados (evaluaciones, signos vitales) y no se puede deshacer.</small></p>
+                <p>Â¿EstÃ¡ seguro de eliminar el expediente de <strong id="nombrePaciente"></strong>?</p>
+                <p class="text-danger mb-0"><small>Esta acciÃ³n eliminarÃ¡ todos los registros asociados (evaluaciones, signos vitales) y no se puede deshacer.</small></p>
             </div>
             <div class="modal-footer">
                 <form method="post" th:action="@{/pacientes/eliminar/0}" id="formEliminar">
@@ -131,11 +131,11 @@
 <script th:src="@{/vendor/jquery/jquery.min.js}"></script>
 <script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
 <script th:src="@{/js/sb-admin-2.min.js}"></script>
-<!-- Scripts para DataTables (Buscador y Paginación) -->
+<!-- Scripts para DataTables (Buscador y PaginaciÃ³n) -->
 <script th:src="@{/vendor/datatables/jquery.dataTables.min.js}"></script>
 <script th:src="@{/vendor/datatables/dataTables.bootstrap4.min.js}"></script>
 
-<!-- Inicialización de la Tabla y Confirmación -->
+<!-- InicializaciÃ³n de la Tabla y ConfirmaciÃ³n -->
 <script>
     $(document).ready(function() {
         $('#dataTable').DataTable({
@@ -155,3 +155,4 @@
 </script>
 </body>
 </html>
+

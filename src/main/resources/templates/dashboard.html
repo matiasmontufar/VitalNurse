@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
 <head>
@@ -47,13 +47,13 @@
         <hr class="sidebar-divider">
 
         <div class="sidebar-heading">
-            Gestión de Pacientes
+            GestiÃ³n de Pacientes
         </div>
 
         <li class="nav-item">
             <a class="nav-link" href="/pacientes/nuevo">
                 <i class="fas fa-fw fa-user-plus"></i>
-                <span>Admisión y Registro</span></a>
+                <span>AdmisiÃ³n y Registro</span></a>
         </li>
         <li class="nav-item"><a class="nav-link" href="/pacientes"><i class="fas fa-fw fa-users"></i><span>Lista de Pacientes</span></a></li>
         <li class="nav-item"><a class="nav-link" href="/pacientes/signos"><i class="fas fa-fw fa-heartbeat"></i><span>Signos Vitales</span></a></li>
@@ -61,7 +61,7 @@
         <hr class="sidebar-divider">
 
         <div class="sidebar-heading">
-            Soporte de Decisiones Clínicas
+            Soporte de Decisiones ClÃ­nicas
         </div>
 
         <li class="nav-item">
@@ -79,13 +79,13 @@
         <li class="nav-item">
             <a class="nav-link" href="/calculadoras/dosis">
                 <i class="fas fa-fw fa-capsules"></i>
-                <span>Conversión de Dosis</span></a>
+                <span>ConversiÃ³n de Dosis</span></a>
         </li>
 
         <hr class="sidebar-divider d-none d-md-block" sec:authorize="hasRole('SUPERVISOR')">
-        <div class="sidebar-heading" sec:authorize="hasRole('SUPERVISOR')">Administración</div>
+        <div class="sidebar-heading" sec:authorize="hasRole('SUPERVISOR')">AdministraciÃ³n</div>
         <li class="nav-item" sec:authorize="hasRole('SUPERVISOR')">
-            <a class="nav-link" href="/usuarios/nuevo"><i class="fas fa-fw fa-user-shield"></i><span>Gestión de Personal</span></a>
+            <a class="nav-link" href="/usuarios/nuevo"><i class="fas fa-fw fa-user-shield"></i><span>GestiÃ³n de Personal</span></a>
         </li>
 
         <!-- Sidebar Toggler (Sidebar) -->
@@ -117,7 +117,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
 
-                <h1 class="h3 mb-0 text-gray-800">Panel de Control Clínico</h1>
+                <h1 class="h3 mb-0 text-gray-800">Panel de Control ClÃ­nico</h1>
 
                 <ul class="navbar-nav ml-auto">
 
@@ -125,13 +125,13 @@
 
                     <li class="nav-item dropdown no-arrow">
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="mr-2 d-none d-lg-inline text-gray-600 small font-weight-bold">Matías Montufar</span>
+                            <span class="mr-2 d-none d-lg-inline text-gray-600 small font-weight-bold">MatÃ­as Montufar</span>
                             <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                         </a>
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                 <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                Cerrar Sesión
+                                Cerrar SesiÃ³n
                             </a>
                         </div>
                     </li>
@@ -158,7 +158,7 @@
                                 <div class="row align-items-center">
                                     <div class="col mr-2">
                                         <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            Módulo de Admisión</div>
+                                            MÃ³dulo de AdmisiÃ³n</div>
                                         <a href="/pacientes/nuevo" class="h5 mb-0 font-weight-bold text-gray-800 text-decoration-none">Nuevo Expediente</a>
                                     </div>
                                     <div class="col-auto">
@@ -175,7 +175,7 @@
                                 <div class="row align-items-center">
                                     <div class="col mr-2">
                                         <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                            Evaluación Nutricional</div>
+                                            EvaluaciÃ³n Nutricional</div>
                                         <a href="/calculadoras/imc" class="h5 mb-0 font-weight-bold text-gray-800 text-decoration-none">Calcular IMC</a>
                                     </div>
                                     <div class="col-auto">
@@ -192,7 +192,7 @@
                                 <div class="row align-items-center">
                                     <div class="col mr-2">
                                         <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                            Triaje Neurológico</div>
+                                            Triaje NeurolÃ³gico</div>
                                         <a href="/calculadoras/glasgow" class="h5 mb-0 font-weight-bold text-gray-800 text-decoration-none">Escala Glasgow</a>
                                     </div>
                                     <div class="col-auto">
@@ -210,7 +210,7 @@
                                     <div class="col mr-2">
                                         <div class="text-xs font-weight-bold text-info text-uppercase mb-1">
                                             Seguridad del Medicamento</div>
-                                        <a href="/calculadoras/dosis" class="h5 mb-0 font-weight-bold text-gray-800 text-decoration-none">Dosificar Fármaco</a>
+                                        <a href="/calculadoras/dosis" class="h5 mb-0 font-weight-bold text-gray-800 text-decoration-none">Dosificar FÃ¡rmaco</a>
                                     </div>
                                     <div class="col-auto">
                                         <i class="fas fa-pills fa-2x text-gray-300"></i>
@@ -248,7 +248,7 @@
                                     <div class="row no-gutters align-items-center">
                                         <div class="col mr-2">
                                             <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                                                Monitoreo Clínico</div>
+                                                Monitoreo ClÃ­nico</div>
                                             <div class="h5 mb-0 font-weight-bold text-gray-800">Signos Vitales</div>
                                         </div>
                                         <div class="col-auto">
@@ -294,16 +294,16 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">¿Cerrar Sesión?</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Â¿Cerrar SesiÃ³n?</h5>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
+                    <span aria-hidden="true">Ã—</span>
                 </button>
             </div>
-            <div class="modal-body">Seleccione "Cerrar Sesión" si desea finalizar su sesión actual.</div>
+            <div class="modal-body">Seleccione "Cerrar SesiÃ³n" si desea finalizar su sesiÃ³n actual.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
                 <form th:action="@{/logout}" method="post">
-                    <button type="submit" class="btn btn-primary">Cerrar Sesión</button>
+                    <button type="submit" class="btn btn-primary">Cerrar SesiÃ³n</button>
                 </form>
             </div>
         </div>

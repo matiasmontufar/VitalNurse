@@ -1,0 +1,140 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.proyecto:VitalNurse >-----------------------
+[INFO] Building VitalNurse 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.5.0:clean (default-clean) @ VitalNurse ---
+[INFO] Deleting C:\Users\USER-PC\Documents\java\VitalNurse\target
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ VitalNurse ---
+[INFO] Copying 3 resources from src\main\resources to target\classes
+[INFO] Copying 1846 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ VitalNurse ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 67 source files with javac [debug parameters release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.5.0:testResources (default-testResources) @ VitalNurse ---
+[INFO] Copying 1 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ VitalNurse ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 3 source files with javac [debug parameters release 17] to target\test-classes
+[INFO] Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/PacienteServiceTest.java:[59,27] constructor PacienteService in class com.proyecto.vitalnurse.services.PacienteService cannot be applied to given types;
+  required: no arguments
+  found:    com.proyecto.vitalnurse.repositories.PersonaRepository,com.proyecto.vitalnurse.repositories.PacienteRepository,com.proyecto.vitalnurse.repositories.EvaluacionCabeceraRepository,com.proyecto.vitalnurse.repositories.EvaluacionResultadoRepository,com.proyecto.vitalnurse.repositories.CatSignoVitalRepository,com.proyecto.vitalnurse.repositories.TipoEvaluacionRepository,com.proyecto.vitalnurse.repositories.UnidadMedidaRepository,com.proyecto.vitalnurse.services.CalculadoraClinicaService
+  reason: actual and formal argument lists differ in length
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/PacienteServiceTest.java:[69,87] incompatible types: double cannot be converted to com.proyecto.vitalnurse.services.CalculadoraClinicaService.ResultadoIMC
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/PacienteServiceTest.java:[114,95] incompatible types: int cannot be converted to com.proyecto.vitalnurse.services.CalculadoraClinicaService.ResultadoGlasgow
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/PacienteServiceTest.java:[183,32] method save in interface org.springframework.data.repository.CrudRepository<T,ID> cannot be applied to given types;
+  required: S
+  found:    com.proyecto.vitalnurse.entity.persona.Paciente
+  reason: inference variable T has incompatible bounds
+    equality constraints: com.proyecto.vitalnurse.entity.persona.Paciente
+    upper bounds: com.proyecto.vitalnurse.models.Paciente,java.lang.Object
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/PacienteServiceTest.java:[185,69] incompatible types: com.proyecto.vitalnurse.models.PacienteRegistroDTO cannot be converted to com.proyecto.vitalnurse.models.Paciente
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/PacienteServiceTest.java:[190,35] method save in interface org.springframework.data.repository.CrudRepository<T,ID> cannot be applied to given types;
+  required: S
+  found:    com.proyecto.vitalnurse.entity.persona.Paciente
+  reason: inference variable T has incompatible bounds
+    equality constraints: com.proyecto.vitalnurse.entity.persona.Paciente
+    upper bounds: com.proyecto.vitalnurse.models.Paciente,java.lang.Object
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/PacienteServiceTest.java:[200,57] incompatible types: com.proyecto.vitalnurse.models.PacienteRegistroDTO cannot be converted to com.proyecto.vitalnurse.models.Paciente
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/PacienteServiceTest.java:[214,46] no suitable method found for thenReturn(java.util.Optional<com.proyecto.vitalnurse.entity.persona.Paciente>)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.util.Optional<com.proyecto.vitalnurse.models.Paciente>) is not applicable
+      (argument mismatch; inference variable T has incompatible bounds
+          equality constraints: com.proyecto.vitalnurse.models.Paciente
+          lower bounds: com.proyecto.vitalnurse.entity.persona.Paciente)
+    method org.mockito.stubbing.OngoingStubbing.thenReturn(java.util.Optional<com.proyecto.vitalnurse.models.Paciente>,java.util.Optional<com.proyecto.vitalnurse.models.Paciente>...) is not applicable
+      (argument mismatch; inference variable T has incompatible bounds
+          equality constraints: com.proyecto.vitalnurse.models.Paciente
+          lower bounds: com.proyecto.vitalnurse.entity.persona.Paciente)
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/PacienteServiceTest.java:[216,63] incompatible types: com.proyecto.vitalnurse.models.Paciente cannot be converted to com.proyecto.vitalnurse.models.PacienteVista
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/UsuarioServiceTest.java:[46,26] constructor UsuarioService in class com.proyecto.vitalnurse.services.UsuarioService cannot be applied to given types;
+  required: no arguments
+  found:    com.proyecto.vitalnurse.repositories.UsuarioRepository,com.proyecto.vitalnurse.repositories.PersonaRepository,com.proyecto.vitalnurse.repositories.RolRepository,com.proyecto.vitalnurse.repositories.UsuarioRolRepository,org.springframework.security.crypto.password.PasswordEncoder
+  reason: actual and formal argument lists differ in length
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/UsuarioServiceTest.java:[56,31] method save in interface org.springframework.data.repository.CrudRepository<T,ID> cannot be applied to given types;
+  required: S
+  found:    com.proyecto.vitalnurse.entity.seguridad.Usuario
+  reason: inference variable T has incompatible bounds
+    equality constraints: com.proyecto.vitalnurse.entity.seguridad.Usuario
+    upper bounds: com.proyecto.vitalnurse.models.Usuario,java.lang.Object
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/UsuarioServiceTest.java:[60,39] incompatible types: com.proyecto.vitalnurse.models.UsuarioRegistroDTO cannot be converted to com.proyecto.vitalnurse.models.Usuario
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/UsuarioServiceTest.java:[63,34] method save in interface org.springframework.data.repository.CrudRepository<T,ID> cannot be applied to given types;
+  required: S
+  found:    com.proyecto.vitalnurse.entity.seguridad.Usuario
+  reason: inference variable T has incompatible bounds
+    equality constraints: com.proyecto.vitalnurse.entity.seguridad.Usuario
+    upper bounds: com.proyecto.vitalnurse.models.Usuario,java.lang.Object
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/UsuarioServiceTest.java:[74,53] incompatible types: com.proyecto.vitalnurse.models.UsuarioRegistroDTO cannot be converted to com.proyecto.vitalnurse.models.Usuario
+[INFO] 14 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.115 s
+[INFO] Finished at: 2026-07-23T11:13:37-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.15.0:testCompile (default-testCompile) on project VitalNurse: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/PacienteServiceTest.java:[59,27] constructor PacienteService in class com.proyecto.vitalnurse.services.PacienteService cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found:    com.proyecto.vitalnurse.repositories.PersonaRepository,com.proyecto.vitalnurse.repositories.PacienteRepository,com.proyecto.vitalnurse.repositories.EvaluacionCabeceraRepository,com.proyecto.vitalnurse.repositories.EvaluacionResultadoRepository,com.proyecto.vitalnurse.repositories.CatSignoVitalRepository,com.proyecto.vitalnurse.repositories.TipoEvaluacionRepository,com.proyecto.vitalnurse.repositories.UnidadMedidaRepository,com.proyecto.vitalnurse.services.CalculadoraClinicaService
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/PacienteServiceTest.java:[69,87] incompatible types: double cannot be converted to com.proyecto.vitalnurse.services.CalculadoraClinicaService.ResultadoIMC
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/PacienteServiceTest.java:[114,95] incompatible types: int cannot be converted to com.proyecto.vitalnurse.services.CalculadoraClinicaService.ResultadoGlasgow
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/PacienteServiceTest.java:[183,32] method save in interface org.springframework.data.repository.CrudRepository<T,ID> cannot be applied to given types;
+[ERROR]   required: S
+[ERROR]   found:    com.proyecto.vitalnurse.entity.persona.Paciente
+[ERROR]   reason: inference variable T has incompatible bounds
+[ERROR]     equality constraints: com.proyecto.vitalnurse.entity.persona.Paciente
+[ERROR]     upper bounds: com.proyecto.vitalnurse.models.Paciente,java.lang.Object
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/PacienteServiceTest.java:[185,69] incompatible types: com.proyecto.vitalnurse.models.PacienteRegistroDTO cannot be converted to com.proyecto.vitalnurse.models.Paciente
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/PacienteServiceTest.java:[190,35] method save in interface org.springframework.data.repository.CrudRepository<T,ID> cannot be applied to given types;
+[ERROR]   required: S
+[ERROR]   found:    com.proyecto.vitalnurse.entity.persona.Paciente
+[ERROR]   reason: inference variable T has incompatible bounds
+[ERROR]     equality constraints: com.proyecto.vitalnurse.entity.persona.Paciente
+[ERROR]     upper bounds: com.proyecto.vitalnurse.models.Paciente,java.lang.Object
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/PacienteServiceTest.java:[200,57] incompatible types: com.proyecto.vitalnurse.models.PacienteRegistroDTO cannot be converted to com.proyecto.vitalnurse.models.Paciente
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/PacienteServiceTest.java:[214,46] no suitable method found for thenReturn(java.util.Optional<com.proyecto.vitalnurse.entity.persona.Paciente>)
+[ERROR]     method org.mockito.stubbing.OngoingStubbing.thenReturn(java.util.Optional<com.proyecto.vitalnurse.models.Paciente>) is not applicable
+[ERROR]       (argument mismatch; inference variable T has incompatible bounds
+[ERROR]           equality constraints: com.proyecto.vitalnurse.models.Paciente
+[ERROR]           lower bounds: com.proyecto.vitalnurse.entity.persona.Paciente)
+[ERROR]     method org.mockito.stubbing.OngoingStubbing.thenReturn(java.util.Optional<com.proyecto.vitalnurse.models.Paciente>,java.util.Optional<com.proyecto.vitalnurse.models.Paciente>...) is not applicable
+[ERROR]       (argument mismatch; inference variable T has incompatible bounds
+[ERROR]           equality constraints: com.proyecto.vitalnurse.models.Paciente
+[ERROR]           lower bounds: com.proyecto.vitalnurse.entity.persona.Paciente)
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/PacienteServiceTest.java:[216,63] incompatible types: com.proyecto.vitalnurse.models.Paciente cannot be converted to com.proyecto.vitalnurse.models.PacienteVista
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/UsuarioServiceTest.java:[46,26] constructor UsuarioService in class com.proyecto.vitalnurse.services.UsuarioService cannot be applied to given types;
+[ERROR]   required: no arguments
+[ERROR]   found:    com.proyecto.vitalnurse.repositories.UsuarioRepository,com.proyecto.vitalnurse.repositories.PersonaRepository,com.proyecto.vitalnurse.repositories.RolRepository,com.proyecto.vitalnurse.repositories.UsuarioRolRepository,org.springframework.security.crypto.password.PasswordEncoder
+[ERROR]   reason: actual and formal argument lists differ in length
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/UsuarioServiceTest.java:[56,31] method save in interface org.springframework.data.repository.CrudRepository<T,ID> cannot be applied to given types;
+[ERROR]   required: S
+[ERROR]   found:    com.proyecto.vitalnurse.entity.seguridad.Usuario
+[ERROR]   reason: inference variable T has incompatible bounds
+[ERROR]     equality constraints: com.proyecto.vitalnurse.entity.seguridad.Usuario
+[ERROR]     upper bounds: com.proyecto.vitalnurse.models.Usuario,java.lang.Object
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/UsuarioServiceTest.java:[60,39] incompatible types: com.proyecto.vitalnurse.models.UsuarioRegistroDTO cannot be converted to com.proyecto.vitalnurse.models.Usuario
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/UsuarioServiceTest.java:[63,34] method save in interface org.springframework.data.repository.CrudRepository<T,ID> cannot be applied to given types;
+[ERROR]   required: S
+[ERROR]   found:    com.proyecto.vitalnurse.entity.seguridad.Usuario
+[ERROR]   reason: inference variable T has incompatible bounds
+[ERROR]     equality constraints: com.proyecto.vitalnurse.entity.seguridad.Usuario
+[ERROR]     upper bounds: com.proyecto.vitalnurse.models.Usuario,java.lang.Object
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/test/java/com/proyecto/vitalnurse/UsuarioServiceTest.java:[74,53] incompatible types: com.proyecto.vitalnurse.models.UsuarioRegistroDTO cannot be converted to com.proyecto.vitalnurse.models.Usuario
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

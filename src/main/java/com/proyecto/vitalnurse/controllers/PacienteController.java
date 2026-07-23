@@ -1,17 +1,16 @@
 package com.proyecto.vitalnurse.controllers;
 
-import com.proyecto.vitalnurse.models.Evaluacion;
-import com.proyecto.vitalnurse.models.Paciente;
-import com.proyecto.vitalnurse.models.SignoVital;
+import com.proyecto.vitalnurse.entity.clinical.EvaluacionCabecera;
+import com.proyecto.vitalnurse.entity.persona.Paciente;
+import com.proyecto.vitalnurse.entity.persona.Persona;
+import com.proyecto.vitalnurse.models.EvaluacionVista;
+import com.proyecto.vitalnurse.models.PacienteVista;
+import com.proyecto.vitalnurse.models.SignoVitalVista;
 import com.proyecto.vitalnurse.services.PacienteService;
 import com.proyecto.vitalnurse.services.PdfService;
 import jakarta.servlet.http.HttpServletResponse;
-import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,56 +19,71 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.io.IOException;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Controller
 public class PacienteController {
 
-    @Autowired
-    private PacienteService pacienteService;
+    private final PacienteService pacienteService;
+    private final PdfService pdfService;
 
-    @Autowired
-    private PdfService pdfService;
+    public PacienteController(PacienteService pacienteService, PdfService pdfService) {
+        this.pacienteService = pacienteService;
+        this.pdfService = pdfService;
+    }
 
     @GetMapping("/pacientes/nuevo")
     public String mostrarFormularioRegistro(Model model) {
-        model.addAttribute("paciente", new Paciente());
+        model.addAttribute("persona", new Persona());
         return "registro-paciente";
     }
 
     @PostMapping("/pacientes/nuevo")
-    public String guardarPaciente(@Valid @ModelAttribute Paciente paciente, BindingResult result, Model model) {
-        if (result.hasErrors()) {
+    public String guardarPaciente(@ModelAttribute Persona persona, Model model) {
+        if (pacienteService.existsByCedula(persona.getCedula())) {
+            model.addAttribute("error", "Ya existe un paciente registrado con la cédula: " + persona.getCedula());
+            model.addAttribute("persona", persona);
             return "registro-paciente";
         }
-        if (pacienteService.existsByCedula(paciente.getCedula())) {
-            model.addAttribute("error", "Ya existe un paciente registrado con la cédula: " + paciente.getCedula());
-            model.addAttribute("paciente", paciente);
-            return "registro-paciente";
-        }
-        pacienteService.guardar(paciente);
+        pacienteService.registrarPaciente(persona);
         model.addAttribute("mensajeExito", "Expediente del paciente creado exitosamente.");
-        model.addAttribute("paciente", new Paciente());
+        model.addAttribute("persona", new Persona());
         return "registro-paciente";
     }
 
     @GetMapping("/pacientes")
     public String listarPacientes(Model model) {
-        List<Paciente> listaPacientes = pacienteService.obtenerTodos();
-        model.addAttribute("pacientes", listaPacientes);
+        List<Paciente> lista = pacienteService.obtenerTodos();
+        List<PacienteVista> vistas = lista.stream().map(p -> {
+            Persona per = p.getPersona();
+            return new PacienteVista(p.getIdPaciente(), per.getCedula(), per.getNombres(),
+                    per.getApellidos(), per.getEdad(), per.getSexo(), p.getEnfermedades() != null ?
+                    p.getEnfermedades().stream().map(Object::toString).collect(Collectors.joining(", ")) : "");
+        }).collect(Collectors.toList());
+        model.addAttribute("pacientes", vistas);
         return "listar-pacientes";
     }
 
     @GetMapping("/pacientes/perfil/{id}")
-    @Transactional(readOnly = true)
     public String verPerfilPaciente(@PathVariable Long id, Model model) {
         Paciente paciente = pacienteService.obtenerPorId(id);
-        List<Evaluacion> historial = pacienteService.obtenerEvaluacionesPorPaciente(id);
-        List<SignoVital> historialSignos = pacienteService.obtenerSignosPorPaciente(id);
+        Persona per = paciente.getPersona();
 
-        model.addAttribute("paciente", paciente);
-        model.addAttribute("historial", historial);
-        model.addAttribute("historialSignos", historialSignos);
+        List<EvaluacionCabecera> historial = pacienteService.obtenerEvaluacionesPorPaciente(id);
+        List<EvaluacionVista> evalVistas = historial.stream().map(e -> {
+            EvaluacionVista ev = new EvaluacionVista();
+            ev.setFechaFormateada(e.getFechaHora().format(DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm")));
+            ev.setTipo(e.getTipoEvaluacion() != null ? e.getTipoEvaluacion().getNombre() : "");
+            ev.setResultado(e.getResultado() != null ? e.getResultado().getResultadoTexto() : "");
+            ev.setDiagnostico(e.getResultado() != null ? e.getResultado().getDiagnostico() : "");
+            return ev;
+        }).collect(Collectors.toList());
+
+        model.addAttribute("paciente", per);
+        model.addAttribute("pacienteId", id);
+        model.addAttribute("historial", evalVistas);
 
         return "perfil-paciente";
     }
@@ -98,13 +112,7 @@ public class PacienteController {
         imc = Math.round(imc * 100.0) / 100.0;
         String diagnostico = pacienteService.clasificarIMC(imc);
 
-        Evaluacion evaluacion = new Evaluacion();
-        evaluacion.setTipo("Triaje Nutricional (IMC)");
-        evaluacion.setResultado(String.valueOf(imc));
-        evaluacion.setDiagnostico(diagnostico);
-        pacienteService.guardarEvaluacion(idPaciente, evaluacion);
-
-        model.addAttribute("mensajeExito", "IMC de " + imc + " guardado exitosamente.");
+        model.addAttribute("mensajeExito", "IMC de " + imc + " calculado: " + diagnostico);
         model.addAttribute("imcCalculado", imc);
         model.addAttribute("diagnostico", diagnostico);
         model.addAttribute("colorAlerta", imc < 18.5 ? "warning" : imc >= 25 ? "danger" : "success");
@@ -145,13 +153,7 @@ public class PacienteController {
             nivelTrauma = "Traumatismo Severo (Riesgo)";
         }
 
-        Evaluacion evaluacion = new Evaluacion();
-        evaluacion.setTipo("Triaje Neurológico (Glasgow)");
-        evaluacion.setResultado(puntajeTotal + " / 15");
-        evaluacion.setDiagnostico(nivelTrauma);
-        pacienteService.guardarEvaluacion(idPaciente, evaluacion);
-
-        model.addAttribute("mensajeExito", "Evaluación de Glasgow guardada exitosamente.");
+        model.addAttribute("mensajeExito", "Evaluación de Glasgow calculada: " + puntajeTotal + "/15");
         model.addAttribute("puntajeTotal", puntajeTotal);
         model.addAttribute("nivelTrauma", nivelTrauma);
         model.addAttribute("colorAlerta", puntajeTotal >= 13 ? "success" : puntajeTotal >= 9 ? "warning" : "danger");
@@ -161,16 +163,15 @@ public class PacienteController {
 
     @GetMapping("/pacientes/editar/{id}")
     public String mostrarEditarPaciente(@PathVariable Long id, Model model) {
-        model.addAttribute("paciente", pacienteService.obtenerPorId(id));
+        Paciente paciente = pacienteService.obtenerPorId(id);
+        model.addAttribute("paciente", paciente);
+        model.addAttribute("persona", paciente.getPersona());
         return "editar-paciente";
     }
 
     @PostMapping("/pacientes/editar/{id}")
-    public String actualizarPaciente(@PathVariable Long id, @Valid @ModelAttribute Paciente paciente, BindingResult result) {
-        if (result.hasErrors()) {
-            return "editar-paciente";
-        }
-        pacienteService.actualizarPaciente(id, paciente);
+    public String actualizarPaciente(@PathVariable Long id, @ModelAttribute Persona persona) {
+        pacienteService.actualizarPersonaPaciente(id, persona);
         return "redirect:/pacientes";
     }
 
@@ -187,26 +188,13 @@ public class PacienteController {
         response.setHeader("Content-Disposition", "attachment; filename=Ficha_Clinica_Paciente_" + id + ".pdf");
 
         Paciente paciente = pacienteService.obtenerPorId(id);
-        List<Evaluacion> historial = pacienteService.obtenerEvaluacionesPorPaciente(id);
-        List<SignoVital> historialSignos = pacienteService.obtenerSignosPorPaciente(id);
 
-        pdfService.exportarFichaPdf(response, paciente, historial, historialSignos);
+        pdfService.exportarFichaPdf(response, paciente);
     }
 
     @GetMapping("/pacientes/signos")
     public String mostrarFormularioSignos(Model model) {
         model.addAttribute("pacientes", pacienteService.obtenerTodos());
-        return "registro-signos";
-    }
-
-    @PostMapping("/pacientes/signos")
-    public String registrarSignos(@RequestParam Long idPaciente, @Valid @ModelAttribute SignoVital signoVital, BindingResult result, Model model) {
-        model.addAttribute("pacientes", pacienteService.obtenerTodos());
-        if (result.hasErrors()) {
-            return "registro-signos";
-        }
-        pacienteService.guardarSignosVitales(idPaciente, signoVital);
-        model.addAttribute("mensajeExito", "Signos vitales registrados correctamente.");
         return "registro-signos";
     }
 

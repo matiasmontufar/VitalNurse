@@ -1,0 +1,558 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.proyecto:VitalNurse >-----------------------
+[INFO] Building VitalNurse 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.5.0:clean (default-clean) @ VitalNurse ---
+[INFO] Deleting C:\Users\USER-PC\Documents\java\VitalNurse\target
+[INFO] 
+[INFO] --- resources:3.5.0:resources (default-resources) @ VitalNurse ---
+[INFO] Copying 3 resources from src\main\resources to target\classes
+[INFO] Copying 1846 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ VitalNurse ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 67 source files with javac [debug parameters release 17] to target\classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Usuario.java:[4,26] package jakarta.validation.constraints does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/controllers/PacienteController.java:[9,26] package jakarta.validation does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[4,26] package jakarta.validation.constraints does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Paciente.java:[4,26] package jakarta.validation.constraints does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Evaluacion.java:[4,26] package jakarta.validation.constraints does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/controllers/UsuarioController.java:[5,26] package jakarta.validation does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/exception/GlobalExceptionHandler.java:[9,26] package jakarta.validation does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/exception/GlobalExceptionHandler.java:[57,49] cannot find symbol
+  symbol:   class ConstraintViolationException
+  location: class com.proyecto.vitalnurse.exception.GlobalExceptionHandler
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/CalculoDosisDTO.java:[3,30] package jakarta.validation.constraints does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/PacienteRegistroDTO.java:[3,30] package jakarta.validation.constraints does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[3,30] package jakarta.validation.constraints does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/UsuarioRegistroDTO.java:[3,26] package jakarta.validation.constraints does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/validation/CedulaValida.java:[3,26] package jakarta.validation does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/validation/CedulaValida.java:[4,26] package jakarta.validation does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/validation/CedulaValida.java:[8,2] cannot find symbol
+  symbol: class Constraint
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/validation/CedulaValida.java:[14,21] cannot find symbol
+  symbol:   class Payload
+  location: @interface com.proyecto.vitalnurse.validation.CedulaValida
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/validation/CedulaValidaValidator.java:[3,26] package jakarta.validation does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/validation/CedulaValidaValidator.java:[4,26] package jakarta.validation does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/validation/CedulaValidaValidator.java:[6,47] cannot find symbol
+  symbol: class ConstraintValidator
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/validation/CedulaValidaValidator.java:[9,43] cannot find symbol
+  symbol:   class ConstraintValidatorContext
+  location: class com.proyecto.vitalnurse.validation.CedulaValidaValidator
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Usuario.java:[14,6] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.proyecto.vitalnurse.models.Usuario
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Usuario.java:[15,6] cannot find symbol
+  symbol:   class Size
+  location: class com.proyecto.vitalnurse.models.Usuario
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Usuario.java:[19,6] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.proyecto.vitalnurse.models.Usuario
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Usuario.java:[23,6] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.proyecto.vitalnurse.models.Usuario
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Usuario.java:[24,6] cannot find symbol
+  symbol:   class Size
+  location: class com.proyecto.vitalnurse.models.Usuario
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Usuario.java:[28,6] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.proyecto.vitalnurse.models.Usuario
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/controllers/PacienteController.java:[42,36] cannot find symbol
+  symbol:   class Valid
+  location: class com.proyecto.vitalnurse.controllers.PacienteController
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/controllers/PacienteController.java:[170,62] cannot find symbol
+  symbol:   class Valid
+  location: class com.proyecto.vitalnurse.controllers.PacienteController
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/controllers/PacienteController.java:[204,67] cannot find symbol
+  symbol:   class Valid
+  location: class com.proyecto.vitalnurse.controllers.PacienteController
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[16,6] cannot find symbol
+  symbol:   class NotNull
+  location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[17,6] cannot find symbol
+  symbol:   class DecimalMin
+  location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[18,6] cannot find symbol
+  symbol:   class DecimalMax
+  location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[22,6] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[26,6] cannot find symbol
+  symbol:   class NotNull
+  location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[27,6] cannot find symbol
+  symbol:   class Min
+  location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[28,6] cannot find symbol
+  symbol:   class Max
+  location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[32,6] cannot find symbol
+  symbol:   class NotNull
+  location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[33,6] cannot find symbol
+  symbol:   class Min
+  location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[34,6] cannot find symbol
+  symbol:   class Max
+  location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[38,6] cannot find symbol
+  symbol:   class NotNull
+  location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[39,6] cannot find symbol
+  symbol:   class Min
+  location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[40,6] cannot find symbol
+  symbol:   class Max
+  location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[44,6] cannot find symbol
+  symbol:   class NotNull
+  location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[45,6] cannot find symbol
+  symbol:   class DecimalMin
+  location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[46,6] cannot find symbol
+  symbol:   class DecimalMax
+  location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[50,6] cannot find symbol
+  symbol:   class NotNull
+  location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Paciente.java:[14,6] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.proyecto.vitalnurse.models.Paciente
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Paciente.java:[15,6] cannot find symbol
+  symbol:   class Size
+  location: class com.proyecto.vitalnurse.models.Paciente
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Paciente.java:[19,6] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.proyecto.vitalnurse.models.Paciente
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Paciente.java:[23,6] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.proyecto.vitalnurse.models.Paciente
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Paciente.java:[27,6] cannot find symbol
+  symbol:   class NotNull
+  location: class com.proyecto.vitalnurse.models.Paciente
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Paciente.java:[28,6] cannot find symbol
+  symbol:   class Min
+  location: class com.proyecto.vitalnurse.models.Paciente
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Paciente.java:[29,6] cannot find symbol
+  symbol:   class Max
+  location: class com.proyecto.vitalnurse.models.Paciente
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Paciente.java:[33,6] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.proyecto.vitalnurse.models.Paciente
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Evaluacion.java:[16,6] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.proyecto.vitalnurse.models.Evaluacion
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Evaluacion.java:[20,6] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.proyecto.vitalnurse.models.Evaluacion
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Evaluacion.java:[24,6] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.proyecto.vitalnurse.models.Evaluacion
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Evaluacion.java:[28,6] cannot find symbol
+  symbol:   class NotNull
+  location: class com.proyecto.vitalnurse.models.Evaluacion
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/controllers/UsuarioController.java:[38,37] cannot find symbol
+  symbol:   class Valid
+  location: class com.proyecto.vitalnurse.controllers.UsuarioController
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/exception/GlobalExceptionHandler.java:[56,23] cannot find symbol
+  symbol:   class ConstraintViolationException
+  location: class com.proyecto.vitalnurse.exception.GlobalExceptionHandler
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/CalculoDosisDTO.java:[7,10] cannot find symbol
+  symbol:   class Positive
+  location: class com.proyecto.vitalnurse.models.CalculoDosisDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/CalculoDosisDTO.java:[10,10] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.proyecto.vitalnurse.models.CalculoDosisDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/CalculoDosisDTO.java:[13,10] cannot find symbol
+  symbol:   class Positive
+  location: class com.proyecto.vitalnurse.models.CalculoDosisDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/CalculoDosisDTO.java:[16,10] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.proyecto.vitalnurse.models.CalculoDosisDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/CalculoDosisDTO.java:[19,10] cannot find symbol
+  symbol:   class Positive
+  location: class com.proyecto.vitalnurse.models.CalculoDosisDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/CalculoDosisDTO.java:[22,10] cannot find symbol
+  symbol:   class PositiveOrZero
+  location: class com.proyecto.vitalnurse.models.CalculoDosisDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/PacienteRegistroDTO.java:[7,10] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.proyecto.vitalnurse.models.PacienteRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/PacienteRegistroDTO.java:[8,10] cannot find symbol
+  symbol:   class Size
+  location: class com.proyecto.vitalnurse.models.PacienteRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/PacienteRegistroDTO.java:[11,10] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.proyecto.vitalnurse.models.PacienteRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/PacienteRegistroDTO.java:[14,10] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.proyecto.vitalnurse.models.PacienteRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/PacienteRegistroDTO.java:[17,10] cannot find symbol
+  symbol:   class NotNull
+  location: class com.proyecto.vitalnurse.models.PacienteRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/PacienteRegistroDTO.java:[18,10] cannot find symbol
+  symbol:   class Min
+  location: class com.proyecto.vitalnurse.models.PacienteRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/PacienteRegistroDTO.java:[19,10] cannot find symbol
+  symbol:   class Max
+  location: class com.proyecto.vitalnurse.models.PacienteRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/PacienteRegistroDTO.java:[22,10] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.proyecto.vitalnurse.models.PacienteRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[7,10] cannot find symbol
+  symbol:   class NotNull
+  location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[10,10] cannot find symbol
+  symbol:   class NotNull
+  location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[11,10] cannot find symbol
+  symbol:   class DecimalMin
+  location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[12,10] cannot find symbol
+  symbol:   class DecimalMax
+  location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[15,10] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[16,10] cannot find symbol
+  symbol:   class Pattern
+  location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[19,10] cannot find symbol
+  symbol:   class NotNull
+  location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[20,10] cannot find symbol
+  symbol:   class Min
+  location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[21,10] cannot find symbol
+  symbol:   class Max
+  location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[24,10] cannot find symbol
+  symbol:   class NotNull
+  location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[25,10] cannot find symbol
+  symbol:   class Min
+  location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[26,10] cannot find symbol
+  symbol:   class Max
+  location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[29,10] cannot find symbol
+  symbol:   class NotNull
+  location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[30,10] cannot find symbol
+  symbol:   class Min
+  location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[31,10] cannot find symbol
+  symbol:   class Max
+  location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[34,10] cannot find symbol
+  symbol:   class NotNull
+  location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[35,10] cannot find symbol
+  symbol:   class DecimalMin
+  location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[36,10] cannot find symbol
+  symbol:   class DecimalMax
+  location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/UsuarioRegistroDTO.java:[7,6] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.proyecto.vitalnurse.models.UsuarioRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/UsuarioRegistroDTO.java:[8,6] cannot find symbol
+  symbol:   class Size
+  location: class com.proyecto.vitalnurse.models.UsuarioRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/UsuarioRegistroDTO.java:[11,6] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.proyecto.vitalnurse.models.UsuarioRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/UsuarioRegistroDTO.java:[14,6] cannot find symbol
+  symbol:   class NotBlank
+  location: class com.proyecto.vitalnurse.models.UsuarioRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/UsuarioRegistroDTO.java:[15,6] cannot find symbol
+  symbol:   class Size
+  location: class com.proyecto.vitalnurse.models.UsuarioRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/controllers/BackupController.java:[25,38] ejecutarBackupMySQL() has private access in com.proyecto.vitalnurse.services.BackupService
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/validation/CedulaValidaValidator.java:[8,5] isValid(java.lang.String,ConstraintValidatorContext) in com.proyecto.vitalnurse.validation.CedulaValidaValidator does not override or implement a method from a supertype
+[INFO] 99 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.689 s
+[INFO] Finished at: 2026-07-23T10:59:53-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.15.0:compile (default-compile) on project VitalNurse: Compilation failure: Compilation failure: 
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Usuario.java:[4,26] package jakarta.validation.constraints does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/controllers/PacienteController.java:[9,26] package jakarta.validation does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[4,26] package jakarta.validation.constraints does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Paciente.java:[4,26] package jakarta.validation.constraints does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Evaluacion.java:[4,26] package jakarta.validation.constraints does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/controllers/UsuarioController.java:[5,26] package jakarta.validation does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/exception/GlobalExceptionHandler.java:[9,26] package jakarta.validation does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/exception/GlobalExceptionHandler.java:[57,49] cannot find symbol
+[ERROR]   symbol:   class ConstraintViolationException
+[ERROR]   location: class com.proyecto.vitalnurse.exception.GlobalExceptionHandler
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/CalculoDosisDTO.java:[3,30] package jakarta.validation.constraints does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/PacienteRegistroDTO.java:[3,30] package jakarta.validation.constraints does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[3,30] package jakarta.validation.constraints does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/UsuarioRegistroDTO.java:[3,26] package jakarta.validation.constraints does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/validation/CedulaValida.java:[3,26] package jakarta.validation does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/validation/CedulaValida.java:[4,26] package jakarta.validation does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/validation/CedulaValida.java:[8,2] cannot find symbol
+[ERROR]   symbol: class Constraint
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/validation/CedulaValida.java:[14,21] cannot find symbol
+[ERROR]   symbol:   class Payload
+[ERROR]   location: @interface com.proyecto.vitalnurse.validation.CedulaValida
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/validation/CedulaValidaValidator.java:[3,26] package jakarta.validation does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/validation/CedulaValidaValidator.java:[4,26] package jakarta.validation does not exist
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/validation/CedulaValidaValidator.java:[6,47] cannot find symbol
+[ERROR]   symbol: class ConstraintValidator
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/validation/CedulaValidaValidator.java:[9,43] cannot find symbol
+[ERROR]   symbol:   class ConstraintValidatorContext
+[ERROR]   location: class com.proyecto.vitalnurse.validation.CedulaValidaValidator
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Usuario.java:[14,6] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.proyecto.vitalnurse.models.Usuario
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Usuario.java:[15,6] cannot find symbol
+[ERROR]   symbol:   class Size
+[ERROR]   location: class com.proyecto.vitalnurse.models.Usuario
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Usuario.java:[19,6] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.proyecto.vitalnurse.models.Usuario
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Usuario.java:[23,6] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.proyecto.vitalnurse.models.Usuario
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Usuario.java:[24,6] cannot find symbol
+[ERROR]   symbol:   class Size
+[ERROR]   location: class com.proyecto.vitalnurse.models.Usuario
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Usuario.java:[28,6] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.proyecto.vitalnurse.models.Usuario
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/controllers/PacienteController.java:[42,36] cannot find symbol
+[ERROR]   symbol:   class Valid
+[ERROR]   location: class com.proyecto.vitalnurse.controllers.PacienteController
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/controllers/PacienteController.java:[170,62] cannot find symbol
+[ERROR]   symbol:   class Valid
+[ERROR]   location: class com.proyecto.vitalnurse.controllers.PacienteController
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/controllers/PacienteController.java:[204,67] cannot find symbol
+[ERROR]   symbol:   class Valid
+[ERROR]   location: class com.proyecto.vitalnurse.controllers.PacienteController
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[16,6] cannot find symbol
+[ERROR]   symbol:   class NotNull
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[17,6] cannot find symbol
+[ERROR]   symbol:   class DecimalMin
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[18,6] cannot find symbol
+[ERROR]   symbol:   class DecimalMax
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[22,6] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[26,6] cannot find symbol
+[ERROR]   symbol:   class NotNull
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[27,6] cannot find symbol
+[ERROR]   symbol:   class Min
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[28,6] cannot find symbol
+[ERROR]   symbol:   class Max
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[32,6] cannot find symbol
+[ERROR]   symbol:   class NotNull
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[33,6] cannot find symbol
+[ERROR]   symbol:   class Min
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[34,6] cannot find symbol
+[ERROR]   symbol:   class Max
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[38,6] cannot find symbol
+[ERROR]   symbol:   class NotNull
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[39,6] cannot find symbol
+[ERROR]   symbol:   class Min
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[40,6] cannot find symbol
+[ERROR]   symbol:   class Max
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[44,6] cannot find symbol
+[ERROR]   symbol:   class NotNull
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[45,6] cannot find symbol
+[ERROR]   symbol:   class DecimalMin
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[46,6] cannot find symbol
+[ERROR]   symbol:   class DecimalMax
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVital.java:[50,6] cannot find symbol
+[ERROR]   symbol:   class NotNull
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVital
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Paciente.java:[14,6] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.proyecto.vitalnurse.models.Paciente
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Paciente.java:[15,6] cannot find symbol
+[ERROR]   symbol:   class Size
+[ERROR]   location: class com.proyecto.vitalnurse.models.Paciente
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Paciente.java:[19,6] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.proyecto.vitalnurse.models.Paciente
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Paciente.java:[23,6] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.proyecto.vitalnurse.models.Paciente
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Paciente.java:[27,6] cannot find symbol
+[ERROR]   symbol:   class NotNull
+[ERROR]   location: class com.proyecto.vitalnurse.models.Paciente
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Paciente.java:[28,6] cannot find symbol
+[ERROR]   symbol:   class Min
+[ERROR]   location: class com.proyecto.vitalnurse.models.Paciente
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Paciente.java:[29,6] cannot find symbol
+[ERROR]   symbol:   class Max
+[ERROR]   location: class com.proyecto.vitalnurse.models.Paciente
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Paciente.java:[33,6] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.proyecto.vitalnurse.models.Paciente
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Evaluacion.java:[16,6] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.proyecto.vitalnurse.models.Evaluacion
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Evaluacion.java:[20,6] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.proyecto.vitalnurse.models.Evaluacion
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Evaluacion.java:[24,6] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.proyecto.vitalnurse.models.Evaluacion
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/Evaluacion.java:[28,6] cannot find symbol
+[ERROR]   symbol:   class NotNull
+[ERROR]   location: class com.proyecto.vitalnurse.models.Evaluacion
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/controllers/UsuarioController.java:[38,37] cannot find symbol
+[ERROR]   symbol:   class Valid
+[ERROR]   location: class com.proyecto.vitalnurse.controllers.UsuarioController
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/exception/GlobalExceptionHandler.java:[56,23] cannot find symbol
+[ERROR]   symbol:   class ConstraintViolationException
+[ERROR]   location: class com.proyecto.vitalnurse.exception.GlobalExceptionHandler
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/CalculoDosisDTO.java:[7,10] cannot find symbol
+[ERROR]   symbol:   class Positive
+[ERROR]   location: class com.proyecto.vitalnurse.models.CalculoDosisDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/CalculoDosisDTO.java:[10,10] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.proyecto.vitalnurse.models.CalculoDosisDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/CalculoDosisDTO.java:[13,10] cannot find symbol
+[ERROR]   symbol:   class Positive
+[ERROR]   location: class com.proyecto.vitalnurse.models.CalculoDosisDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/CalculoDosisDTO.java:[16,10] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.proyecto.vitalnurse.models.CalculoDosisDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/CalculoDosisDTO.java:[19,10] cannot find symbol
+[ERROR]   symbol:   class Positive
+[ERROR]   location: class com.proyecto.vitalnurse.models.CalculoDosisDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/CalculoDosisDTO.java:[22,10] cannot find symbol
+[ERROR]   symbol:   class PositiveOrZero
+[ERROR]   location: class com.proyecto.vitalnurse.models.CalculoDosisDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/PacienteRegistroDTO.java:[7,10] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.proyecto.vitalnurse.models.PacienteRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/PacienteRegistroDTO.java:[8,10] cannot find symbol
+[ERROR]   symbol:   class Size
+[ERROR]   location: class com.proyecto.vitalnurse.models.PacienteRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/PacienteRegistroDTO.java:[11,10] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.proyecto.vitalnurse.models.PacienteRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/PacienteRegistroDTO.java:[14,10] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.proyecto.vitalnurse.models.PacienteRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/PacienteRegistroDTO.java:[17,10] cannot find symbol
+[ERROR]   symbol:   class NotNull
+[ERROR]   location: class com.proyecto.vitalnurse.models.PacienteRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/PacienteRegistroDTO.java:[18,10] cannot find symbol
+[ERROR]   symbol:   class Min
+[ERROR]   location: class com.proyecto.vitalnurse.models.PacienteRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/PacienteRegistroDTO.java:[19,10] cannot find symbol
+[ERROR]   symbol:   class Max
+[ERROR]   location: class com.proyecto.vitalnurse.models.PacienteRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/PacienteRegistroDTO.java:[22,10] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.proyecto.vitalnurse.models.PacienteRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[7,10] cannot find symbol
+[ERROR]   symbol:   class NotNull
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[10,10] cannot find symbol
+[ERROR]   symbol:   class NotNull
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[11,10] cannot find symbol
+[ERROR]   symbol:   class DecimalMin
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[12,10] cannot find symbol
+[ERROR]   symbol:   class DecimalMax
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[15,10] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[16,10] cannot find symbol
+[ERROR]   symbol:   class Pattern
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[19,10] cannot find symbol
+[ERROR]   symbol:   class NotNull
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[20,10] cannot find symbol
+[ERROR]   symbol:   class Min
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[21,10] cannot find symbol
+[ERROR]   symbol:   class Max
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[24,10] cannot find symbol
+[ERROR]   symbol:   class NotNull
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[25,10] cannot find symbol
+[ERROR]   symbol:   class Min
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[26,10] cannot find symbol
+[ERROR]   symbol:   class Max
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[29,10] cannot find symbol
+[ERROR]   symbol:   class NotNull
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[30,10] cannot find symbol
+[ERROR]   symbol:   class Min
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[31,10] cannot find symbol
+[ERROR]   symbol:   class Max
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[34,10] cannot find symbol
+[ERROR]   symbol:   class NotNull
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[35,10] cannot find symbol
+[ERROR]   symbol:   class DecimalMin
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/SignoVitalDTO.java:[36,10] cannot find symbol
+[ERROR]   symbol:   class DecimalMax
+[ERROR]   location: class com.proyecto.vitalnurse.models.SignoVitalDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/UsuarioRegistroDTO.java:[7,6] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.proyecto.vitalnurse.models.UsuarioRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/UsuarioRegistroDTO.java:[8,6] cannot find symbol
+[ERROR]   symbol:   class Size
+[ERROR]   location: class com.proyecto.vitalnurse.models.UsuarioRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/UsuarioRegistroDTO.java:[11,6] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.proyecto.vitalnurse.models.UsuarioRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/UsuarioRegistroDTO.java:[14,6] cannot find symbol
+[ERROR]   symbol:   class NotBlank
+[ERROR]   location: class com.proyecto.vitalnurse.models.UsuarioRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/models/UsuarioRegistroDTO.java:[15,6] cannot find symbol
+[ERROR]   symbol:   class Size
+[ERROR]   location: class com.proyecto.vitalnurse.models.UsuarioRegistroDTO
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/controllers/BackupController.java:[25,38] ejecutarBackupMySQL() has private access in com.proyecto.vitalnurse.services.BackupService
+[ERROR] /C:/Users/USER-PC/Documents/java/VitalNurse/src/main/java/com/proyecto/vitalnurse/validation/CedulaValidaValidator.java:[8,5] isValid(java.lang.String,ConstraintValidatorContext) in com.proyecto.vitalnurse.validation.CedulaValidaValidator does not override or implement a method from a supertype
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

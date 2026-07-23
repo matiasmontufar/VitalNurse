@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="utf-8">
-    <title>VitalNurse - Ficha Médica</title>
+    <title>VitalNurse - Ficha MÃ©dica</title>
     <link th:href="@{/vendor/fontawesome-free/css/all.min.css}" rel="stylesheet" type="text/css">
     <link th:href="@{/css/sb-admin-2.min.css}" rel="stylesheet">
     <!-- Estilos de DataTables -->
@@ -12,7 +12,7 @@
 
 <div id="wrapper">
 
-    <!-- MENÚ LATERAL -->
+    <!-- MENÃš LATERAL -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
             <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-stethoscope"></i></div>
@@ -21,20 +21,20 @@
         <hr class="sidebar-divider my-0">
         <li class="nav-item"><a class="nav-link" href="/dashboard"><i class="fas fa-fw fa-tachometer-alt"></i><span>Panel Principal</span></a></li>
         <hr class="sidebar-divider">
-        <div class="sidebar-heading">Gestión de Pacientes</div>
-        <li class="nav-item"><a class="nav-link" href="/pacientes/nuevo"><i class="fas fa-fw fa-user-plus"></i><span>Admisión y Registro</span></a></li>
+        <div class="sidebar-heading">GestiÃ³n de Pacientes</div>
+        <li class="nav-item"><a class="nav-link" href="/pacientes/nuevo"><i class="fas fa-fw fa-user-plus"></i><span>AdmisiÃ³n y Registro</span></a></li>
         <li class="nav-item"><a class="nav-link" href="/pacientes"><i class="fas fa-fw fa-users"></i><span>Lista de Pacientes</span></a></li>
         <li class="nav-item"><a class="nav-link" href="/pacientes/signos"><i class="fas fa-fw fa-heartbeat"></i><span>Signos Vitales</span></a></li>
         <hr class="sidebar-divider">
-        <div class="sidebar-heading">Soporte Clínico</div>
+        <div class="sidebar-heading">Soporte ClÃ­nico</div>
         <li class="nav-item"><a class="nav-link" href="/calculadoras/imc"><i class="fas fa-fw fa-weight"></i><span>Triaje Nutricional</span></a></li>
         <li class="nav-item"><a class="nav-link" href="/calculadoras/glasgow"><i class="fas fa-fw fa-brain"></i><span>Escala de Glasgow</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="/calculadoras/dosis"><i class="fas fa-fw fa-capsules"></i><span>Conversión de Dosis</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/calculadoras/dosis"><i class="fas fa-fw fa-capsules"></i><span>ConversiÃ³n de Dosis</span></a></li>
 
         <hr class="sidebar-divider" sec:authorize="hasRole('SUPERVISOR')">
-        <div class="sidebar-heading" sec:authorize="hasRole('SUPERVISOR')">Administración</div>
+        <div class="sidebar-heading" sec:authorize="hasRole('SUPERVISOR')">AdministraciÃ³n</div>
         <li class="nav-item" sec:authorize="hasRole('SUPERVISOR')">
-            <a class="nav-link" href="/usuarios/nuevo"><i class="fas fa-fw fa-user-shield"></i><span>Gestión de Personal</span></a>
+            <a class="nav-link" href="/usuarios/nuevo"><i class="fas fa-fw fa-user-shield"></i><span>GestiÃ³n de Personal</span></a>
         </li>
     </ul>
 
@@ -42,7 +42,7 @@
     <div id="content-wrapper" class="d-flex flex-column">
         <div id="content">
             <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-                <h1 class="h3 mb-0 text-gray-800 ml-3">Expediente Clínico del Paciente</h1>
+                <h1 class="h3 mb-0 text-gray-800 ml-3">Expediente ClÃ­nico del Paciente</h1>
             </nav>
 
             <div class="container-fluid">
@@ -52,7 +52,7 @@
                     <div class="col-xl-4 col-lg-5">
                         <div class="card shadow mb-4">
                             <div class="card-header py-3 bg-primary">
-                                <h6 class="m-0 font-weight-bold text-white"><i class="fas fa-id-card"></i> Información Demográfica</h6>
+                                <h6 class="m-0 font-weight-bold text-white"><i class="fas fa-id-card"></i> InformaciÃ³n DemogrÃ¡fica</h6>
                             </div>
                             <div class="card-body">
                                 <div class="text-center mb-4">
@@ -61,13 +61,11 @@
                                     <span class="badge badge-primary" th:text="'C.I: ' + ${paciente.cedula}">C.I</span>
                                 </div>
                                 <hr>
-                                <p class="mb-2"><strong>Edad:</strong> <span th:text="${paciente.edad} + ' años'"></span></p>
-                                <p class="mb-2"><strong>Sexo Biológico:</strong> <span th:text="${paciente.sexo}"></span></p>
-                                <p class="mb-0 text-danger"><strong>Preexistencias:</strong></p>
-                                <p class="text-gray-800" th:text="${paciente.enfermedadesPreexistentes}">Ninguna</p>
+                                <p class="mb-2"><strong>Edad:</strong> <span th:text="${paciente.edad} + ' aÃ±os'"></span></p>
+                                <p class="mb-2"><strong>Sexo BiolÃ³gico:</strong> <span th:text="${paciente.sexo}"></span></p>
                                 <hr>
                                 <div class="text-center mt-3">
-                                    <a th:href="@{/pacientes/perfil/{id}/pdf(id=${paciente.idPaciente})}" 
+                                    <a th:href="@{/pacientes/perfil/{id}/pdf(id=${pacienteId})}" 
                                        class="btn btn-danger btn-icon-split shadow-sm w-100">
                                         <span class="icon text-white-50">
                                             <i class="fas fa-file-pdf"></i>
@@ -79,20 +77,20 @@
                         </div>
                     </div>
 
-                    <!-- Tarjeta de Historial Clínico -->
+                    <!-- Tarjeta de Historial ClÃ­nico -->
                     <div class="col-xl-8 col-lg-7">
                         <div class="card shadow mb-4">
                             <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                                <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-notes-medical"></i> Historial de Evaluaciones Clínicas</h6>
+                                <h6 class="m-0 font-weight-bold text-primary"><i class="fas fa-notes-medical"></i> Historial de Evaluaciones ClÃ­nicas</h6>
                             </div>
                             <!-- CUERPO DE LA TARJETA DEL HISTORIAL -->
                             <div class="card-body">
                                 
-                                <!-- Se muestra SOLO si el historial ESTÁ VACÍO -->
+                                <!-- Se muestra SOLO si el historial ESTÃ VACÃO -->
                                 <div th:if="${#lists.isEmpty(historial)}" class="mt-5 mb-5 text-center">
                                     <i class="fas fa-folder-open fa-4x text-gray-200 mb-3"></i>
-                                    <h5 class="text-gray-500">Aún no hay evaluaciones guardadas</h5>
-                                    <p class="text-muted">Los resultados de la calculadora IMC y Escala de Glasgow aparecerán aquí automáticamente.</p>
+                                    <h5 class="text-gray-500">AÃºn no hay evaluaciones guardadas</h5>
+                                    <p class="text-muted">Los resultados de la calculadora IMC y Escala de Glasgow aparecerÃ¡n aquÃ­ automÃ¡ticamente.</p>
                                 </div>
 
                                 <!-- Se muestra SOLO si el historial TIENE DATOS -->
@@ -101,9 +99,9 @@
                                         <thead class="thead-light">
                                             <tr>
                                                 <th>Fecha y Hora</th>
-                                                <th>Evaluación</th>
+                                                <th>EvaluaciÃ³n</th>
                                                 <th>Resultado</th>
-                                                <th>Diagnóstico / Riesgo</th>
+                                                <th>DiagnÃ³stico / Riesgo</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -128,46 +126,7 @@
                     </div>
                 </div>
 
-                    <!-- TARJETA DE SIGNOS VITALES (RF5) -->
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between bg-danger">
-                            <h6 class="m-0 font-weight-bold text-white"><i class="fas fa-heartbeat"></i> Historial de Signos Vitales</h6>
-                        </div>
-                        <div class="card-body">
 
-                            <div th:if="${#lists.isEmpty(historialSignos)}" class="mt-4 mb-4 text-center">
-                                <i class="fas fa-notes-medical fa-3x text-gray-300 mb-3"></i>
-                                <h6 class="text-gray-500">Aún no se han registrado signos vitales para este paciente.</h6>
-                            </div>
-
-                            <div th:unless="${#lists.isEmpty(historialSignos)}" class="table-responsive">
-                                <table id="tablaSignos" class="table table-bordered table-striped table-sm text-center" width="100%" cellspacing="0">
-                                    <thead class="thead-dark">
-                                        <tr>
-                                            <th>Fecha y Hora</th>
-                                            <th>P. Arterial</th>
-                                            <th>F. Cardíaca</th>
-                                            <th>F. Resp.</th>
-                                            <th>Temp.</th>
-                                            <th>Sat. O2</th>
-                                            <th>Glicemia</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr th:each="signo : ${historialSignos}">
-                                            <td class="font-weight-bold text-primary" th:text="${signo.fechaFormateada}"></td>
-                                            <td th:text="${signo.presionArterial} + ' mmHg'"></td>
-                                            <td th:text="${signo.frecuenciaCardiaca} + ' lpm'"></td>
-                                            <td th:text="${signo.frecuenciaRespiratoria} + ' rpm'"></td>
-                                            <td th:text="${signo.temperatura} + ' °C'"></td>
-                                            <td th:text="${signo.saturacionOxigeno} + ' %'"></td>
-                                            <td th:text="${signo.glicemia} + ' mg/dl'"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
 
             </div>
         </div>
@@ -179,11 +138,11 @@
 <script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
 <script th:src="@{/js/sb-admin-2.min.js}"></script>
 
-<!-- 2. Cargar DataTables después -->
+<!-- 2. Cargar DataTables despuÃ©s -->
 <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
 <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap4.min.js"></script>
 
-<!-- 3. Ejecutar la configuración -->
+<!-- 3. Ejecutar la configuraciÃ³n -->
 <script>
     $(document).ready(function() {
         var colOrder = [0, "desc"];
@@ -199,10 +158,9 @@
         if ($('#tablaEvaluaciones').length) {
             $('#tablaEvaluaciones').DataTable(configuracionTabla);
         }
-        if ($('#tablaSignos').length) {
-            $('#tablaSignos').DataTable(configuracionTabla);
-        }
+
     });
 </script>
 </body>
 </html>
+

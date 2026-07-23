@@ -22,7 +22,7 @@ public class SecurityConfig {
             )
             .formLogin(form -> form
                 .loginPage("/login")
-                .usernameParameter("cedula")
+                .usernameParameter("username")
                 .passwordParameter("contrasena")
                 .defaultSuccessUrl("/dashboard", true)
                 .permitAll()

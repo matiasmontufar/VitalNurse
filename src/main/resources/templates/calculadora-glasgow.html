@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="utf-8">
@@ -12,7 +12,7 @@
 
 <div id="wrapper">
 
-    <!-- MENÚ LATERAL -->
+    <!-- MENÃš LATERAL -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
         <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
             <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-stethoscope"></i></div>
@@ -21,20 +21,20 @@
         <hr class="sidebar-divider my-0">
         <li class="nav-item"><a class="nav-link" href="/dashboard"><i class="fas fa-fw fa-tachometer-alt"></i><span>Panel Principal</span></a></li>
         <hr class="sidebar-divider">
-        <div class="sidebar-heading">Gestión de Pacientes</div>
-        <li class="nav-item"><a class="nav-link" href="/pacientes/nuevo"><i class="fas fa-fw fa-user-plus"></i><span>Admisión y Registro</span></a></li>
+        <div class="sidebar-heading">GestiÃ³n de Pacientes</div>
+        <li class="nav-item"><a class="nav-link" href="/pacientes/nuevo"><i class="fas fa-fw fa-user-plus"></i><span>AdmisiÃ³n y Registro</span></a></li>
         <li class="nav-item"><a class="nav-link" href="/pacientes"><i class="fas fa-fw fa-users"></i><span>Lista de Pacientes</span></a></li>
         <li class="nav-item"><a class="nav-link" href="/pacientes/signos"><i class="fas fa-fw fa-heartbeat"></i><span>Signos Vitales</span></a></li>
         <hr class="sidebar-divider">
-        <div class="sidebar-heading">Soporte Clínico</div>
+        <div class="sidebar-heading">Soporte ClÃ­nico</div>
         <li class="nav-item"><a class="nav-link" href="/calculadoras/imc"><i class="fas fa-fw fa-weight"></i><span>Triaje Nutricional</span></a></li>
         <li class="nav-item active"><a class="nav-link" href="/calculadoras/glasgow"><i class="fas fa-fw fa-brain"></i><span>Escala de Glasgow</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="/calculadoras/dosis"><i class="fas fa-fw fa-capsules"></i><span>Conversión de Dosis</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="/calculadoras/dosis"><i class="fas fa-fw fa-capsules"></i><span>ConversiÃ³n de Dosis</span></a></li>
 
         <hr class="sidebar-divider" sec:authorize="hasRole('SUPERVISOR')">
-        <div class="sidebar-heading" sec:authorize="hasRole('SUPERVISOR')">Administración</div>
+        <div class="sidebar-heading" sec:authorize="hasRole('SUPERVISOR')">AdministraciÃ³n</div>
         <li class="nav-item" sec:authorize="hasRole('SUPERVISOR')">
-            <a class="nav-link" href="/usuarios/nuevo"><i class="fas fa-fw fa-user-shield"></i><span>Gestión de Personal</span></a>
+            <a class="nav-link" href="/usuarios/nuevo"><i class="fas fa-fw fa-user-shield"></i><span>GestiÃ³n de Personal</span></a>
         </li>
     </ul>
 
@@ -45,20 +45,20 @@
                 <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                     <i class="fa fa-bars"></i>
                 </button>
-                <h1 class="h3 mb-0 text-gray-800 ml-3">Evaluación Neurológica</h1>
+                <h1 class="h3 mb-0 text-gray-800 ml-3">EvaluaciÃ³n NeurolÃ³gica</h1>
                 <ul class="navbar-nav ml-auto">
 
                     <div class="topbar-divider d-none d-sm-block"></div>
 
                     <li class="nav-item dropdown no-arrow">
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="mr-2 d-none d-lg-inline text-gray-600 small font-weight-bold">Matías Montufar</span>
+                            <span class="mr-2 d-none d-lg-inline text-gray-600 small font-weight-bold">MatÃ­as Montufar</span>
                             <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
                         </a>
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                                 <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                                Cerrar Sesión
+                                Cerrar SesiÃ³n
                             </a>
                         </div>
                     </li>
@@ -77,7 +77,7 @@
                             </div>
                             <div class="card-body">
                                 
-                                <!-- Alerta de éxito unificada -->
+                                <!-- Alerta de Ã©xito unificada -->
                                 <div th:if="${mensajeExito}" class="alert alert-success shadow-sm mb-4">
                                     <i class="fas fa-check-circle"></i> <span th:text="${mensajeExito}"></span>
                                 </div>
@@ -88,7 +88,7 @@
                                     <div class="form-group border-bottom pb-3 mb-4">
                                         <label class="font-weight-bold text-primary">Seleccione el Paciente:</label>
                                         <select class="form-control" id="buscadorPaciente" name="idPaciente" required>
-                                            <option value="">-- Buscar Paciente por Cédula o Nombre --</option>
+                                            <option value="">-- Buscar Paciente por CÃ©dula o Nombre --</option>
                                             <option th:each="paciente : ${pacientes}" 
                                                     th:value="${paciente.idPaciente}" 
                                                     th:text="${paciente.cedula} + ' - ' + ${paciente.apellidos} + ' ' + ${paciente.nombres}">
@@ -102,7 +102,7 @@
                                             <label class="font-weight-bold">1. Apertura Ocular:</label>
                                             <select class="form-control" name="ocular" required>
                                                 <option value="" disabled selected>-- Seleccione --</option>
-                                                <option value="4">Espontánea (+4)</option>
+                                                <option value="4">EspontÃ¡nea (+4)</option>
                                                 <option value="3">Al hablarle (+3)</option>
                                                 <option value="2">Al dolor (+2)</option>
                                                 <option value="1">Ninguna (+1)</option>
@@ -125,11 +125,11 @@
                                             <label class="font-weight-bold">3. Respuesta Motora:</label>
                                             <select class="form-control" name="motora" required>
                                                 <option value="" disabled selected>-- Seleccione --</option>
-                                                <option value="6">Obedece órdenes (+6)</option>
+                                                <option value="6">Obedece Ã³rdenes (+6)</option>
                                                 <option value="5">Localiza dolor (+5)</option>
                                                 <option value="4">Se retira al dolor (+4)</option>
-                                                <option value="3">Flexión anormal (+3)</option>
-                                                <option value="2">Extensión anormal (+2)</option>
+                                                <option value="3">FlexiÃ³n anormal (+3)</option>
+                                                <option value="2">ExtensiÃ³n anormal (+2)</option>
                                                 <option value="1">Ninguna (+1)</option>
                                             </select>
                                         </div>
@@ -138,7 +138,7 @@
                                     <hr>
                                     <button type="submit" class="btn btn-primary btn-icon-split shadow-sm">
                                         <span class="icon text-white-50"><i class="fas fa-save"></i></span>
-                                        <span class="text">Guardar Evaluación en Ficha</span>
+                                        <span class="text">Guardar EvaluaciÃ³n en Ficha</span>
                                     </button>
                                 </form>
                             </div>
@@ -149,7 +149,7 @@
                     <div class="col-lg-5 mb-4" th:if="${puntajeTotal != null}">
                         <div th:class="'card shadow mb-4 border-left-' + ${colorAlerta}">
                             <div class="card-header py-3">
-                                <h6 th:class="'m-0 font-weight-bold text-' + ${colorAlerta}"><i class="fas fa-file-medical-alt"></i> Diagnóstico Neurológico</h6>
+                                <h6 th:class="'m-0 font-weight-bold text-' + ${colorAlerta}"><i class="fas fa-file-medical-alt"></i> DiagnÃ³stico NeurolÃ³gico</h6>
                             </div>
                             <div class="card-body text-center mt-4">
                                 <h1 class="display-1 font-weight-bold text-dark" th:text="${puntajeTotal}"></h1>
@@ -175,28 +175,28 @@
 <script>
     $(document).ready(function() {
         $('#buscadorPaciente').select2({
-            placeholder: "-- Digite Cédula o Apellido --",
+            placeholder: "-- Digite CÃ©dula o Apellido --",
             allowClear: true,
             width: '100%'
         });
     });
 </script>
 
-<!-- Modal de Cerrar Sesión -->
+<!-- Modal de Cerrar SesiÃ³n -->
 <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">¿Cerrar Sesión?</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Â¿Cerrar SesiÃ³n?</h5>
                 <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
+                    <span aria-hidden="true">Ã—</span>
                 </button>
             </div>
-            <div class="modal-body">Seleccione "Cerrar Sesión" si desea finalizar su sesión actual.</div>
+            <div class="modal-body">Seleccione "Cerrar SesiÃ³n" si desea finalizar su sesiÃ³n actual.</div>
             <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
                 <form th:action="@{/logout}" method="post">
-                    <button type="submit" class="btn btn-primary">Cerrar Sesión</button>
+                    <button type="submit" class="btn btn-primary">Cerrar SesiÃ³n</button>
                 </form>
             </div>
         </div>
@@ -204,3 +204,4 @@
 </div>
 </body>
 </html>
+

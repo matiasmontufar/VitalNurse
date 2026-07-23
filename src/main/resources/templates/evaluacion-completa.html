@@ -1,258 +1,65 @@
-<!DOCTYPE html>
-<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+﻿<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="utf-8">
-    <link rel="icon" type="image/svg+xml" th:href="@{/img/favicon.svg}">
-    <title>VitalNurse - Evaluación Clínica</title>
-    <link th:href="@{/vendor/fontawesome-free/css/all.min.css}" rel="stylesheet" type="text/css">
-    <link th:href="@{/css/sb-admin-2.min.css}" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <title>Dashboard ClÃ­nico - VitalNurse</title>
+    <!-- CSS Bootstrap y de la app -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
-<body id="page-top">
-<div id="wrapper">
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
-        <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/dashboard">
-            <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-stethoscope"></i></div>
-            <div class="sidebar-brand-text mx-3">VitalNurse</div>
-        </a>
-        <hr class="sidebar-divider my-0">
-        <li class="nav-item"><a class="nav-link" href="/dashboard"><i class="fas fa-fw fa-tachometer-alt"></i><span>Panel Principal</span></a></li>
-        <hr class="sidebar-divider">
-        <div class="sidebar-heading">Gestión de Pacientes</div>
-        <li class="nav-item"><a class="nav-link" href="/pacientes/nuevo"><i class="fas fa-fw fa-user-plus"></i><span>Admisión y Registro</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="/pacientes"><i class="fas fa-fw fa-users"></i><span>Lista de Pacientes</span></a></li>
-        <li class="nav-item active"><a class="nav-link" href="/evaluacion/completa"><i class="fas fa-fw fa-notes-medical"></i><span>Evaluación Clínica</span></a></li>
-        <hr class="sidebar-divider" sec:authorize="hasRole('SUPERVISOR')">
-        <div class="sidebar-heading" sec:authorize="hasRole('SUPERVISOR')">Administración</div>
-        <li class="nav-item" sec:authorize="hasRole('SUPERVISOR')">
-            <a class="nav-link" href="/usuarios/nuevo"><i class="fas fa-fw fa-user-shield"></i><span>Gestión de Personal</span></a>
-        </li>
-    </ul>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="/dashboard"><i class="fas fa-heartbeat me-2"></i>VitalNurse</a>
+    </div>
+</nav>
 
-    <div id="content-wrapper" class="d-flex flex-column">
-        <div id="content">
-            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-                <h1 class="h3 mb-0 text-gray-800 ml-3">Evaluación Clínica</h1>
-            </nav>
-            <div class="container-fluid">
-                <div th:if="${error}" class="alert alert-danger shadow-sm mb-4">
-                    <i class="fas fa-exclamation-triangle"></i> <span th:text="${error}"></span>
-                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+<div class="container mt-4">
+    <h2 class="mb-4"><i class="fas fa-stethoscope text-primary"></i> Dashboard ClÃ­nico Centralizado</h2>
+    
+    <div class="card shadow-sm mb-4">
+        <div class="card-header bg-white pb-0">
+            <ul class="nav nav-tabs border-bottom-0" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active fw-bold text-secondary" data-bs-toggle="pill" data-bs-target="#imc" type="button" role="tab"><i class="fas fa-weight"></i> Triaje Nutricional (IMC)</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link fw-bold text-secondary" data-bs-toggle="pill" data-bs-target="#glasgow" type="button" role="tab"><i class="fas fa-brain"></i> Escala Glasgow</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link fw-bold text-secondary" data-bs-toggle="pill" data-bs-target="#dosis" type="button" role="tab"><i class="fas fa-syringe"></i> CÃ¡lculo de Dosis</button>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body">
+            <div class="tab-content" id="pills-tabContent">
+                
+                <!-- Tab IMC -->
+                <div class="tab-pane fade show active" id="imc" role="tabpanel">
+                    <h5 class="text-primary mb-3">Calculadora de IMC</h5>
+                    <p class="text-muted">AsegÃºrese de guardar la evaluaciÃ³n para el expediente del paciente.</p>
+                    <a href="/calculadoras/imc" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Ir a IMC Individual</a>
+                    <!-- AquÃ­ se integrarÃ­a el formulario vÃ­a fragments en Thymeleaf, ej: <div th:replace="calculadora-imc :: formImc"></div> -->
                 </div>
-                <div th:if="${mensajeExito}" class="alert alert-success shadow-sm mb-4">
-                    <i class="fas fa-check-circle"></i> <span th:text="${mensajeExito}"></span>
-                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                
+                <!-- Tab Glasgow -->
+                <div class="tab-pane fade" id="glasgow" role="tabpanel">
+                    <h5 class="text-primary mb-3">Escala de Coma de Glasgow</h5>
+                    <p class="text-muted">Permite clasificar el nivel del trauma.</p>
+                    <a href="/calculadoras/glasgow" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Ir a Escala Glasgow</a>
                 </div>
-
-                <form th:action="@{/evaluacion/completa}" method="post" id="formCompleta">
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3 bg-primary">
-                            <h6 class="m-0 font-weight-bold text-white"><i class="fas fa-user"></i> Paciente</h6>
-                        </div>
-                        <div class="card-body">
-                            <select class="form-control" id="buscadorPaciente" name="idPaciente" required>
-                                <option value="">-- Buscar Paciente --</option>
-                                <option th:each="paciente : ${pacientes}"
-                                        th:value="${paciente.idPaciente}"
-                                        th:text="${paciente.cedula} + ' - ' + ${paciente.apellidos} + ' ' + ${paciente.nombres}">
-                                </option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3 bg-danger">
-                            <h6 class="m-0 font-weight-bold text-white"><i class="fas fa-heartbeat"></i> Signos Vitales</h6>
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-3 mb-3">
-                                    <label class="font-weight-bold">PAS (mmHg) <span class="text-muted small">(100-119)</span></label>
-                                    <input type="number" class="form-control" name="pas" placeholder="Ej: 120" oninput="validarRango(this,40,300)">
-                                </div>
-                                <div class="col-md-3 mb-3">
-                                    <label class="font-weight-bold">PAD (mmHg) <span class="text-muted small">(60-79)</span></label>
-                                    <input type="number" class="form-control" name="pad" placeholder="Ej: 80" oninput="validarRango(this,20,200)">
-                                </div>
-                                <div class="col-md-3 mb-3">
-                                    <label class="font-weight-bold">FC (lpm) <span class="text-muted small">(60-100)</span></label>
-                                    <input type="number" class="form-control" name="fc" placeholder="Ej: 80" oninput="validarRango(this,20,300)">
-                                </div>
-                                <div class="col-md-3 mb-3">
-                                    <label class="font-weight-bold">FR (rpm) <span class="text-muted small">(12-20)</span></label>
-                                    <input type="number" class="form-control" name="fr" placeholder="Ej: 16" oninput="validarRango(this,4,100)">
-                                </div>
-                                <div class="col-md-3 mb-3">
-                                    <label class="font-weight-bold">Temperatura (°C) <span class="text-muted small">(36-37)</span></label>
-                                    <input type="number" step="0.1" class="form-control" name="temp" placeholder="Ej: 36.5" oninput="validarRango(this,30,45)">
-                                </div>
-                                <div class="col-md-3 mb-3">
-                                    <label class="font-weight-bold">SpO2 (%) <span class="text-muted small">(>95)</span></label>
-                                    <input type="number" class="form-control" name="spo2" placeholder="Ej: 98" oninput="validarRango(this,30,100)">
-                                </div>
-                                <div class="col-md-3 mb-3">
-                                    <label class="font-weight-bold">Glicemia (mg/dL) <span class="text-muted small">(70-110)</span></label>
-                                    <input type="number" step="0.1" class="form-control" name="glicemia" placeholder="Ej: 100" oninput="validarRango(this,10,600)">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3 bg-success">
-                            <h6 class="m-0 font-weight-bold text-white"><i class="fas fa-weight"></i> IMC</h6>
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-4 mb-3">
-                                    <label class="font-weight-bold">Peso (kg)</label>
-                                    <input type="number" step="0.1" class="form-control" id="peso" name="peso" placeholder="Ej: 70" oninput="validarRango(this,1,500);calcularIMC()">
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <label class="font-weight-bold">Estatura (m)</label>
-                                    <input type="number" step="0.01" class="form-control" id="estatura" name="estatura" placeholder="Ej: 1.75" oninput="validarRango(this,0.3,2.5);calcularIMC()">
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <label class="font-weight-bold">Resultado</label>
-                                    <div id="resultadoIMC" class="alert alert-secondary p-2 mb-0 text-center" style="font-size:1.1rem">--</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card shadow mb-4">
-                        <div class="card-header py-3 bg-warning">
-                            <h6 class="m-0 font-weight-bold text-white"><i class="fas fa-brain"></i> Escala de Glasgow</h6>
-                        </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-4 mb-3">
-                                    <label class="font-weight-bold">Respuesta Ocular</label>
-                                    <select class="form-control" id="ocular" name="ocular" onchange="calcularGlasgow()">
-                                        <option value="">-- Seleccionar --</option>
-                                        <option value="4">4 - Espontánea</option>
-                                        <option value="3">3 - Al llamado verbal</option>
-                                        <option value="2">2 - Al dolor</option>
-                                        <option value="1">1 - No responde</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <label class="font-weight-bold">Respuesta Verbal</label>
-                                    <select class="form-control" id="verbal" name="verbal" onchange="calcularGlasgow()">
-                                        <option value="">-- Seleccionar --</option>
-                                        <option value="5">5 - Orientado</option>
-                                        <option value="4">4 - Confuso</option>
-                                        <option value="3">3 - Palabras inapropiadas</option>
-                                        <option value="2">2 - Sonidos incomprensibles</option>
-                                        <option value="1">1 - No responde</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-4 mb-3">
-                                    <label class="font-weight-bold">Respuesta Motora</label>
-                                    <select class="form-control" id="motora" name="motora" onchange="calcularGlasgow()">
-                                        <option value="">-- Seleccionar --</option>
-                                        <option value="6">6 - Obedece órdenes</option>
-                                        <option value="5">5 - Localiza el dolor</option>
-                                        <option value="4">4 - Retirada al dolor</option>
-                                        <option value="3">3 - Flexión anormal</option>
-                                        <option value="2">2 - Extensión anormal</option>
-                                        <option value="1">1 - No responde</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row mt-2">
-                                <div class="col-md-12">
-                                    <div id="resultadoGlasgow" class="alert alert-secondary p-2 mb-0 text-center" style="font-size:1.1rem">--</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary btn-lg btn-icon-split shadow-sm mb-4">
-                        <span class="icon text-white-50"><i class="fas fa-save"></i></span>
-                        <span class="text font-weight-bold">Guardar Evaluación</span>
-                    </button>
-                </form>
+                
+                <!-- Tab Dosis -->
+                <div class="tab-pane fade" id="dosis" role="tabpanel">
+                    <h5 class="text-primary mb-3">CÃ¡lculo de Dosis MÃ©dica</h5>
+                    <p class="text-muted">Calcula mililitros, gotas y microgotas.</p>
+                    <a href="/calculadoras/dosis" class="btn btn-primary"><i class="fas fa-arrow-right"></i> Ir a Calculadora de Dosis</a>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<script th:src="@{/vendor/jquery/jquery.min.js}"></script>
-<script th:src="@{/vendor/bootstrap/js/bootstrap.bundle.min.js}"></script>
-<script th:src="@{/js/sb-admin-2.min.js}"></script>
-<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
-<script>
-$(document).ready(function() {
-    $('#buscadorPaciente').select2({ placeholder: "Buscar paciente", allowClear: true, width: '100%' });
-    calcularIMC();
-    calcularGlasgow();
-});
-
-function validarRango(input, min, max) {
-    var val = parseFloat(input.value);
-    if (val && (val < min || val > max)) { input.classList.remove("is-valid"); input.classList.add("is-invalid"); }
-    else if (val) { input.classList.remove("is-invalid"); input.classList.add("is-valid"); }
-    else { input.classList.remove("is-valid", "is-invalid"); }
-}
-
-function clasificarIMC(imc) {
-    if (imc < 18.5) return {text:"Bajo peso",color:"warning"};
-    if (imc < 25)  return {text:"Normal",color:"success"};
-    if (imc < 30)  return {text:"Sobrepeso",color:"warning"};
-    if (imc < 35)  return {text:"Obesidad I",color:"danger"};
-    if (imc < 40)  return {text:"Obesidad II",color:"danger"};
-    return {text:"Obesidad III",color:"danger"};
-}
-
-function calcularIMC() {
-    var peso = parseFloat(document.getElementById("peso").value);
-    var talla = parseFloat(document.getElementById("estatura").value);
-    var div = document.getElementById("resultadoIMC");
-    if (peso > 0 && talla > 0) {
-        var imc = peso / (talla * talla);
-        imc = Math.round(imc * 100) / 100;
-        var cls = clasificarIMC(imc);
-        div.className = "alert alert-" + cls.color + " p-2 mb-0 text-center fw-bold";
-        div.innerHTML = "<strong>" + imc + " kg/m²</strong> — " + cls.text;
-    } else {
-        div.className = "alert alert-secondary p-2 mb-0 text-center";
-        div.innerHTML = "--";
-    }
-}
-
-function clasificarGlasgow(total) {
-    if (total >= 13 && total <= 15) return {text:"Trauma leve",color:"success"};
-    if (total >= 9 && total <= 12)  return {text:"Trauma moderado",color:"warning"};
-    if (total >= 3 && total <= 8)   return {text:"Trauma severo",color:"danger"};
-    return {text:"--",color:"secondary"};
-}
-
-function calcularGlasgow() {
-    var o = parseInt(document.getElementById("ocular").value) || 0;
-    var v = parseInt(document.getElementById("verbal").value) || 0;
-    var m = parseInt(document.getElementById("motora").value) || 0;
-    var div = document.getElementById("resultadoGlasgow");
-    if (o > 0 && v > 0 && m > 0) {
-        var total = o + v + m;
-        var cls = clasificarGlasgow(total);
-        div.className = "alert alert-" + cls.color + " p-2 mb-0 text-center fw-bold";
-        div.innerHTML = "<strong>" + total + "/15</strong> — " + cls.text;
-    } else {
-        div.className = "alert alert-secondary p-2 mb-0 text-center";
-        div.innerHTML = "--";
-    }
-}
-
-document.getElementById("formCompleta").addEventListener("submit", function(e) {
-    var inv = this.querySelectorAll(".is-invalid");
-    if (inv.length > 0) { e.preventDefault(); alert("Corrija los valores en rojo."); inv[0].focus(); }
-});
-setTimeout(function() {
-    document.querySelectorAll(".alert-dismissible, .alert-success, .alert-danger").forEach(function(a) {
-        if (a.closest(".card-body") == null) { a.style.transition = "opacity 1s"; a.style.opacity = "0"; setTimeout(function(){a.style.display="none"},1000); }
-    });
-}, 5000);
-</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
